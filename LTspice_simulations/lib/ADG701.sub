@@ -1,0 +1,96 @@
+* ADG701 SPICE Macro-model
+* Generic Desc:CMOS Low Voltage 2 Ω SPST Switches
+* Developed by: mbarrien / ANALOG
+* Revision History: 2.0 (8/2018) - Updated model design
+* 1.0 (05/2008)
+* Copyright 2018 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model
+* indicates your acceptance of the terms and provisions in the License Statement.
+*
+* Begin Notes:
+* The model will work on Vdd from 0.5V to 5V single supply.
+* The model provides parametric specifications at 5V only and is not variable with Vdd changes. Please see datasheet spec table.
+*
+* Parameters modeled include:
+* On Resistance
+* Ton and Toff
+* Off Isolation
+* Supply Currents: Iss/Idd
+* Bandwidth
+* Charge Injection
+* Connections
+*      1  = D1
+*      2  = NIC
+*      3  = NIC
+*      4  = VDD
+*      5  = NIC
+*      6  = IN1
+*      7  = GND
+*      8  = S1
+*
+.SUBCKT ADG701 1 2 3 4 5 6 7 8
+
+.MODEL VON VSWITCH(Von=5 Voff=0.8 Ron=0.001 Roff=9000000000000)
+.MODEL VEN VSWITCH(Von=5 Voff=0.8 Ron=5400 Roff=27430)
+.MODEL VRESET VSWITCH(Von=5 Voff=0.8 Ron=2700000 Roff=1000)
+.MODEL DCLAMP D(IS=1E-15 IBV=1E-13)
+
+
+* IDD/ISS
+I1 4 7 0.001E-006
+
+* Configuration: SPST 1:1
+
+
+** SWITCH 1 **
+*
+* ESD PROTECTION DIODES
+D11 7 1 DCLAMP
+D12 1 4 DCLAMP
+D13 7 8 DCLAMP
+D14 8 4 DCLAMP
+*
+* OFF ISOLATION
+C11 8 1 0.566E-012
+*
+* CHARGE INJECTION
+C12 1 140 0.163E-011
+C13 8 140 0.163E-011
+*
+* CD/CS OFF AND BANDWIDTH
+C14 8 7 11.78E-012
+C15 1 7 11.78E-012
+*
+* ON RESISTANCE
+Ech155 1555 7 VALUE = { IF ((ABS(V(8)))>(ABS(V(184))),V(8),V(1)) }
+R155 1555 7 1G
+R11 137 1 0.001
+S111 136 141 1141 7 VON
+Ech111 1141 7 VALUE = { IF (V(1555)<1.25,5,0) }
+Ech11 141 7 VALUE = { IF (V(1555)<1.25,0.104*(V(1555)-1.25)+1.85,0) }
+S112 136 146 1146 7 VON
+Ech112 1146 7 VALUE = { IF ((V(1555)>=1.25) & (V(1555)<=3.6),5,0) }
+Ech12 146 7 VALUE = { IF ((V(1555)>=1.25) & (V(1555)<=3.6),((1.85-1.52)/((1.25-2.5713389907903)*(1.25-2.5713389907903)))*(V(1555)-2.5713389907903)*(V(1555)-2.5713389907903) + 1.52,0) }
+S113 136 144 1144 7 VON
+Ech113 1144 7 VALUE = { IF (V(1555)>3.6,5,0) }
+Ech13 144 7 VALUE = { IF (V(1555)>3.6,-0.171428571428571*(V(1555)-3.6)+1.72,0) }
+RIN1	136 7	1G
+EOUT1 137 181	POLY(2) (136,7) (180,7) 0 0 0 0 0.999/1000
+FCOPY1	7 180 VSENSE1 1
+RSENSOR1 180 7	1K
+VSENSE1 181 184	0
+*
+* TON/ TOFF/ BBM
+S11 182 184 140 7 VON
+S12 143 138 143 7 VEN
+Ech14 143 7 VALUE = { IF(V(6)>=2.4, 5 , 0.8 ) }
+eV1 140 7 138 7 1
+C16 138 7 1e-012
+*
+* VOLTAGE SUPPLY REQUIREMENT
+S13 8 182 185 7 VON
+S15 139 185 139 7 VON
+Ech16 139 7 VALUE = { IF((V(0)>=-0.5 & (V(4)<=5 & V(4)>=0.5)), 5 , 0.01 ) }
+
+.ENDS ADG701

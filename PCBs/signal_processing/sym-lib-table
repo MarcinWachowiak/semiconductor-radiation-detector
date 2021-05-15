@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name signal_processing-eagle-import)(type Legacy)(uri ${KIPRJMOD}/signal_processing-eagle-import.lib)(options "")(descr ""))
+)

@@ -1,0 +1,1719 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 12095 8470
+encoding utf-8
+Sheet 1 1
+Title "Gamma PIN preamplifier"
+Date "2021-05-15"
+Rev "3.1.0"
+Comp "Marcin Wachowiak, Poland"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2300 1700 2400 1700
+Wire Wire Line
+	2400 1700 2400 1800
+Wire Wire Line
+	2400 1700 4400 1700
+Wire Wire Line
+	4400 1700 4400 1800
+Connection ~ 2400 1700
+Wire Wire Line
+	5300 3500 5300 3600
+Text Label 5300 3500 0    10   ~ 0
+GND
+Wire Wire Line
+	5100 3450 5100 3600
+Text Label 5100 3450 0    10   ~ 0
+GND
+Wire Wire Line
+	7600 3400 7600 3500
+Text Label 7600 3400 0    10   ~ 0
+GND
+Wire Wire Line
+	7000 2700 7000 2600
+Text Label 7000 2700 0    10   ~ 0
+GND
+Wire Wire Line
+	6800 2450 6800 2700
+Text Label 6800 2450 0    10   ~ 0
+GND
+Wire Wire Line
+	6600 2450 6600 2700
+Text Label 6600 2450 0    10   ~ 0
+GND
+Wire Wire Line
+	8700 3100 8700 3000
+Text Label 8700 3100 0    10   ~ 0
+GND
+Wire Wire Line
+	3500 6300 3500 5900
+Text Label 3500 6300 0    10   ~ 0
+GND
+Wire Wire Line
+	4550 5300 4550 5600
+Text Label 4550 5300 0    10   ~ 0
+GND
+Wire Wire Line
+	3700 5900 3700 6300
+Text Label 3700 5900 0    10   ~ 0
+GND
+Wire Wire Line
+	4750 5300 4750 5600
+Text Label 4750 5300 0    10   ~ 0
+GND
+Wire Wire Line
+	2500 6300 2500 5900
+Text Label 2500 6300 0    10   ~ 0
+GND
+Wire Wire Line
+	2700 5900 2700 6300
+Text Label 2700 5900 0    10   ~ 0
+GND
+Wire Wire Line
+	2300 6300 2300 6200
+Text Label 2300 6300 0    10   ~ 0
+GND
+Wire Wire Line
+	3300 6200 3300 6300
+Text Label 3300 6200 0    10   ~ 0
+GND
+Wire Wire Line
+	4350 5400 4350 5300
+Text Label 4350 5400 0    10   ~ 0
+GND
+Wire Wire Line
+	5500 5950 5500 6200
+Wire Wire Line
+	5500 6200 5700 6200
+Wire Wire Line
+	5700 6200 5900 6200
+Wire Wire Line
+	5900 6200 5900 6100
+Wire Wire Line
+	5900 6300 5900 6200
+Wire Wire Line
+	5700 5950 5700 6200
+Connection ~ 5900 6200
+Connection ~ 5700 6200
+Text Label 5500 5950 0    10   ~ 0
+GND
+Wire Wire Line
+	6500 5650 6500 5800
+Wire Wire Line
+	6500 5800 6500 5950
+Wire Wire Line
+	6300 5650 6300 5800
+Wire Wire Line
+	6300 5800 6300 5950
+Wire Wire Line
+	6500 5800 6300 5800
+Wire Wire Line
+	6300 5800 6100 5800
+Wire Wire Line
+	6100 5900 6100 5800
+Connection ~ 6500 5800
+Connection ~ 6300 5800
+Text Label 6500 5650 0    10   ~ 0
+GND
+Wire Wire Line
+	1800 5800 1800 6000
+Wire Wire Line
+	1600 5800 1800 5800
+Text Label 1800 5800 0    10   ~ 0
+GND
+Wire Wire Line
+	4900 3600 4900 3450
+Text Label 4900 3600 0    10   ~ 0
+GND
+Wire Wire Line
+	2500 5300 2500 5600
+Text Label 2500 5300 1    70   ~ 0
++65V
+Wire Wire Line
+	2700 5300 2700 5600
+Text Label 2700 5300 1    70   ~ 0
++65V
+Wire Wire Line
+	1700 5600 1700 5300
+Wire Wire Line
+	1600 5600 1700 5600
+Text Label 1700 5300 1    70   ~ 0
++65V
+Wire Wire Line
+	2300 5400 2300 5300
+Text Label 2300 5300 1    70   ~ 0
++65V
+Wire Wire Line
+	1900 2200 1800 2200
+Text Label 1800 2200 2    70   ~ 0
++65V
+Wire Wire Line
+	3500 5300 3500 5600
+Text Label 3500 5300 0    10   ~ 0
++5V
+Wire Wire Line
+	3700 5300 3700 5600
+Text Label 3700 5300 0    10   ~ 0
++5V
+Wire Wire Line
+	1800 5700 1800 5500
+Wire Wire Line
+	1600 5700 1800 5700
+Text Label 1800 5700 0    10   ~ 0
++5V
+Wire Wire Line
+	3300 5300 3300 5400
+Text Label 3300 5300 0    10   ~ 0
++5V
+Wire Wire Line
+	6700 4600 6700 4700
+Text Label 6700 4600 0    10   ~ 0
++5V
+Wire Wire Line
+	5900 4800 5900 4900
+Text Label 5900 4800 0    10   ~ 0
++5V
+Wire Wire Line
+	5300 2500 5300 2300
+Text Label 5300 2500 0    10   ~ 0
++5V
+Wire Wire Line
+	7000 1600 7000 1500
+Text Label 7000 1600 0    10   ~ 0
++5V
+Wire Wire Line
+	5300 3100 5300 3000
+Wire Wire Line
+	5300 3000 5300 2900
+Wire Wire Line
+	5600 3000 5300 3000
+Wire Wire Line
+	5300 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 3150
+Wire Wire Line
+	5100 3000 4900 3000
+Wire Wire Line
+	4900 3000 4900 3150
+Connection ~ 5300 3000
+Connection ~ 5100 3000
+Wire Wire Line
+	6100 2600 6300 2600
+Wire Wire Line
+	6300 2600 6300 2900
+Wire Wire Line
+	6300 2900 6200 2900
+Wire Wire Line
+	6050 2400 6300 2400
+Wire Wire Line
+	6300 2400 6300 2600
+Wire Wire Line
+	6300 2900 7100 2900
+Connection ~ 6300 2600
+Connection ~ 6300 2900
+Wire Wire Line
+	4550 5900 4550 6300
+Text Label 4550 5900 0    10   ~ 0
+-5V
+Wire Wire Line
+	4750 5900 4750 6300
+Text Label 4750 5900 0    10   ~ 0
+-5V
+Wire Wire Line
+	4350 6200 4350 6300
+Text Label 4350 6200 0    10   ~ 0
+-5V
+Wire Wire Line
+	6700 7000 6700 6900
+Text Label 6700 7000 0    10   ~ 0
+-5V
+Wire Wire Line
+	1700 5900 1700 6300
+Wire Wire Line
+	1700 5900 1600 5900
+Text Label 1700 5900 0    10   ~ 0
+-5V
+Wire Wire Line
+	1900 1700 1800 1700
+Text Label 1800 1700 2    70   ~ 0
+-5V
+Wire Wire Line
+	4400 3500 4400 3600
+Wire Wire Line
+	4400 3600 4200 3600
+Wire Wire Line
+	4200 3500 4200 3600
+Wire Wire Line
+	4200 3600 4000 3600
+Wire Wire Line
+	4000 3500 4000 3600
+Wire Wire Line
+	4000 3600 3800 3600
+Wire Wire Line
+	3800 3500 3800 3600
+Wire Wire Line
+	3800 3600 3600 3600
+Wire Wire Line
+	3600 3500 3600 3600
+Wire Wire Line
+	3600 3600 3400 3600
+Wire Wire Line
+	3400 3500 3400 3600
+Wire Wire Line
+	3400 3600 3200 3600
+Wire Wire Line
+	3200 3500 3200 3600
+Wire Wire Line
+	3200 3600 3000 3600
+Wire Wire Line
+	3000 3500 3000 3600
+Wire Wire Line
+	3000 3600 2800 3600
+Wire Wire Line
+	2800 3500 2800 3600
+Wire Wire Line
+	2800 3600 2600 3600
+Wire Wire Line
+	2600 3600 2600 3500
+Wire Wire Line
+	4400 3600 4600 3600
+Wire Wire Line
+	2600 2700 2600 2800
+Wire Wire Line
+	2600 2800 2800 2800
+Wire Wire Line
+	2800 2800 2800 2700
+Wire Wire Line
+	2800 2800 3000 2800
+Wire Wire Line
+	3000 2800 3200 2800
+Wire Wire Line
+	3200 2800 3400 2800
+Wire Wire Line
+	3400 2800 3600 2800
+Wire Wire Line
+	3600 2800 3800 2800
+Wire Wire Line
+	3800 2800 4000 2800
+Wire Wire Line
+	4000 2800 4200 2800
+Wire Wire Line
+	4200 2800 4400 2800
+Wire Wire Line
+	4400 2800 4400 2700
+Wire Wire Line
+	4200 2700 4200 2800
+Wire Wire Line
+	4000 2700 4000 2800
+Wire Wire Line
+	3800 2700 3800 2800
+Wire Wire Line
+	3600 2700 3600 2800
+Wire Wire Line
+	3400 2700 3400 2800
+Wire Wire Line
+	3200 2800 3200 2700
+Wire Wire Line
+	3000 2700 3000 2800
+Wire Wire Line
+	4400 2800 4600 2800
+Wire Wire Line
+	4600 2800 4600 2200
+Wire Wire Line
+	5600 2800 5500 2800
+Wire Wire Line
+	5500 2800 4600 2800
+Wire Wire Line
+	5500 2800 5500 2600
+Wire Wire Line
+	5500 2600 5500 2400
+Wire Wire Line
+	5750 2400 5500 2400
+Wire Wire Line
+	5700 2600 5500 2600
+Wire Wire Line
+	4600 3600 4600 2800
+Connection ~ 4200 3600
+Connection ~ 4000 3600
+Connection ~ 3800 3600
+Connection ~ 3600 3600
+Connection ~ 3400 3600
+Connection ~ 3200 3600
+Connection ~ 3000 3600
+Connection ~ 2800 3600
+Connection ~ 4400 3600
+Connection ~ 2800 2800
+Connection ~ 4200 2800
+Connection ~ 4000 2800
+Connection ~ 3800 2800
+Connection ~ 3600 2800
+Connection ~ 3400 2800
+Connection ~ 3200 2800
+Connection ~ 3000 2800
+Connection ~ 4400 2800
+Connection ~ 4600 2800
+Connection ~ 5500 2800
+Connection ~ 5500 2600
+Wire Wire Line
+	4400 3100 4400 3000
+Wire Wire Line
+	4200 3000 4400 3000
+Wire Wire Line
+	4200 3100 4200 3000
+Wire Wire Line
+	4000 3000 4200 3000
+Wire Wire Line
+	4000 3100 4000 3000
+Wire Wire Line
+	3800 3000 4000 3000
+Wire Wire Line
+	3800 3100 3800 3000
+Wire Wire Line
+	3600 3000 3800 3000
+Wire Wire Line
+	3600 3100 3600 3000
+Wire Wire Line
+	3400 3000 3600 3000
+Wire Wire Line
+	3400 3100 3400 3000
+Wire Wire Line
+	3200 3000 3400 3000
+Wire Wire Line
+	3200 3100 3200 3000
+Wire Wire Line
+	3000 3000 3200 3000
+Wire Wire Line
+	3000 3100 3000 3000
+Wire Wire Line
+	2800 3000 3000 3000
+Wire Wire Line
+	2800 3100 2800 3000
+Wire Wire Line
+	2600 3000 2800 3000
+Wire Wire Line
+	2600 3100 2600 3000
+Wire Wire Line
+	2600 3000 2400 3000
+Wire Wire Line
+	2400 3000 2400 2200
+Wire Wire Line
+	2600 2200 2800 2200
+Wire Wire Line
+	2800 2200 2800 2300
+Wire Wire Line
+	2800 2200 3000 2200
+Wire Wire Line
+	3000 2200 3000 2300
+Wire Wire Line
+	3000 2200 3200 2200
+Wire Wire Line
+	3200 2200 3200 2300
+Wire Wire Line
+	3200 2200 3400 2200
+Wire Wire Line
+	3400 2200 3400 2300
+Wire Wire Line
+	3400 2200 3600 2200
+Wire Wire Line
+	3600 2200 3600 2300
+Wire Wire Line
+	3600 2200 3800 2200
+Wire Wire Line
+	3800 2200 3800 2300
+Wire Wire Line
+	3800 2200 4000 2200
+Wire Wire Line
+	4000 2200 4000 2300
+Wire Wire Line
+	4000 2200 4200 2200
+Wire Wire Line
+	4200 2300 4200 2200
+Wire Wire Line
+	4200 2200 4400 2200
+Wire Wire Line
+	4400 2200 4400 2300
+Wire Wire Line
+	2600 2300 2600 2200
+Wire Wire Line
+	2400 2200 2600 2200
+Wire Wire Line
+	2400 2100 2400 2200
+Wire Wire Line
+	2300 2200 2400 2200
+Connection ~ 4200 3000
+Connection ~ 4000 3000
+Connection ~ 3800 3000
+Connection ~ 3600 3000
+Connection ~ 3400 3000
+Connection ~ 3200 3000
+Connection ~ 3000 3000
+Connection ~ 2800 3000
+Connection ~ 2600 3000
+Connection ~ 2800 2200
+Connection ~ 3000 2200
+Connection ~ 3200 2200
+Connection ~ 3400 2200
+Connection ~ 3600 2200
+Connection ~ 3800 2200
+Connection ~ 4000 2200
+Connection ~ 4200 2200
+Connection ~ 2600 2200
+Connection ~ 2400 2200
+Wire Wire Line
+	7500 2900 7600 2900
+Wire Wire Line
+	7600 2900 7700 2900
+Wire Wire Line
+	7600 3000 7600 2900
+Connection ~ 7600 2900
+Wire Wire Line
+	7700 2700 7600 2700
+Wire Wire Line
+	7500 2100 7600 2100
+Wire Wire Line
+	7600 2100 7800 2100
+Wire Wire Line
+	7600 2700 7600 2100
+Connection ~ 7600 2100
+Wire Wire Line
+	8200 2100 8400 2100
+Wire Wire Line
+	8400 2100 8400 2800
+Wire Wire Line
+	8400 2800 8300 2800
+Wire Wire Line
+	8600 2800 8400 2800
+Connection ~ 8400 2800
+Wire Wire Line
+	7000 2200 7000 2100
+Wire Wire Line
+	7000 2100 7000 2000
+Wire Wire Line
+	7100 2100 7000 2100
+Wire Wire Line
+	7000 2100 6800 2100
+Wire Wire Line
+	6800 2100 6800 2150
+Wire Wire Line
+	6800 2100 6600 2100
+Wire Wire Line
+	6600 2100 6600 2150
+Connection ~ 7000 2100
+Connection ~ 6800 2100
+Wire Wire Line
+	2300 5800 2300 5900
+Wire Wire Line
+	3300 5800 3300 5900
+Wire Wire Line
+	4350 5800 4350 5700
+Wire Wire Line
+	6300 5350 6300 5200
+Wire Wire Line
+	6300 5200 6500 5200
+Wire Wire Line
+	6500 5200 6700 5200
+Wire Wire Line
+	6700 5200 6700 5500
+Wire Wire Line
+	6500 5350 6500 5200
+Wire Wire Line
+	6700 5100 6700 5200
+Connection ~ 6500 5200
+Connection ~ 6700 5200
+Wire Wire Line
+	6300 6250 6300 6400
+Wire Wire Line
+	6300 6400 6500 6400
+Wire Wire Line
+	6500 6400 6700 6400
+Wire Wire Line
+	6700 6400 6700 6100
+Wire Wire Line
+	6700 6500 6700 6400
+Wire Wire Line
+	6500 6250 6500 6400
+Connection ~ 6700 6400
+Connection ~ 6500 6400
+Wire Wire Line
+	4600 1800 4600 1700
+Text Label 4600 1700 1    70   ~ 0
+LOC+5V
+Wire Wire Line
+	5900 5500 5900 5400
+Wire Wire Line
+	5900 5400 5700 5400
+Wire Wire Line
+	5700 5400 5500 5400
+Wire Wire Line
+	5500 5400 5500 5650
+Wire Wire Line
+	5700 5650 5700 5400
+Wire Wire Line
+	5900 5300 5900 5400
+Wire Wire Line
+	5500 5400 5500 5200
+Connection ~ 5700 5400
+Connection ~ 5900 5400
+Connection ~ 5500 5400
+Text Label 5500 5200 1    70   ~ 0
+LOC+5V
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R1
+U 1 1 4B6B8DD1
+P 2100 1700
+F 0 "R1" H 2050 1759 59  0000 L BNN
+F 1 "4,7k" H 2050 1570 59  0000 L BNN
+F 2 "preamplifier:R0603" H 2100 1700 50  0001 C CNN
+F 3 "" H 2100 1700 50  0001 C CNN
+	1    2100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC1206 C1
+U 1 1 781CA996
+P 2400 2000
+F 0 "C1" H 2290 1935 59  0000 R TNN
+F 1 "4,7u/50V" H 2290 2035 59  0000 R TNN
+F 2 "preamplifier:C1206" H 2400 2000 50  0001 C CNN
+F 3 "" H 2400 2000 50  0001 C CNN
+	1    2400 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R2
+U 1 1 736DBF44
+P 2100 2200
+F 0 "R2" H 2050 2259 59  0000 L BNN
+F 1 "4,7k" H 2050 2070 59  0000 L BNN
+F 2 "preamplifier:R0603" H 2100 2200 50  0001 C CNN
+F 3 "" H 2100 2200 50  0001 C CNN
+	1    2100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D1
+U 1 1 8D141E84
+P 2600 2500
+F 0 "D1" H 2349 2551 59  0000 L BNN
+F 1 "VBPW34S" H 2299 2750 59  0000 L BNN
+F 2 "preamplifier:SOD6439X130N" H 2600 2500 50  0001 C CNN
+F 3 "" H 2600 2500 50  0001 C CNN
+	1    2600 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D3
+U 1 1 39967F7A
+P 2800 2500
+F 0 "D3" H 2549 2551 59  0000 L BNN
+F 1 "VBPW34S" H 2500 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 2800 2500 50  0001 C CNN
+F 3 "" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D5
+U 1 1 73B70CE6
+P 3000 2500
+F 0 "D5" H 2749 2551 59  0000 L BNN
+F 1 "VBPW34S" H 2700 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 3000 2500 50  0001 C CNN
+F 3 "" H 3000 2500 50  0001 C CNN
+	1    3000 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D7
+U 1 1 64AFC188
+P 3200 2500
+F 0 "D7" H 2949 2551 59  0000 L BNN
+F 1 "VBPW34S" H 2900 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 3200 2500 50  0001 C CNN
+F 3 "" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D9
+U 1 1 01F958EF
+P 3400 2500
+F 0 "D9" H 3149 2551 59  0000 L BNN
+F 1 "VBPW34S" H 3100 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 3400 2500 50  0001 C CNN
+F 3 "" H 3400 2500 50  0001 C CNN
+	1    3400 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D11
+U 1 1 BAC73F4F
+P 3600 2500
+F 0 "D11" H 3349 2551 59  0000 L BNN
+F 1 "VBPW34S" H 3300 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 3600 2500 50  0001 C CNN
+F 3 "" H 3600 2500 50  0001 C CNN
+	1    3600 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D13
+U 1 1 1B9FE3C0
+P 3800 2500
+F 0 "D13" H 3549 2551 59  0000 L BNN
+F 1 "VBPW34S" H 3500 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 3800 2500 50  0001 C CNN
+F 3 "" H 3800 2500 50  0001 C CNN
+	1    3800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D15
+U 1 1 2A336CCE
+P 4000 2500
+F 0 "D15" H 3749 2551 59  0000 L BNN
+F 1 "VBPW34S" H 3700 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 4000 2500 50  0001 C CNN
+F 3 "" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D17
+U 1 1 20A09832
+P 4200 2500
+F 0 "D17" H 3949 2551 59  0000 L BNN
+F 1 "VBPW34S" H 3900 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 4200 2500 50  0001 C CNN
+F 3 "" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:VBPW34S D19
+U 1 1 9B5A414A
+P 4400 2500
+F 0 "D19" H 4149 2551 59  0000 L BNN
+F 1 "VBPW34S" H 4100 2300 59  0001 L BNN
+F 2 "preamplifier:SOD6439X130N" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R7
+U 1 1 9E8052E2
+P 5300 3300
+F 0 "R7" V 5309 3250 59  0000 R TNN
+F 1 "1k" V 5220 3250 59  0000 R TNN
+F 2 "preamplifier:R0603" H 5300 3300 50  0001 C CNN
+F 3 "" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R6
+U 1 1 64669C67
+P 5300 2700
+F 0 "R6" H 5250 2759 59  0000 L BNN
+F 1 "1k" H 5250 2570 59  0000 L BNN
+F 2 "preamplifier:R0603" H 5300 2700 50  0001 C CNN
+F 3 "" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C9
+U 1 1 0806FA8A
+P 5100 3350
+F 0 "C9" V 5115 3490 59  0000 R TNN
+F 1 "100n/50V" V 4945 3510 59  0000 R TNN
+F 2 "preamplifier:C0603" H 5100 3350 50  0001 C CNN
+F 3 "" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND012
+U 1 1 A5F18D96
+P 5100 3700
+F 0 "#GND012" H 5100 3700 50  0001 C CNN
+F 1 "GND" H 5000 3600 59  0000 L BNN
+F 2 "" H 5100 3700 50  0001 C CNN
+F 3 "" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND013
+U 1 1 9E3D6951
+P 5300 3700
+F 0 "#GND013" H 5300 3700 50  0001 C CNN
+F 1 "GND" H 5250 3600 59  0000 L BNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R8
+U 1 1 29FFBDFC
+P 5900 2600
+F 0 "R8" H 6150 2541 59  0000 R TNN
+F 1 "22-47M" H 5860 2540 59  0000 R TNN
+F 2 "preamplifier:R0603" H 5900 2600 50  0001 C CNN
+F 3 "" H 5900 2600 50  0001 C CNN
+	1    5900 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C12
+U 1 1 24910B93
+P 5950 2400
+F 0 "C12" V 5735 2110 59  0000 L BNN
+F 1 "0,47p/50V" V 5835 2110 59  0000 L BNN
+F 2 "preamplifier:C0603" H 5950 2400 50  0001 C CNN
+F 3 "" H 5950 2400 50  0001 C CNN
+	1    5950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D2
+U 1 1 20478EC3
+P 2600 3300
+F 0 "D2" H 2349 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 2199 3550 59  0000 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 2600 3300 50  0001 C CNN
+F 3 "" H 2600 3300 50  0001 C CNN
+	1    2600 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D4
+U 1 1 DCE5EB0D
+P 2800 3300
+F 0 "D4" H 2549 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 2500 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 2800 3300 50  0001 C CNN
+F 3 "" H 2800 3300 50  0001 C CNN
+	1    2800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D6
+U 1 1 0CA8CD4D
+P 3000 3300
+F 0 "D6" H 2749 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 2700 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D8
+U 1 1 F6A72D8D
+P 3200 3300
+F 0 "D8" H 2949 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 2900 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 3200 3300 50  0001 C CNN
+F 3 "" H 3200 3300 50  0001 C CNN
+	1    3200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D10
+U 1 1 4EB806FC
+P 3400 3300
+F 0 "D10" H 3149 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 3100 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D12
+U 1 1 279ED16D
+P 3600 3300
+F 0 "D12" H 3349 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 3300 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 3600 3300 50  0001 C CNN
+F 3 "" H 3600 3300 50  0001 C CNN
+	1    3600 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D14
+U 1 1 1213472B
+P 3800 3300
+F 0 "D14" H 3549 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 3500 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+	1    3800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D16
+U 1 1 2B8C609C
+P 4000 3300
+F 0 "D16" H 3749 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 3700 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 4000 3300 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D18
+U 1 1 A2E1D69D
+P 4200 3300
+F 0 "D18" H 3949 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 3900 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 4200 3300 50  0001 C CNN
+F 3 "" H 4200 3300 50  0001 C CNN
+	1    4200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:TEMD5010X01 D20
+U 1 1 5A7E911D
+P 4400 3300
+F 0 "D20" H 4149 3351 59  0000 L BNN
+F 1 "TEMD5010X01" H 4100 3100 59  0001 L BNN
+F 2 "preamplifier:DIODE_TEMD5010" H 4400 3300 50  0001 C CNN
+F 3 "" H 4400 3300 50  0001 C CNN
+	1    4400 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R15
+U 1 1 BB50C2AF
+P 7300 2900
+F 0 "R15" H 7400 2841 59  0000 R TNN
+F 1 "100" H 7400 3030 59  0000 R TNN
+F 2 "preamplifier:R0603" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R16
+U 1 1 2724FC92
+P 7600 3200
+F 0 "R16" H 7700 3141 59  0000 R TNN
+F 1 "1k" H 7650 3330 59  0000 R TNN
+F 2 "preamplifier:R0603" H 7600 3200 50  0001 C CNN
+F 3 "" H 7600 3200 50  0001 C CNN
+	1    7600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND019
+U 1 1 48B3EBD8
+P 7600 3600
+F 0 "#GND019" H 7600 3600 50  0001 C CNN
+F 1 "GND" H 7500 3500 59  0000 L BNN
+F 2 "" H 7600 3600 50  0001 C CNN
+F 3 "" H 7600 3600 50  0001 C CNN
+	1    7600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R17
+U 1 1 29F8CE43
+P 8000 2100
+F 0 "R17" H 7900 2159 59  0000 L BNN
+F 1 "1k" H 7950 1970 59  0000 L BNN
+F 2 "preamplifier:R0603" H 8000 2100 50  0001 C CNN
+F 3 "" H 8000 2100 50  0001 C CNN
+	1    8000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R14
+U 1 1 1FF815BE
+P 7300 2100
+F 0 "R14" H 7200 2159 59  0000 L BNN
+F 1 "100" H 7200 1970 59  0000 L BNN
+F 2 "preamplifier:R0603" H 7300 2100 50  0001 C CNN
+F 3 "" H 7300 2100 50  0001 C CNN
+	1    7300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R12
+U 1 1 34D92192
+P 7000 1800
+F 0 "R12" H 6900 1859 59  0000 L BNN
+F 1 "100" H 6900 1670 59  0000 L BNN
+F 2 "preamplifier:R0603" H 7000 1800 50  0001 C CNN
+F 3 "" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R13
+U 1 1 CC3A67BE
+P 7000 2400
+F 0 "R13" V 7009 2350 59  0000 R TNN
+F 1 "92" V 6920 2350 59  0000 R TNN
+F 2 "preamplifier:R0603" H 7000 2400 50  0001 C CNN
+F 3 "" H 7000 2400 50  0001 C CNN
+	1    7000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND018
+U 1 1 E0081D19
+P 7000 2800
+F 0 "#GND018" H 7000 2800 50  0001 C CNN
+F 1 "GND" H 6930 2720 59  0000 L BNN
+F 2 "" H 7000 2800 50  0001 C CNN
+F 3 "" H 7000 2800 50  0001 C CNN
+	1    7000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND017
+U 1 1 0A5A0AC8
+P 6800 2800
+F 0 "#GND017" H 6800 2800 50  0001 C CNN
+F 1 "GND" H 6700 2720 59  0000 L BNN
+F 2 "" H 6800 2800 50  0001 C CNN
+F 3 "" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C17
+U 1 1 17DFBEA3
+P 6600 2250
+F 0 "C17" V 6535 1960 59  0000 L BNN
+F 1 "100n/50V" V 6535 2260 59  0000 L BNN
+F 2 "preamplifier:C0603" H 6600 2250 50  0001 C CNN
+F 3 "" H 6600 2250 50  0001 C CNN
+	1    6600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND016
+U 1 1 99D4D269
+P 6600 2800
+F 0 "#GND016" H 6600 2800 50  0001 C CNN
+F 1 "GND" H 6460 2720 59  0000 L BNN
+F 2 "" H 6600 2800 50  0001 C CNN
+F 3 "" H 6600 2800 50  0001 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCA C18
+U 1 1 93A5A2F4
+P 6800 2250
+F 0 "C18" V 6781 1795 59  0000 L BNN
+F 1 "4,7u/6V" V 6881 1795 59  0000 L BNN
+F 2 "preamplifier:SMC_A" H 6800 2250 50  0001 C CNN
+F 3 "" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LTC6268 IC1
+U 1 1 06F92037
+P 5900 2900
+F 0 "IC1" H 6100 3025 59  0001 L BNN
+F 1 "LTC6268" H 6100 3100 59  0001 L BNN
+F 2 "preamplifier:TSOT23-6" H 5900 2900 50  0001 C CNN
+F 3 "" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPH3910 T1
+U 1 1 011D2A96
+P 4500 2000
+F 0 "T1" H 4299 1801 59  0000 L BNN
+F 1 "CPH3910" H 4298 1701 59  0000 L BNN
+F 2 "preamplifier:SOT23" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:LINX-SMA-EDGE-0.062 A1
+U 1 1 72C413EE
+P 8700 2800
+F 0 "A1" H 8600 2980 42  0000 L BNN
+F 1 "SMA-EDGE-0.062" H 8600 2920 42  0000 L BNN
+F 2 "preamplifier:CONSMA003.062" H 8700 2800 50  0001 C CNN
+F 3 "" H 8700 2800 50  0001 C CNN
+	1    8700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND020
+U 1 1 2DF12463
+P 8700 3200
+F 0 "#GND020" H 8700 3200 50  0001 C CNN
+F 1 "GND" H 8600 3100 59  0000 L BNN
+F 2 "" H 8700 3200 50  0001 C CNN
+F 3 "" H 8700 3200 50  0001 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LTC6268 IC2
+U 1 1 9CE202B0
+P 8000 2800
+F 0 "IC2" H 8000 3025 59  0001 L BNN
+F 1 "LTC6228" H 8000 3100 59  0001 L BNN
+F 2 "preamplifier:TSOT23-6" H 8000 2800 50  0001 C CNN
+F 3 "" H 8000 2800 50  0001 C CNN
+	1    8000 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:-5V #P-03
+U 1 1 034A1A5F
+P 4550 6400
+F 0 "#P-03" H 4550 6400 50  0001 C CNN
+F 1 "-5V" V 4450 6300 59  0000 L BNN
+F 2 "" H 4550 6400 50  0001 C CNN
+F 3 "" H 4550 6400 50  0001 C CNN
+	1    4550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+03
+U 1 1 00F05DF6
+P 3500 5200
+F 0 "#P+03" H 3500 5200 50  0001 C CNN
+F 1 "+5V" V 3400 5250 59  0000 L BNN
+F 2 "" H 3500 5200 50  0001 C CNN
+F 3 "" H 3500 5200 50  0001 C CNN
+	1    3500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND05
+U 1 1 EF27308A
+P 3300 6400
+F 0 "#GND05" H 3300 6400 50  0001 C CNN
+F 1 "GND" H 3200 6300 59  0000 L BNN
+F 2 "" H 3300 6400 50  0001 C CNN
+F 3 "" H 3300 6400 50  0001 C CNN
+	1    3300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C6
+U 1 1 D18951A2
+P 4550 5800
+F 0 "C6" V 4565 5690 59  0000 R TNN
+F 1 "100n/50V" V 4465 5690 59  0000 R TNN
+F 2 "preamplifier:C0603" H 4550 5800 50  0001 C CNN
+F 3 "" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:LEDCHIPLED_0603 LED3
+U 1 1 BE584E05
+P 4350 5500
+F 0 "LED3" V 4090 5320 59  0000 L BNN
+F 1 "GREEN" V 4175 5320 59  0000 L BNN
+F 2 "preamplifier:CHIPLED_0603" H 4350 5500 50  0001 C CNN
+F 3 "" H 4350 5500 50  0001 C CNN
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:-5V #P-02
+U 1 1 C2D528AC
+P 4350 6400
+F 0 "#P-02" H 4350 6400 50  0001 C CNN
+F 1 "-5V" V 4250 6300 59  0000 L BNN
+F 2 "" H 4350 6400 50  0001 C CNN
+F 3 "" H 4350 6400 50  0001 C CNN
+	1    4350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R5
+U 1 1 E6514F90
+P 4350 6000
+F 0 "R5" H 4250 6059 59  0000 L BNN
+F 1 "300" H 4250 5870 59  0000 L BNN
+F 2 "preamplifier:R0603" H 4350 6000 50  0001 C CNN
+F 3 "" H 4350 6000 50  0001 C CNN
+	1    4350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+02
+U 1 1 339DE9D3
+P 3300 5200
+F 0 "#P+02" H 3300 5200 50  0001 C CNN
+F 1 "+5V" V 3200 5250 59  0000 L BNN
+F 2 "" H 3300 5200 50  0001 C CNN
+F 3 "" H 3300 5200 50  0001 C CNN
+	1    3300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LEDCHIPLED_0603 LED2
+U 1 1 836D62AD
+P 3300 6000
+F 0 "LED2" V 3040 5720 59  0000 L BNN
+F 1 "GREEN" V 3125 5720 59  0000 L BNN
+F 2 "preamplifier:CHIPLED_0603" H 3300 6000 50  0001 C CNN
+F 3 "" H 3300 6000 50  0001 C CNN
+	1    3300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R4
+U 1 1 79E9A608
+P 3300 5600
+F 0 "R4" H 3200 5759 59  0000 L BNN
+F 1 "300" H 3200 5670 59  0000 L BNN
+F 2 "preamplifier:R0603" H 3300 5600 50  0001 C CNN
+F 3 "" H 3300 5600 50  0001 C CNN
+	1    3300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C4
+U 1 1 07A33FA9
+P 3500 5800
+F 0 "C4" V 3515 5690 59  0000 R TNN
+F 1 "100n/50V" V 3415 5690 59  0000 R TNN
+F 2 "preamplifier:C0603" H 3500 5800 50  0001 C CNN
+F 3 "" H 3500 5800 50  0001 C CNN
+	1    3500 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND06
+U 1 1 A07C0193
+P 3500 6400
+F 0 "#GND06" H 3500 6400 50  0001 C CNN
+F 1 "GND" H 3400 6300 59  0000 L BNN
+F 2 "" H 3500 6400 50  0001 C CNN
+F 3 "" H 3500 6400 50  0001 C CNN
+	1    3500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND08
+U 1 1 DF24F9E8
+P 4350 5200
+F 0 "#GND08" H 4350 5200 50  0001 C CNN
+F 1 "GND" H 4300 5100 59  0000 L BNN
+F 2 "" H 4350 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND09
+U 1 1 928DF91D
+P 4550 5200
+F 0 "#GND09" H 4550 5200 50  0001 C CNN
+F 1 "GND" H 4450 5100 59  0000 L BNN
+F 2 "" H 4550 5200 50  0001 C CNN
+F 3 "" H 4550 5200 50  0001 C CNN
+	1    4550 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCB C5
+U 1 1 1F44C0E4
+P 3700 5700
+F 0 "C5" V 3781 5445 59  0000 L BNN
+F 1 "47u/6V" V 3881 5445 59  0000 L BNN
+F 2 "preamplifier:SMC_B" H 3700 5700 50  0001 C CNN
+F 3 "" H 3700 5700 50  0001 C CNN
+	1    3700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCB C7
+U 1 1 5FB4929D
+P 4750 5700
+F 0 "C7" V 4856 5395 59  0000 L BNN
+F 1 "47u/6V" V 4956 5395 59  0000 L BNN
+F 2 "preamplifier:SMC_B" H 4750 5700 50  0001 C CNN
+F 3 "" H 4750 5700 50  0001 C CNN
+	1    4750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+04
+U 1 1 A7FDB2D8
+P 3700 5200
+F 0 "#P+04" H 3700 5200 50  0001 C CNN
+F 1 "+5V" V 3600 5250 59  0000 L BNN
+F 2 "" H 3700 5200 50  0001 C CNN
+F 3 "" H 3700 5200 50  0001 C CNN
+	1    3700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND07
+U 1 1 9CDE76EF
+P 3700 6400
+F 0 "#GND07" H 3700 6400 50  0001 C CNN
+F 1 "GND" H 3600 6300 59  0000 L BNN
+F 2 "" H 3700 6400 50  0001 C CNN
+F 3 "" H 3700 6400 50  0001 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND010
+U 1 1 845C69E3
+P 4750 5200
+F 0 "#GND010" H 4750 5200 50  0001 C CNN
+F 1 "GND" H 4600 5100 59  0000 L BNN
+F 2 "" H 4750 5200 50  0001 C CNN
+F 3 "" H 4750 5200 50  0001 C CNN
+	1    4750 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:-5V #P-04
+U 1 1 FE0A0260
+P 4750 6400
+F 0 "#P-04" H 4750 6400 50  0001 C CNN
+F 1 "-5V" V 4650 6300 59  0000 L BNN
+F 2 "" H 4750 6400 50  0001 C CNN
+F 3 "" H 4750 6400 50  0001 C CNN
+	1    4750 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND02
+U 1 1 13A376EC
+P 2300 6400
+F 0 "#GND02" H 2300 6400 50  0001 C CNN
+F 1 "GND" H 2150 6300 59  0000 L BNN
+F 2 "" H 2300 6400 50  0001 C CNN
+F 3 "" H 2300 6400 50  0001 C CNN
+	1    2300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LEDCHIPLED_0603 LED1
+U 1 1 3C888371
+P 2300 6000
+F 0 "LED1" V 2040 5820 59  0000 L BNN
+F 1 "GREEN" V 2125 5820 59  0000 L BNN
+F 2 "preamplifier:CHIPLED_0603" H 2300 6000 50  0001 C CNN
+F 3 "" H 2300 6000 50  0001 C CNN
+	1    2300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R3
+U 1 1 B668FB2B
+P 2300 5600
+F 0 "R3" H 2200 5759 59  0000 L BNN
+F 1 "43k" H 2200 5670 59  0000 L BNN
+F 2 "preamplifier:R0603" H 2300 5600 50  0001 C CNN
+F 3 "" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C2
+U 1 1 D31B0C93
+P 2500 5800
+F 0 "C2" V 2515 6190 59  0000 R TNN
+F 1 "1n/100V" V 2415 6190 59  0000 R TNN
+F 2 "preamplifier:C0603" H 2500 5800 50  0001 C CNN
+F 3 "" H 2500 5800 50  0001 C CNN
+	1    2500 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND03
+U 1 1 7679BDCC
+P 2500 6400
+F 0 "#GND03" H 2500 6400 50  0001 C CNN
+F 1 "GND" H 2400 6300 59  0000 L BNN
+F 2 "" H 2500 6400 50  0001 C CNN
+F 3 "" H 2500 6400 50  0001 C CNN
+	1    2500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC1206 C3
+U 1 1 53760F4D
+P 2700 5700
+F 0 "C3" V 2781 5445 59  0000 L BNN
+F 1 "4,7u/50V" V 2881 5445 59  0000 L BNN
+F 2 "preamplifier:C1206" H 2700 5700 50  0001 C CNN
+F 3 "" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND04
+U 1 1 D896219B
+P 2700 6400
+F 0 "#GND04" H 2700 6400 50  0001 C CNN
+F 1 "GND" H 2650 6300 59  0000 L BNN
+F 2 "" H 2700 6400 50  0001 C CNN
+F 3 "" H 2700 6400 50  0001 C CNN
+	1    2700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:87438-0487437-0443 X1
+U 1 1 8CE963C8
+P 1500 5900
+F 0 "X1" H 1600 5870 51  0000 L BNN
+F 1 "87437-0443" H 1850 5825 59  0001 R TNN
+F 2 "preamplifier:87437-0443" H 1500 5900 50  0001 C CNN
+F 3 "" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:87438-0487437-0443 X1
+U 2 1 8CE963C4
+P 1500 5800
+F 0 "X1" H 1600 5770 51  0000 L BNN
+F 1 "87437-0443" H 1470 5855 59  0001 L BNN
+F 2 "preamplifier:87437-0443" H 1500 5800 50  0001 C CNN
+F 3 "" H 1500 5800 50  0001 C CNN
+	2    1500 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:87438-0487437-0443 X1
+U 3 1 8CE963C0
+P 1500 5700
+F 0 "X1" H 1600 5670 51  0000 L BNN
+F 1 "87437-0443" H 1470 5755 59  0001 L BNN
+F 2 "preamplifier:87437-0443" H 1500 5700 50  0001 C CNN
+F 3 "" H 1500 5700 50  0001 C CNN
+	3    1500 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:87438-0487437-0443 X1
+U 4 1 8CE963DC
+P 1500 5600
+F 0 "X1" H 1600 5570 51  0000 L BNN
+F 1 "87437-0443" H 1470 5655 59  0001 L BNN
+F 2 "preamplifier:87437-0443" H 1500 5600 50  0001 C CNN
+F 3 "" H 1500 5600 50  0001 C CNN
+	4    1500 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND01
+U 1 1 DB8695AC
+P 1800 6100
+F 0 "#GND01" H 1800 6100 50  0001 C CNN
+F 1 "GND" H 1725 6000 59  0000 L BNN
+F 2 "" H 1800 6100 50  0001 C CNN
+F 3 "" H 1800 6100 50  0001 C CNN
+	1    1800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+01
+U 1 1 BCDF72C5
+P 1800 5400
+F 0 "#P+01" H 1800 5400 50  0001 C CNN
+F 1 "+5V" V 1850 5350 59  0000 L BNN
+F 2 "" H 1800 5400 50  0001 C CNN
+F 3 "" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:-5V #P-01
+U 1 1 4A0E12CB
+P 1700 6400
+F 0 "#P-01" H 1700 6400 50  0001 C CNN
+F 1 "-5V" V 1750 6250 59  0000 L BNN
+F 2 "" H 1700 6400 50  0001 C CNN
+F 3 "" H 1700 6400 50  0001 C CNN
+	1    1700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C10
+U 1 1 90757F85
+P 5500 5850
+F 0 "C10" V 5515 6090 59  0000 R TNN
+F 1 "100n/50V" V 5515 5690 59  0000 R TNN
+F 2 "preamplifier:C0603" H 5500 5850 50  0001 C CNN
+F 3 "" H 5500 5850 50  0001 C CNN
+	1    5500 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C13
+U 1 1 B516155C
+P 6300 5550
+F 0 "C13" V 6415 5390 59  0000 R TNN
+F 1 "100n/50V" V 6315 5390 59  0000 R TNN
+F 2 "preamplifier:C0603" H 6300 5550 50  0001 C CNN
+F 3 "" H 6300 5550 50  0001 C CNN
+	1    6300 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND014
+U 1 1 109F320A
+P 5900 6400
+F 0 "#GND014" H 5900 6400 50  0001 C CNN
+F 1 "GND" H 5800 6300 59  0000 L BNN
+F 2 "" H 5900 6400 50  0001 C CNN
+F 3 "" H 5900 6400 50  0001 C CNN
+	1    5900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:-5V #P-05
+U 1 1 B0008035
+P 6700 7100
+F 0 "#P-05" H 6700 7100 50  0001 C CNN
+F 1 "-5V" V 6600 7000 59  0000 L BNN
+F 2 "" H 6700 7100 50  0001 C CNN
+F 3 "" H 6700 7100 50  0001 C CNN
+	1    6700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+06
+U 1 1 B0F39303
+P 5900 4700
+F 0 "#P+06" H 5900 4700 50  0001 C CNN
+F 1 "+5V" V 5800 4750 59  0000 L BNN
+F 2 "" H 5900 4700 50  0001 C CNN
+F 3 "" H 5900 4700 50  0001 C CNN
+	1    5900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+07
+U 1 1 BC2DCEA9
+P 6700 4500
+F 0 "#P+07" H 6700 4500 50  0001 C CNN
+F 1 "+5V" V 6600 4550 59  0000 L BNN
+F 2 "" H 6700 4500 50  0001 C CNN
+F 3 "" H 6700 4500 50  0001 C CNN
+	1    6700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCA C11
+U 1 1 9875CF1C
+P 5700 5750
+F 0 "C11" V 5631 5445 59  0000 L BNN
+F 1 "4,7u/6V" V 5631 5745 59  0000 L BNN
+F 2 "preamplifier:SMC_A" H 5700 5750 50  0001 C CNN
+F 3 "" H 5700 5750 50  0001 C CNN
+	1    5700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCA C15
+U 1 1 5CFCD8FC
+P 6500 5450
+F 0 "C15" V 6431 5745 59  0000 L BNN
+F 1 "4,7u/6V" V 6531 5745 59  0000 L BNN
+F 2 "preamplifier:SMC_A" H 6500 5450 50  0001 C CNN
+F 3 "" H 6500 5450 50  0001 C CNN
+	1    6500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R9
+U 1 1 81D6C62D
+P 5900 5100
+F 0 "R9" H 6000 5041 59  0000 R TNN
+F 1 "1" H 5950 5230 59  0000 R TNN
+F 2 "preamplifier:R0603" H 5900 5100 50  0001 C CNN
+F 3 "" H 5900 5100 50  0001 C CNN
+	1    5900 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R10
+U 1 1 D632D20D
+P 6700 4900
+F 0 "R10" H 6800 4841 59  0000 R TNN
+F 1 "1" H 6750 5030 59  0000 R TNN
+F 2 "preamplifier:R0603" H 6700 4900 50  0001 C CNN
+F 3 "" H 6700 4900 50  0001 C CNN
+	1    6700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:R-EU_R0603 R11
+U 1 1 6010926E
+P 6700 6700
+F 0 "R11" H 7000 6641 59  0000 R TNN
+F 1 "1" H 6950 6830 59  0000 R TNN
+F 2 "preamplifier:R0603" H 6700 6700 50  0001 C CNN
+F 3 "" H 6700 6700 50  0001 C CNN
+	1    6700 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L preamplifier-eagle-import:C-EUC0603 C14
+U 1 1 51C3D7B0
+P 6300 6150
+F 0 "C14" V 6415 6590 59  0000 R TNN
+F 1 "100n/50V" V 6315 6590 59  0000 R TNN
+F 2 "preamplifier:C0603" H 6300 6150 50  0001 C CNN
+F 3 "" H 6300 6150 50  0001 C CNN
+	1    6300 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCA C16
+U 1 1 23143777
+P 6500 6050
+F 0 "C16" V 6431 5345 59  0000 L BNN
+F 1 "4,7u/6V" V 6531 5345 59  0000 L BNN
+F 2 "preamplifier:SMC_A" H 6500 6050 50  0001 C CNN
+F 3 "" H 6500 6050 50  0001 C CNN
+	1    6500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND015
+U 1 1 257B06B4
+P 6100 6000
+F 0 "#GND015" H 6100 6000 50  0001 C CNN
+F 1 "GND" H 5990 5910 59  0000 L BNN
+F 2 "" H 6100 6000 50  0001 C CNN
+F 3 "" H 6100 6000 50  0001 C CNN
+	1    6100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LTC6268 IC2
+U 2 1 9CE202BC
+P 6700 5800
+F 0 "IC2" H 6800 5925 59  0001 L BNN
+F 1 "LTC6228" H 6800 5600 59  0001 L BNN
+F 2 "preamplifier:TSOT23-6" H 6700 5800 50  0001 C CNN
+F 3 "" H 6700 5800 50  0001 C CNN
+	2    6700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:LTC6268 IC1
+U 2 1 06F9203B
+P 5900 5800
+F 0 "IC1" H 6000 5925 59  0001 L BNN
+F 1 "LTC6268" H 6000 5600 59  0001 L BNN
+F 2 "preamplifier:TSOT23-6" H 5900 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	2    5900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:CPOL-EUSMCA C8
+U 1 1 A30FC654
+P 4900 3250
+F 0 "C8" V 4881 2955 59  0000 L BNN
+F 1 "4,7u/6V" V 4881 3325 59  0000 L BNN
+F 2 "preamplifier:SMC_A" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:GND #GND011
+U 1 1 19DA8D48
+P 4900 3700
+F 0 "#GND011" H 4900 3700 50  0001 C CNN
+F 1 "GND" H 4750 3600 59  0000 L BNN
+F 2 "" H 4900 3700 50  0001 C CNN
+F 3 "" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+05
+U 1 1 33ACA7EC
+P 5300 2200
+F 0 "#P+05" H 5300 2200 50  0001 C CNN
+F 1 "+5V" V 5350 2150 59  0000 L BNN
+F 2 "" H 5300 2200 50  0001 C CNN
+F 3 "" H 5300 2200 50  0001 C CNN
+	1    5300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:+5V #P+08
+U 1 1 B54CCCBB
+P 7000 1400
+F 0 "#P+08" H 7000 1400 50  0001 C CNN
+F 1 "+5V" V 7050 1350 59  0000 L BNN
+F 2 "" H 7000 1400 50  0001 C CNN
+F 3 "" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamplifier-eagle-import:DINA4_L #FRAME1
+U 1 1 FAE21A2C
+P 900 7600
+F 0 "#FRAME1" H 900 7600 50  0001 C CNN
+F 1 "A4" H 900 7600 50  0001 C CNN
+F 2 "" H 900 7600 50  0001 C CNN
+F 3 "" H 900 7600 50  0001 C CNN
+	1    900  7600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1100 900  9200 900 
+Wire Notes Line
+	9200 900  9200 3900
+Wire Notes Line
+	9200 3900 1100 3900
+Wire Notes Line
+	1100 3900 1100 900 
+Text Notes 1100 800  0    85   ~ 0
+Transimpedance amplifier with substractor
+Wire Notes Line
+	1100 4300 5100 4300
+Wire Notes Line
+	5100 4300 5100 7300
+Wire Notes Line
+	5100 7300 1100 7300
+Wire Notes Line
+	1100 7300 1100 4300
+Text Notes 1100 4200 0    85   ~ 0
+Power supply connector
+Wire Notes Line
+	5200 4300 7000 4300
+Wire Notes Line
+	7000 4300 7000 7300
+Wire Notes Line
+	7000 7300 5200 7300
+Wire Notes Line
+	5200 7300 5200 4300
+Text Notes 5200 4200 0    85   ~ 0
+Local power supply filters
+Text Notes 5300 7200 0    85   ~ 0
+R9-11 common \nresistors or ferrite \nbeads
+$EndSCHEMATC

@@ -1,0 +1,315 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# signal_processing-eagle-import_+5V
+#
+DEF signal_processing-eagle-import_+5V #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "signal_processing-eagle-import_+5V" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+X +5V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_-5V
+#
+DEF signal_processing-eagle-import_-5V #P- 0 40 Y Y 1 L P
+F0 "#P-" 0 0 50 H I C CNN
+F1 "signal_processing-eagle-import_-5V" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 75 0 0 N
+P 2 1 0 0 0 0 50 75 N
+X -5V 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_87438-0487437-0443
+#
+DEF signal_processing-eagle-import_87438-0487437-0443 X 0 40 Y Y 4 L N
+F0 "X" 100 -30 51 H V L BNN
+F1 "signal_processing-eagle-import_87438-0487437-0443" -30 55 59 H I L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 50 0 0 0 N
+P 2 2 0 0 50 0 0 0 N
+P 2 3 0 0 50 0 0 0 N
+P 2 4 0 0 50 0 0 0 N
+X S 1 -100 0 100 R 0 0 1 0 P
+X S 5 -100 0 100 R 0 0 1 0 P
+X S 2 -100 0 100 R 0 0 2 0 P
+X S 6 -100 0 100 R 0 0 2 0 P
+X S 3 -100 0 100 R 0 0 3 0 P
+X S 7 -100 0 100 R 0 0 3 0 P
+X S 4 -100 0 100 R 0 0 4 0 P
+X S 8 -100 0 100 R 0 0 4 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_AD8066
+#
+DEF signal_processing-eagle-import_AD8066 IC 0 40 Y Y 3 L N
+F0 "IC" 50 150 59 H V L BNN
+F1 "signal_processing-eagle-import_AD8066" 50 -200 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 -200 300 0 N
+P 2 1 0 0 -100 200 -100 -200 N
+P 2 1 0 0 -80 -100 -40 -100 N
+P 2 1 0 0 -80 100 -40 100 N
+P 2 1 0 0 -60 120 -60 80 N
+P 2 1 0 0 300 0 -100 200 N
+P 2 2 0 0 -100 -200 300 0 N
+P 2 2 0 0 -100 200 -100 -200 N
+P 2 2 0 0 -80 -100 -40 -100 N
+P 2 2 0 0 -80 100 -40 100 N
+P 2 2 0 0 -60 120 -60 80 N
+P 2 2 0 0 300 0 -100 200 N
+X OUT 1 400 0 100 L 50 0 1 0 O
+X IN- 2 -200 -100 100 R 50 0 1 0 I
+X IN+ 3 -200 100 100 R 50 0 1 0 I
+X IN+ 5 -200 100 100 R 50 0 2 0 I
+X IN- 6 -200 -100 100 R 50 0 2 0 I
+X OUT 7 400 0 100 L 50 0 2 0 O
+X V- 4 0 -300 200 U 50 0 3 0 W
+X V+ 8 0 300 200 D 50 0 3 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_ADG701BRTZN
+#
+DEF signal_processing-eagle-import_ADG701BRTZN IC 0 40 Y Y 2 L N
+F0 "IC" 50 150 59 H V L BNN
+F1 "signal_processing-eagle-import_ADG701BRTZN" 50 -200 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 -65 15 1 0 6 N
+P 2 1 0 0 -200 0 -190 0 N
+P 2 1 0 0 -190 -50 -190 0 N
+P 2 1 0 0 -190 0 -190 50 N
+P 2 1 0 0 -190 50 -130 0 N
+P 2 1 0 0 -130 0 -190 -50 N
+P 2 1 0 0 -130 0 -100 0 N
+P 2 1 0 0 -70 0 -40 0 N
+P 2 1 0 0 -10 0 15 0 N
+P 2 1 0 0 0 -100 0 -80 N
+P 2 1 0 0 0 100 0 50 N
+P 2 1 0 0 5 -50 60 55 N
+P 2 1 0 0 100 -100 0 -100 N
+P 2 1 0 0 100 100 0 100 N
+P 3 1 0 0 0 50 25 65 0 80 F
+X D 1 200 -100 100 L 50 0 1 0 P
+X S 2 200 100 100 L 50 0 1 0 P
+X IN 4 -300 0 100 R 50 0 1 0 I
+X V- 3 0 -300 200 U 50 0 2 0 W
+X V+ 6 0 300 200 D 50 0 2 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_BAS140
+#
+DEF signal_processing-eagle-import_BAS140 D 0 40 Y Y 1 L N
+F0 "D" -90 75 70 H V L BNN
+F1 "signal_processing-eagle-import_BAS140" -90 -135 70 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 -50 50 0 N
+P 2 1 0 0 -50 50 -50 -50 N
+P 2 1 0 0 25 -40 25 -50 N
+P 2 1 0 0 50 -50 25 -50 N
+P 2 1 0 0 50 0 -50 50 N
+P 2 1 0 0 50 0 50 -50 N
+P 2 1 0 0 50 50 50 0 N
+P 2 1 0 0 75 50 50 50 N
+P 2 1 0 0 75 50 75 40 N
+X A A -100 0 100 R 0 0 1 0 P
+X K K 100 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_C-EUC0603
+#
+DEF signal_processing-eagle-import_C-EUC0603 C 0 40 Y Y 1 L N
+F0 "C" 60 15 59 H V L BNN
+F1 "signal_processing-eagle-import_C-EUC0603" 60 -185 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -80 -80 80 -60 1 0 0 F
+S -80 -40 80 -20 1 0 0 F
+P 2 1 0 0 0 -100 0 -80 N
+P 2 1 0 0 0 0 0 -20 N
+X 1 1 0 100 100 D 0 0 1 0 P
+X 2 2 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_C-EUC1206
+#
+DEF signal_processing-eagle-import_C-EUC1206 C 0 40 Y Y 1 L N
+F0 "C" 60 15 59 H V L BNN
+F1 "signal_processing-eagle-import_C-EUC1206" 60 -185 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -80 -80 80 -60 1 0 0 F
+S -80 -40 80 -20 1 0 0 F
+P 2 1 0 0 0 -100 0 -80 N
+P 2 1 0 0 0 0 0 -20 N
+X 1 1 0 100 100 D 0 0 1 0 P
+X 2 2 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_CPOL-EUSMCA
+#
+DEF signal_processing-eagle-import_CPOL-EUSMCA C 0 40 Y Y 1 L N
+F0 "C" 45 19 59 H V L BNN
+F1 "signal_processing-eagle-import_CPOL-EUSMCA" 45 -181 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 900 -23 16 42 0 1 0 + Normal 0 L B
+S -65 -100 65 -65 1 0 0 F
+P 2 1 0 0 -60 -35 60 -35 N
+P 2 1 0 0 -60 0 -60 -35 N
+P 2 1 0 0 -60 0 60 0 N
+P 2 1 0 0 60 -35 60 0 N
+X + + 0 100 100 D 0 0 1 0 P
+X - - 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_CPOL-EUSMCB
+#
+DEF signal_processing-eagle-import_CPOL-EUSMCB C 0 40 Y Y 1 L N
+F0 "C" 45 19 59 H V L BNN
+F1 "signal_processing-eagle-import_CPOL-EUSMCB" 45 -181 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 900 -23 16 42 0 1 0 + Normal 0 L B
+S -65 -100 65 -65 1 0 0 F
+P 2 1 0 0 -60 -35 60 -35 N
+P 2 1 0 0 -60 0 -60 -35 N
+P 2 1 0 0 -60 0 60 0 N
+P 2 1 0 0 60 -35 60 0 N
+X + + 0 100 100 D 0 0 1 0 P
+X - - 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_GND
+#
+DEF signal_processing-eagle-import_GND #GND 0 40 Y Y 1 L P
+F0 "#GND" 0 0 50 H I C CNN
+F1 "signal_processing-eagle-import_GND" -100 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 0 75 0 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_LEDCHIPLED_0603
+#
+DEF signal_processing-eagle-import_LEDCHIPLED_0603 LED 0 40 Y Y 1 L N
+F0 "LED" 140 -180 59 V V L BNN
+F1 "signal_processing-eagle-import_LEDCHIPLED_0603" 225 -180 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -80 -30 -135 -85 N
+P 2 1 0 0 -75 -75 -130 -130 N
+P 2 1 0 0 0 -100 -50 -100 N
+P 2 1 0 0 0 -100 -50 0 N
+P 2 1 0 0 0 0 -50 0 N
+P 2 1 0 0 0 0 0 -100 N
+P 2 1 0 0 50 -100 0 -100 N
+P 2 1 0 0 50 0 0 -100 N
+P 2 1 0 0 50 0 0 0 N
+P 3 1 0 0 -135 -85 -120 -50 -100 -70 F
+P 3 1 0 0 -130 -130 -115 -95 -95 -115 F
+X A A 0 100 100 D 0 0 1 0 P
+X C C 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_LINX-SMA-EDGE-0.062
+#
+DEF signal_processing-eagle-import_LINX-SMA-EDGE-0.062 A 0 40 Y Y 1 L N
+F0 "A" 0 120 42 H V L BNN
+F1 "signal_processing-eagle-import_LINX-SMA-EDGE-0.062" 100 -100 42 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 100 1 0 10 N
+X ANT ANT -100 0 100 R 0 0 1 0 B
+X P$2 GND1 0 -200 100 U 0 0 1 0 B
+X P$2 GND2 0 -200 100 U 0 0 1 0 B
+X P$2 GND3 0 -200 100 U 0 0 1 0 B
+X P$2 GND4 0 -200 100 U 0 0 1 0 B
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_LT1713
+#
+DEF signal_processing-eagle-import_LT1713 IC 0 40 Y Y 3 L N
+F0 "IC" 50 150 59 H I L BNN
+F1 "signal_processing-eagle-import_LT1713" 50 -200 59 H I L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -20 -120 42 0 1 0 L Normal 0 L B
+P 2 1 0 0 -100 -200 0 -150 N
+P 2 1 0 0 -100 200 -100 -200 N
+P 2 1 0 0 -80 -100 -40 -100 N
+P 2 1 0 0 -80 -100 -40 -100 N
+P 2 1 0 0 -80 100 -40 100 N
+P 2 1 0 0 -60 -80 -60 -120 N
+P 2 1 0 0 0 -200 0 -150 N
+P 2 1 0 0 0 -150 100 -100 N
+P 2 1 0 0 100 -100 300 0 N
+P 2 1 0 0 100 100 -100 200 N
+P 2 1 0 0 200 -100 100 -100 N
+P 2 1 0 0 200 100 100 100 N
+P 2 1 0 0 300 0 100 100 N
+X IN+ 2 -200 -100 100 R 50 0 1 0 I
+X IN- 3 -200 100 100 R 50 0 1 0 I
+X L 5 0 -300 100 U 0 0 1 0 I
+X OUT 7 400 100 200 L 50 0 1 0 O
+X BOUT 8 400 -100 200 L 50 0 1 0 O I
+X V+ 1 0 300 200 D 50 0 2 0 W
+X V- 4 0 -300 200 U 50 0 2 0 W
+X GND 6 0 -100 100 U 50 50 3 0 W
+ENDDRAW
+ENDDEF
+#
+# signal_processing-eagle-import_R-EU_R0603
+#
+DEF signal_processing-eagle-import_R-EU_R0603 R 0 40 Y Y 1 L N
+F0 "R" -150 59 59 H V L BNN
+F1 "signal_processing-eagle-import_R-EU_R0603" -150 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 -35 -100 35 N
+P 2 1 0 0 -100 -35 100 -35 N
+P 2 1 0 0 100 -35 100 35 N
+P 2 1 0 0 100 35 -100 35 N
+X 1 1 -200 0 100 R 0 0 1 0 P
+X 2 2 200 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

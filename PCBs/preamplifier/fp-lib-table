@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name preamplifier)(type KiCad)(uri "$(KIPRJMOD)/preamplifier.pretty")(options "")(descr ""))
+)
