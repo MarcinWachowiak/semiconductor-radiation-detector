@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name signal_processing)(type KiCad)(uri "$(KIPRJMOD)/signal_processing.pretty")(options "")(descr ""))
-)

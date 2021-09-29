@@ -4,9 +4,9 @@ EELAYER END
 $Descr User 15351 14568
 encoding utf-8
 Sheet 1 1
-Title "Gamma PIN signal processing"
-Date "2021-05-15"
-Rev "3.1.0"
+Title "Semiconductor radiation detector: signal processing"
+Date "2021-09-29"
+Rev "1.0.0"
 Comp "Marcin Wachowiak, Poland"
 Comment1 ""
 Comment2 ""
@@ -14,21 +14,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	7500 6500 7500 6600
-Text Label 7500 6500 0    10   ~ 0
-GND
-Wire Wire Line
 	7300 5900 7300 6000
-Text Label 7300 5900 0    10   ~ 0
-GND
 Wire Wire Line
 	9800 6000 9800 6100
-Text Label 9800 6000 0    10   ~ 0
-GND
-Wire Wire Line
-	10000 6700 10000 6800
-Text Label 10000 6700 0    10   ~ 0
-GND
 Wire Wire Line
 	6400 2750 6400 2900
 Wire Wire Line
@@ -45,8 +33,6 @@ Wire Wire Line
 	6100 3000 6100 2900
 Connection ~ 6400 2900
 Connection ~ 6200 2900
-Text Label 6400 2750 0    10   ~ 0
-GND
 Wire Wire Line
 	6900 3050 6900 2900
 Wire Wire Line
@@ -63,48 +49,12 @@ Wire Wire Line
 	6800 2900 6800 3000
 Connection ~ 6900 2900
 Connection ~ 7100 2900
-Text Label 6900 3050 0    10   ~ 0
-GND
-Wire Wire Line
-	2900 9000 2900 9200
-Text Label 2900 9000 0    10   ~ 0
-GND
-Wire Wire Line
-	4900 9000 4900 8900
-Text Label 4900 9000 0    10   ~ 0
-GND
-Wire Wire Line
-	3500 11700 3500 11800
-Text Label 3500 11700 0    10   ~ 0
-GND
-Wire Wire Line
-	3700 11700 3700 11800
-Text Label 3700 11700 0    10   ~ 0
-GND
-Wire Wire Line
-	8000 9800 8000 9700
-Text Label 8000 9800 0    10   ~ 0
-GND
-Wire Wire Line
-	9800 10700 9800 10800
-Text Label 9800 10700 0    10   ~ 0
-GND
 Wire Wire Line
 	12400 10800 12400 11000
 Text Label 12400 10800 0    10   ~ 0
 GND
 Wire Wire Line
-	11400 10300 11400 10400
-Text Label 11400 10300 0    10   ~ 0
-GND
-Wire Wire Line
-	11400 8200 11400 8300
-Text Label 11400 8200 0    10   ~ 0
-GND
-Wire Wire Line
-	13100 3300 13100 3400
-Text Label 13100 3300 0    10   ~ 0
-GND
+	13200 3400 13200 3500
 Wire Wire Line
 	7600 3050 7600 2900
 Wire Wire Line
@@ -121,8 +71,6 @@ Wire Wire Line
 	7500 2900 7500 3000
 Connection ~ 7600 2900
 Connection ~ 7800 2900
-Text Label 7600 3050 0    10   ~ 0
-GND
 Wire Wire Line
 	8300 3050 8300 2900
 Wire Wire Line
@@ -139,8 +87,6 @@ Wire Wire Line
 	8200 2900 8200 3000
 Connection ~ 8300 2900
 Connection ~ 8500 2900
-Text Label 8300 3050 0    10   ~ 0
-GND
 Wire Wire Line
 	9000 3050 9000 3300
 Wire Wire Line
@@ -155,8 +101,6 @@ Wire Wire Line
 	9200 3050 9200 3300
 Connection ~ 9400 3300
 Connection ~ 9200 3300
-Text Label 9000 3050 0    10   ~ 0
-GND
 Wire Wire Line
 	9700 3050 9700 2900
 Wire Wire Line
@@ -175,8 +119,6 @@ Wire Wire Line
 	10000 2900 9900 2900
 Connection ~ 9700 2900
 Connection ~ 9900 2900
-Text Label 9700 3050 0    10   ~ 0
-GND
 Wire Wire Line
 	10600 3050 10600 2900
 Wire Wire Line
@@ -195,288 +137,68 @@ Wire Wire Line
 	10900 2900 10800 2900
 Connection ~ 10600 2900
 Connection ~ 10800 2900
-Text Label 10600 3050 0    10   ~ 0
-GND
 Wire Wire Line
-	13100 4100 13100 4000
-Text Label 13100 4100 0    10   ~ 0
-GND
+	13200 4100 13200 4000
 Wire Wire Line
 	12000 6100 12000 6200
-Text Label 12000 6100 0    10   ~ 0
-GND
-Wire Wire Line
-	12200 6800 12200 6900
-Text Label 12200 6800 0    10   ~ 0
-GND
-Wire Wire Line
-	12000 2000 12000 2100
-Text Label 12000 2000 0    10   ~ 0
-GND
 Wire Wire Line
 	2100 9050 2100 9150
-Text Label 2100 9050 0    10   ~ 0
-GND
 Wire Wire Line
 	1800 9050 1800 9150
-Text Label 1800 9050 0    10   ~ 0
-GND
 Wire Wire Line
 	4000 2800 4000 2400
-Text Label 4000 2800 0    10   ~ 0
-GND
 Wire Wire Line
 	5050 1800 5050 2100
-Text Label 5050 1800 0    10   ~ 0
-GND
 Wire Wire Line
 	4200 2400 4200 2800
-Text Label 4200 2400 0    10   ~ 0
-GND
 Wire Wire Line
 	5250 1800 5250 2100
-Text Label 5250 1800 0    10   ~ 0
-GND
 Wire Wire Line
 	3000 2800 3000 2400
-Text Label 3000 2800 0    10   ~ 0
-GND
 Wire Wire Line
 	3200 2400 3200 2800
-Text Label 3200 2400 0    10   ~ 0
-GND
 Wire Wire Line
 	2800 2800 2800 2700
-Text Label 2800 2800 0    10   ~ 0
-GND
 Wire Wire Line
 	3800 2700 3800 2800
-Text Label 3800 2700 0    10   ~ 0
-GND
-Wire Wire Line
-	4850 1900 4850 1800
-Text Label 4850 1900 0    10   ~ 0
-GND
 Wire Wire Line
 	2300 2200 2300 2000
 Wire Wire Line
 	2100 2200 2300 2200
-Text Label 2300 2200 0    10   ~ 0
-GND
-Wire Wire Line
-	4000 4400 4000 4000
-Text Label 4000 4400 0    10   ~ 0
-GND
-Wire Wire Line
-	5050 3400 5050 3700
-Text Label 5050 3400 0    10   ~ 0
-GND
-Wire Wire Line
-	4200 4000 4200 4400
-Text Label 4200 4000 0    10   ~ 0
-GND
-Wire Wire Line
-	5250 3400 5250 3700
-Text Label 5250 3400 0    10   ~ 0
-GND
-Wire Wire Line
-	3000 4400 3000 4000
-Text Label 3000 4400 0    10   ~ 0
-GND
-Wire Wire Line
-	3200 4000 3200 4400
-Text Label 3200 4000 0    10   ~ 0
-GND
-Wire Wire Line
-	2800 4400 2800 4300
-Text Label 2800 4400 0    10   ~ 0
-GND
-Wire Wire Line
-	3800 4300 3800 4400
-Text Label 3800 4300 0    10   ~ 0
-GND
-Wire Wire Line
-	4850 3500 4850 3400
-Text Label 4850 3500 0    10   ~ 0
-GND
 Wire Wire Line
 	2300 3900 2300 4100
 Wire Wire Line
 	2100 3900 2300 3900
-Text Label 2300 3900 0    10   ~ 0
-GND
 Wire Wire Line
-	12900 2700 12900 2600
+	12950 2800 12950 2700
 Wire Wire Line
-	12900 2600 13000 2600
-Text Label 12900 2700 0    10   ~ 0
-GND
-Wire Wire Line
-	7300 1700 7300 1800
-Text Label 7300 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	6600 1700 6600 1800
-Text Label 6600 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	8000 1700 8000 1800
-Text Label 8000 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	8700 1700 8700 1800
-Text Label 8700 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	9400 1900 9400 2000
-Text Label 9400 1900 0    10   ~ 0
-+5V
-Wire Wire Line
-	10200 1700 10200 1800
-Text Label 10200 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	11100 1700 11100 1800
-Text Label 11100 1700 0    10   ~ 0
-+5V
-Wire Wire Line
-	4000 1800 4000 2100
-Text Label 4000 1800 0    10   ~ 0
-+5V
-Wire Wire Line
-	4200 1800 4200 2100
-Text Label 4200 1800 0    10   ~ 0
-+5V
+	12950 2700 13050 2700
 Wire Wire Line
 	2300 2300 2300 2500
 Wire Wire Line
 	2100 2300 2300 2300
-Text Label 2300 2300 0    10   ~ 0
-+5V
-Wire Wire Line
-	3800 1800 3800 1900
-Text Label 3800 1800 0    10   ~ 0
-+5V
-Wire Wire Line
-	4000 3400 4000 3700
-Text Label 4000 3400 0    10   ~ 0
-+5V
-Wire Wire Line
-	4200 3400 4200 3700
-Text Label 4200 3400 0    10   ~ 0
-+5V
 Wire Wire Line
 	2300 3800 2300 3600
 Wire Wire Line
 	2100 3800 2300 3800
-Text Label 2300 3800 0    10   ~ 0
-+5V
 Wire Wire Line
-	3800 3400 3800 3500
-Text Label 3800 3400 0    10   ~ 0
-+5V
-Wire Wire Line
-	6600 4100 6600 4000
-Text Label 6600 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	7300 4100 7300 4000
-Text Label 7300 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	3900 9300 3900 9400
-Text Label 3900 9300 0    10   ~ 0
--5V
-Wire Wire Line
-	4200 9600 4200 9700
-Text Label 4200 9600 0    10   ~ 0
--5V
-Wire Wire Line
-	11000 11400 11000 11500
-Text Label 11000 11400 0    10   ~ 0
--5V
-Wire Wire Line
-	11400 11400 11400 11500
-Text Label 11400 11400 0    10   ~ 0
--5V
-Wire Wire Line
-	11000 9300 11000 9400
-Text Label 11000 9300 0    10   ~ 0
--5V
-Wire Wire Line
-	11400 9300 11400 9400
-Text Label 11400 9300 0    10   ~ 0
--5V
-Wire Wire Line
-	8000 4100 8000 4000
-Text Label 8000 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	8700 4100 8700 4000
-Text Label 8700 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	10200 4100 10200 4000
-Text Label 10200 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	11100 4100 11100 4000
-Text Label 11100 4100 0    10   ~ 0
--5V
-Wire Wire Line
-	11200 11350 11200 11500
-Text Label 11200 11350 0    10   ~ 0
--5V
-Wire Wire Line
-	11200 9250 11200 9400
-Text Label 11200 9250 0    10   ~ 0
--5V
+	11475 11425 11475 11500
 Wire Wire Line
 	1800 9550 1800 9450
-Text Label 1800 9550 0    10   ~ 0
--5V
 Wire Wire Line
 	2100 9550 2100 9450
-Text Label 2100 9550 0    10   ~ 0
--5V
 Wire Wire Line
 	5050 2400 5050 2800
-Text Label 5050 2400 0    10   ~ 0
--5V
 Wire Wire Line
 	5250 2400 5250 2800
-Text Label 5250 2400 0    10   ~ 0
--5V
-Wire Wire Line
-	4850 2700 4850 2800
-Text Label 4850 2700 0    10   ~ 0
--5V
 Wire Wire Line
 	2200 2100 2200 1700
 Wire Wire Line
 	2100 2100 2200 2100
-Text Label 2200 2100 0    10   ~ 0
--5V
-Wire Wire Line
-	5050 4000 5050 4400
-Text Label 5050 4000 0    10   ~ 0
--5V
-Wire Wire Line
-	5250 4000 5250 4400
-Text Label 5250 4000 0    10   ~ 0
--5V
-Wire Wire Line
-	4850 4300 4850 4400
-Text Label 4850 4300 0    10   ~ 0
--5V
 Wire Wire Line
 	2200 4000 2200 4400
 Wire Wire Line
 	2100 4000 2200 4000
-Text Label 2200 4000 0    10   ~ 0
--5V
-Wire Wire Line
-	7200 5500 7300 5500
 Wire Wire Line
 	7300 5500 7300 5600
 Wire Wire Line
@@ -486,35 +208,19 @@ Wire Wire Line
 	7600 5700 7500 5700
 Wire Wire Line
 	7500 5700 7500 6000
-Wire Wire Line
-	7500 6000 7500 6100
-Wire Wire Line
-	7700 6000 7500 6000
 Connection ~ 7500 6000
 Wire Wire Line
-	9100 5600 9200 5600
-Wire Wire Line
-	9200 5600 9300 5600
-Wire Wire Line
 	9200 5600 9200 5200
-Wire Wire Line
-	9200 5200 9900 5200
 Connection ~ 9200 5600
-Wire Wire Line
-	9700 5600 9800 5600
 Wire Wire Line
 	9800 5600 10100 5600
 Wire Wire Line
 	9800 5700 9800 5600
 Connection ~ 9800 5600
 Wire Wire Line
-	10200 6100 10000 6100
-Wire Wire Line
 	10000 6100 10000 5800
 Wire Wire Line
 	10000 5800 10100 5800
-Wire Wire Line
-	10000 6100 10000 6300
 Connection ~ 10000 6100
 Wire Wire Line
 	6900 2450 6900 2300
@@ -526,8 +232,6 @@ Wire Wire Line
 	7300 2300 7300 2600
 Wire Wire Line
 	7100 2450 7100 2300
-Wire Wire Line
-	7300 2300 7300 2200
 Connection ~ 7100 2300
 Connection ~ 7300 2300
 Wire Wire Line
@@ -540,8 +244,6 @@ Wire Wire Line
 	6600 2300 6600 2600
 Wire Wire Line
 	6400 2450 6400 2300
-Wire Wire Line
-	6600 2200 6600 2300
 Connection ~ 6400 2300
 Connection ~ 6600 2300
 Wire Wire Line
@@ -553,13 +255,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 3500 6600 3200
 Wire Wire Line
-	6600 3600 6600 3500
-Wire Wire Line
 	6400 3350 6400 3500
 Connection ~ 6600 3500
 Connection ~ 6400 3500
-Wire Wire Line
-	7300 3600 7300 3500
 Wire Wire Line
 	7300 3500 7300 3200
 Wire Wire Line
@@ -573,10 +271,6 @@ Wire Wire Line
 Connection ~ 7300 3500
 Connection ~ 7100 3500
 Wire Wire Line
-	6800 5500 6700 5500
-Wire Wire Line
-	6700 5500 6600 5500
-Wire Wire Line
 	7400 5200 6700 5200
 Wire Wire Line
 	6700 5200 6700 5500
@@ -584,33 +278,17 @@ Connection ~ 6700 5500
 Wire Wire Line
 	2400 8300 2500 8300
 Wire Wire Line
-	2500 8300 2600 8300
-Wire Wire Line
-	3400 9100 2500 9100
-Wire Wire Line
 	2500 9100 2500 8300
 Connection ~ 2500 8300
 Wire Wire Line
-	3000 8300 3100 8300
-Wire Wire Line
 	3100 8300 3200 8300
 Wire Wire Line
-	3300 8000 3100 8000
-Wire Wire Line
 	3100 8000 3100 8300
-Wire Wire Line
-	3300 8800 3100 8800
 Wire Wire Line
 	3100 8800 3100 8300
 Connection ~ 3100 8300
 Wire Wire Line
-	3700 8000 4900 8000
-Wire Wire Line
 	4900 8000 4900 8400
-Wire Wire Line
-	4900 8400 4900 8500
-Wire Wire Line
-	4800 8400 4900 8400
 Wire Wire Line
 	4900 8400 5000 8400
 Connection ~ 4900 8400
@@ -621,70 +299,25 @@ Wire Wire Line
 Text Label 1700 10900 2    70   ~ 0
 BLR_OUT
 Wire Wire Line
-	4600 8400 4500 8400
-Wire Wire Line
 	4500 8400 4200 8400
 Wire Wire Line
-	4200 8400 3900 8400
-Wire Wire Line
-	3900 8400 3800 8400
-Wire Wire Line
-	3900 8500 3900 8400
-Wire Wire Line
 	4200 8500 4200 8400
-Wire Wire Line
-	4500 8500 4500 8400
-Connection ~ 3900 8400
 Connection ~ 4200 8400
-Connection ~ 4500 8400
 Wire Wire Line
-	3700 8800 3900 8800
-Wire Wire Line
-	3900 8800 3900 8700
-Wire Wire Line
-	3900 8800 3900 8900
-Connection ~ 3900 8800
-Wire Wire Line
-	4200 8700 4200 9100
-Wire Wire Line
-	4200 9100 4200 9200
-Wire Wire Line
-	4500 8900 4500 9100
+	4200 8800 4200 9100
 Wire Wire Line
 	4500 9100 4200 9100
-Wire Wire Line
-	3600 9100 4200 9100
 Connection ~ 4200 9100
 Wire Wire Line
 	3200 8500 2900 8500
-Wire Wire Line
-	2900 8500 2900 8600
 Wire Wire Line
 	1800 10700 1700 10700
 Wire Wire Line
 	1700 10700 1700 10400
 Wire Wire Line
-	2600 10400 2500 10400
-Wire Wire Line
-	2500 10400 2500 10500
-Wire Wire Line
-	1700 10400 2500 10400
-Connection ~ 2500 10400
-Wire Wire Line
-	3000 10600 2900 10600
-Wire Wire Line
 	2900 10600 2900 10800
 Wire Wire Line
-	2900 10800 2800 10800
-Wire Wire Line
-	3000 10800 2900 10800
-Connection ~ 2900 10800
-Wire Wire Line
-	3000 10400 3500 10400
-Wire Wire Line
 	3500 10400 3500 10600
-Wire Wire Line
-	3500 10600 3400 10600
 Wire Wire Line
 	4100 10600 3500 10600
 Wire Wire Line
@@ -705,71 +338,29 @@ Wire Wire Line
 Text Label 12800 3800 2    70   ~ 0
 ADC
 Wire Wire Line
-	3700 10800 3500 10800
-Wire Wire Line
 	3500 10800 3500 10900
 Wire Wire Line
-	3200 10800 3500 10800
+	12850 2400 12850 2300
 Wire Wire Line
-	3800 11000 3700 11000
+	12850 2300 12750 2300
 Wire Wire Line
-	3700 11000 3700 10800
-Wire Wire Line
-	4100 10800 3700 10800
-Connection ~ 3500 10800
-Connection ~ 3700 10800
-Wire Wire Line
-	3500 11200 3500 11300
-Wire Wire Line
-	3800 11200 3700 11200
-Wire Wire Line
-	3700 11200 3700 11300
-Wire Wire Line
-	4300 11100 5200 11100
-Text Label 5200 11100 0    70   ~ 0
+	13050 2400 12850 2400
+Text Label 12750 2300 2    70   ~ 0
 RESET
-Wire Wire Line
-	12800 2300 12800 2200
-Wire Wire Line
-	12800 2200 12700 2200
-Wire Wire Line
-	13000 2300 12800 2300
-Text Label 12700 2200 2    70   ~ 0
-RESET
-Wire Wire Line
-	7900 9000 8000 9000
 Wire Wire Line
 	8000 9000 8100 9000
 Wire Wire Line
-	8200 8700 8000 8700
-Wire Wire Line
 	8000 8700 8000 9000
 Connection ~ 8000 9000
-Wire Wire Line
-	7400 9000 7500 9000
-Wire Wire Line
-	8600 8700 8800 8700
 Wire Wire Line
 	8800 8700 8800 9100
 Wire Wire Line
 	8800 9100 8700 9100
 Wire Wire Line
 	8800 9100 8800 10000
-Wire Wire Line
-	8800 10000 8900 10000
-Wire Wire Line
-	8800 9100 11600 9100
-Wire Wire Line
-	11600 9100 11600 9300
-Wire Wire Line
-	11600 9300 11700 9300
 Connection ~ 8800 9100
 Wire Wire Line
 	8100 9200 8000 9200
-Wire Wire Line
-	8000 9200 8000 9300
-Wire Wire Line
-	9400 10000 9300 10000
 Wire Wire Line
 	9900 10000 9800 10000
 Wire Wire Line
@@ -780,8 +371,6 @@ Wire Wire Line
 	9800 9600 9800 9800
 Wire Wire Line
 	9800 9800 9800 10000
-Wire Wire Line
-	10000 9800 9800 9800
 Connection ~ 9800 10000
 Connection ~ 9800 9800
 Wire Wire Line
@@ -793,104 +382,47 @@ Wire Wire Line
 Wire Wire Line
 	10600 10100 10500 10100
 Wire Wire Line
-	10400 9800 10600 9800
-Wire Wire Line
 	10600 10100 11600 10100
 Wire Wire Line
 	11600 10100 11600 10400
-Wire Wire Line
-	11600 10400 11700 10400
 Connection ~ 10600 9800
 Connection ~ 10600 10100
 Wire Wire Line
 	9900 10200 9800 10200
 Wire Wire Line
-	9800 10200 9800 10300
-Wire Wire Line
 	12800 10400 12900 10400
 Wire Wire Line
 	12900 10400 12900 10900
-Wire Wire Line
-	12900 10900 12600 10900
-Wire Wire Line
-	12900 10400 13100 10400
-Connection ~ 12900 10400
-Text Label 13100 10400 0    70   ~ 0
+Text Label 13100 10600 0    70   ~ 0
 RISING_SLOPE
 Wire Wire Line
-	12800 2500 12800 2600
+	12850 2600 12850 2700
 Wire Wire Line
-	12800 2600 12700 2600
+	12850 2700 12750 2700
 Wire Wire Line
-	13000 2500 12800 2500
-Text Label 12700 2600 2    70   ~ 0
+	13050 2600 12850 2600
+Text Label 12750 2700 2    70   ~ 0
 RISING_SLOPE
-Wire Wire Line
-	12200 10900 12100 10900
 Wire Wire Line
 	12100 10900 12100 10600
 Wire Wire Line
 	12100 10600 12200 10600
-Wire Wire Line
-	12000 10900 12100 10900
 Connection ~ 12100 10900
 Wire Wire Line
-	11600 10900 11400 10900
+	11275 10900 11475 10900
 Wire Wire Line
-	11400 10900 11400 11000
+	11475 10900 11650 10900
+Connection ~ 11475 10900
 Wire Wire Line
-	11000 11100 11000 10900
+	12975 8800 12975 9300
 Wire Wire Line
-	11000 10900 11200 10900
-Wire Wire Line
-	11200 10900 11400 10900
-Wire Wire Line
-	11400 10800 11400 10900
-Wire Wire Line
-	11200 10900 11200 11050
-Connection ~ 11400 10900
-Connection ~ 11200 10900
-Wire Wire Line
-	12100 10400 12200 10400
-Wire Wire Line
-	12200 9300 12100 9300
-Wire Wire Line
-	12200 9100 12200 8800
-Wire Wire Line
-	12200 8800 12100 8800
-Wire Wire Line
-	12300 8800 12200 8800
-Connection ~ 12200 8800
-Wire Wire Line
-	12700 8800 12900 8800
-Wire Wire Line
-	12900 8800 12900 9300
-Wire Wire Line
-	12900 9300 12800 9300
-Wire Wire Line
-	12800 9100 13100 9100
-Text Label 13100 9100 0    70   ~ 0
+	12975 9300 12875 9300
+Text Label 13175 9100 0    70   ~ 0
 PULSE_DURATION
 Wire Wire Line
-	13000 2400 12700 2400
-Text Label 12700 2400 2    70   ~ 0
+	13050 2500 12750 2500
+Text Label 12750 2500 2    70   ~ 0
 PULSE_DURATION
-Wire Wire Line
-	11700 8800 11400 8800
-Wire Wire Line
-	11400 8800 11400 8900
-Wire Wire Line
-	11000 9000 11000 8800
-Wire Wire Line
-	11000 8800 11200 8800
-Wire Wire Line
-	11200 8800 11400 8800
-Wire Wire Line
-	11400 8700 11400 8800
-Wire Wire Line
-	11200 8950 11200 8800
-Connection ~ 11400 8800
-Connection ~ 11200 8800
 Wire Wire Line
 	7100 9000 7000 9000
 Text Label 7000 9000 2    70   ~ 0
@@ -902,13 +434,9 @@ Wire Wire Line
 Wire Wire Line
 	8300 5200 8300 5600
 Wire Wire Line
-	8700 5600 8500 5600
-Wire Wire Line
 	8500 5600 8300 5600
 Wire Wire Line
 	8300 6000 8300 5600
-Wire Wire Line
-	8100 6000 8300 6000
 Wire Wire Line
 	8500 5600 8500 5800
 Connection ~ 8300 5600
@@ -925,12 +453,8 @@ Wire Wire Line
 	8000 2300 8000 2600
 Wire Wire Line
 	7800 2450 7800 2300
-Wire Wire Line
-	8000 2300 8000 2200
 Connection ~ 7800 2300
 Connection ~ 8000 2300
-Wire Wire Line
-	8000 3600 8000 3500
 Wire Wire Line
 	8000 3500 8000 3200
 Wire Wire Line
@@ -953,12 +477,8 @@ Wire Wire Line
 	8700 2300 8700 2600
 Wire Wire Line
 	8500 2450 8500 2300
-Wire Wire Line
-	8700 2300 8700 2200
 Connection ~ 8500 2300
 Connection ~ 8700 2300
-Wire Wire Line
-	8700 3600 8700 3500
 Wire Wire Line
 	8700 3500 8700 3200
 Wire Wire Line
@@ -981,8 +501,6 @@ Wire Wire Line
 	9000 2500 9000 2750
 Wire Wire Line
 	9200 2750 9200 2500
-Wire Wire Line
-	9400 2400 9400 2500
 Connection ~ 9200 2500
 Connection ~ 9400 2500
 Wire Wire Line
@@ -995,12 +513,8 @@ Wire Wire Line
 	10200 2300 10200 2600
 Wire Wire Line
 	9900 2450 9900 2300
-Wire Wire Line
-	10200 2300 10200 2200
 Connection ~ 9900 2300
 Connection ~ 10200 2300
-Wire Wire Line
-	10200 3600 10200 3500
 Wire Wire Line
 	10200 3500 10200 3200
 Wire Wire Line
@@ -1023,12 +537,8 @@ Wire Wire Line
 	11100 2300 11100 2600
 Wire Wire Line
 	10800 2450 10800 2300
-Wire Wire Line
-	11100 2300 11100 2200
 Connection ~ 10800 2300
 Connection ~ 11100 2300
-Wire Wire Line
-	11100 3600 11100 3500
 Wire Wire Line
 	11100 3500 11100 3200
 Wire Wire Line
@@ -1052,8 +562,6 @@ Wire Wire Line
 Wire Wire Line
 	13000 5800 12900 5800
 Wire Wire Line
-	12800 6200 13000 6200
-Wire Wire Line
 	13000 6200 13000 5800
 Wire Wire Line
 	13000 5800 13200 5800
@@ -1061,40 +569,23 @@ Connection ~ 13000 5800
 Text Label 13200 5800 0    70   ~ 0
 FILTERED_SIGNAL
 Wire Wire Line
-	13000 3100 12800 3100
-Text Label 12800 3100 2    70   ~ 0
+	13000 3200 12800 3200
+Text Label 12800 3200 2    70   ~ 0
 FILTERED_SIGNAL
-Wire Wire Line
-	2600 10800 2500 10800
-Wire Wire Line
-	2500 10800 2400 10800
-Wire Wire Line
-	2500 10700 2500 10800
-Connection ~ 2500 10800
-Wire Wire Line
-	11300 5700 11400 5700
-Wire Wire Line
-	11400 5700 11500 5700
 Wire Wire Line
 	11400 5700 11400 5300
 Wire Wire Line
 	11400 5300 12100 5300
 Connection ~ 11400 5700
 Wire Wire Line
-	11900 5700 12000 5700
-Wire Wire Line
 	12000 5700 12300 5700
 Wire Wire Line
 	12000 5800 12000 5700
 Connection ~ 12000 5700
 Wire Wire Line
-	12400 6200 12200 6200
-Wire Wire Line
 	12200 6200 12200 5900
 Wire Wire Line
 	12200 5900 12300 5900
-Wire Wire Line
-	12200 6200 12200 6400
 Connection ~ 12200 6200
 Wire Wire Line
 	10200 5200 10800 5200
@@ -1103,19 +594,13 @@ Wire Wire Line
 Wire Wire Line
 	10800 5700 10700 5700
 Wire Wire Line
-	10600 6100 10800 6100
-Wire Wire Line
 	10800 6100 10800 5700
-Wire Wire Line
-	10800 5700 10900 5700
 Connection ~ 10800 5700
-Wire Wire Line
-	6200 5500 6000 5500
 Text Label 6000 5500 2    70   ~ 0
 SIGNAL_INPUT
 Wire Wire Line
-	12100 1800 12300 1800
-Text Label 12300 1800 0    70   ~ 0
+	12150 1750 12350 1750
+Text Label 12350 1750 0    70   ~ 0
 SIGNAL_INPUT
 Wire Wire Line
 	3000 1800 3000 2100
@@ -1131,17 +616,7 @@ Wire Wire Line
 	2100 2400 2200 2400
 Text Label 2200 2700 3    70   ~ 0
 +65V
-Wire Wire Line
-	2800 1900 2800 1800
 Text Label 2800 1800 1    70   ~ 0
-+65V
-Wire Wire Line
-	3000 3400 3000 3700
-Text Label 3000 3400 1    70   ~ 0
-+65V
-Wire Wire Line
-	3200 3400 3200 3700
-Text Label 3200 3400 1    70   ~ 0
 +65V
 Wire Wire Line
 	2200 3700 2200 3400
@@ -1149,2770 +624,1181 @@ Wire Wire Line
 	2100 3700 2200 3700
 Text Label 2200 3400 1    70   ~ 0
 +65V
-Wire Wire Line
-	2800 3500 2800 3400
-Text Label 2800 3400 1    70   ~ 0
-+65V
-Wire Wire Line
-	2800 2300 2800 2400
-Wire Wire Line
-	3800 2300 3800 2400
-Wire Wire Line
-	4850 2300 4850 2200
-Wire Wire Line
-	2800 3900 2800 4000
-Wire Wire Line
-	3800 3900 3800 4000
-Wire Wire Line
-	4850 3900 4850 3800
 $Comp
-L signal_processing-eagle-import:LINX-SMA-EDGE-0.062 A2
-U 1 1 030033ED
-P 13100 3100
-F 0 "A2" H 12500 2880 42  0000 L BNN
-F 1 "SMA-EDGE-0.062" H 12500 2820 42  0000 L BNN
-F 2 "signal_processing:CONSMA003.062" H 13100 3100 50  0001 C CNN
-F 3 "" H 13100 3100 50  0001 C CNN
-	1    13100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R22
+L Device:R R22
 U 1 1 9E8FA22C
 P 7000 5500
 F 0 "R22" H 6900 5559 59  0000 L BNN
 F 1 "33k" H 6900 5370 59  0000 L BNN
-F 2 "signal_processing:R0603" H 7000 5500 50  0001 C CNN
-F 3 "" H 7000 5500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 5500 50  0001 C CNN
+F 3 "~" H 7000 5500 50  0001 C CNN
 	1    7000 5500
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C25
+L Device:C C25
 U 1 1 A26872C8
-P 7300 5800
-F 0 "C25" V 7515 5990 59  0000 R TNN
-F 1 "200p/50V" V 7415 5990 59  0000 R TNN
-F 2 "signal_processing:C0603" H 7300 5800 50  0001 C CNN
-F 3 "" H 7300 5800 50  0001 C CNN
-	1    7300 5800
+P 7300 5750
+F 0 "C25" V 7515 5940 59  0000 R TNN
+F 1 "200p/50V" V 7415 5940 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7300 5750 50  0001 C CNN
+F 3 "~" H 7300 5750 50  0001 C CNN
+	1    7300 5750
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R27
+L Device:R R27
 U 1 1 877853DF
 P 7900 6000
 F 0 "R27" H 7800 6059 59  0000 L BNN
 F 1 "9,1k" H 7800 5870 59  0000 L BNN
-F 2 "signal_processing:R0603" H 7900 6000 50  0001 C CNN
-F 3 "" H 7900 6000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 6000 50  0001 C CNN
+F 3 "~" H 7900 6000 50  0001 C CNN
 	1    7900 6000
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R25
+L Device:R R25
 U 1 1 D84B7013
 P 7500 6300
 F 0 "R25" V 7509 6250 59  0000 R TNN
 F 1 "1,8k" V 7420 6250 59  0000 R TNN
-F 2 "signal_processing:R0603" H 7500 6300 50  0001 C CNN
-F 3 "" H 7500 6300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 6300 50  0001 C CNN
+F 3 "~" H 7500 6300 50  0001 C CNN
 	1    7500 6300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND031
-U 1 1 E3033BC1
-P 7500 6700
-F 0 "#GND031" H 7500 6700 50  0001 C CNN
-F 1 "GND" H 7400 6600 59  0000 L BNN
-F 2 "" H 7500 6700 50  0001 C CNN
-F 3 "" H 7500 6700 50  0001 C CNN
-	1    7500 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C29
+L Device:C C29
 U 1 1 DB89FBA2
-P 7600 5200
-F 0 "C29" V 7535 4910 59  0000 L BNN
-F 1 "200p/50V" V 7535 5210 59  0000 L BNN
-F 2 "signal_processing:C0603" H 7600 5200 50  0001 C CNN
-F 3 "" H 7600 5200 50  0001 C CNN
-	1    7600 5200
+P 7550 5200
+F 0 "C29" V 7485 4910 59  0000 L BNN
+F 1 "200p/50V" V 7485 5210 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7550 5200 50  0001 C CNN
+F 3 "~" H 7550 5200 50  0001 C CNN
+	1    7550 5200
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND029
-U 1 1 BFC01DE5
-P 7300 6100
-F 0 "#GND029" H 7300 6100 50  0001 C CNN
-F 1 "GND" H 7200 6000 59  0000 L BNN
-F 2 "" H 7300 6100 50  0001 C CNN
-F 3 "" H 7300 6100 50  0001 C CNN
-	1    7300 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R34
+L Device:R R34
 U 1 1 90B097BE
 P 8900 5600
 F 0 "R34" H 8800 5659 59  0000 L BNN
 F 1 "3,6k" H 8800 5470 59  0000 L BNN
-F 2 "signal_processing:R0603" H 8900 5600 50  0001 C CNN
-F 3 "" H 8900 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8900 5600 50  0001 C CNN
+F 3 "~" H 8900 5600 50  0001 C CNN
 	1    8900 5600
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R37
+L Device:R R37
 U 1 1 A5AEEAA3
 P 9500 5600
 F 0 "R37" H 9400 5659 59  0000 L BNN
 F 1 "30k" H 9400 5470 59  0000 L BNN
-F 2 "signal_processing:R0603" H 9500 5600 50  0001 C CNN
-F 3 "" H 9500 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 5600 50  0001 C CNN
+F 3 "~" H 9500 5600 50  0001 C CNN
 	1    9500 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C44
-U 1 1 66CBEE65
-P 10100 5200
-F 0 "C44" V 10035 4910 59  0000 L BNN
-F 1 "180p/50V" V 10035 5210 59  0000 L BNN
-F 2 "signal_processing:C0603" H 10100 5200 50  0001 C CNN
-F 3 "" H 10100 5200 50  0001 C CNN
-	1    10100 5200
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C41
+L Device:C C41
 U 1 1 46EEF232
-P 9800 5900
-F 0 "C41" V 10015 6140 59  0000 R TNN
-F 1 "180p/50V" V 9915 6140 59  0000 R TNN
-F 2 "signal_processing:C0603" H 9800 5900 50  0001 C CNN
-F 3 "" H 9800 5900 50  0001 C CNN
-	1    9800 5900
+P 9800 5850
+F 0 "C41" V 10015 6090 59  0000 R TNN
+F 1 "180p/50V" V 9915 6090 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9800 5850 50  0001 C CNN
+F 3 "~" H 9800 5850 50  0001 C CNN
+	1    9800 5850
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND036
-U 1 1 397F6EFB
-P 9800 6200
-F 0 "#GND036" H 9800 6200 50  0001 C CNN
-F 1 "GND" H 9700 6100 59  0000 L BNN
-F 2 "" H 9800 6200 50  0001 C CNN
-F 3 "" H 9800 6200 50  0001 C CNN
-	1    9800 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R43
+L Device:R R43
 U 1 1 C640A87B
 P 10400 6100
 F 0 "R43" H 10300 6159 59  0000 L BNN
 F 1 "8,2k" H 10300 5970 59  0000 L BNN
-F 2 "signal_processing:R0603" H 10400 6100 50  0001 C CNN
-F 3 "" H 10400 6100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10400 6100 50  0001 C CNN
+F 3 "~" H 10400 6100 50  0001 C CNN
 	1    10400 6100
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R39
+L Device:R R39
 U 1 1 A2552392
 P 10000 6500
 F 0 "R39" V 10009 6450 59  0000 R TNN
 F 1 "2k" V 9920 6450 59  0000 R TNN
-F 2 "signal_processing:R0603" H 10000 6500 50  0001 C CNN
-F 3 "" H 10000 6500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10000 6500 50  0001 C CNN
+F 3 "~" H 10000 6500 50  0001 C CNN
 	1    10000 6500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND038
-U 1 1 9C9B1271
-P 10000 6900
-F 0 "#GND038" H 10000 6900 50  0001 C CNN
-F 1 "GND" H 9900 6800 59  0000 L BNN
-F 2 "" H 10000 6900 50  0001 C CNN
-F 3 "" H 10000 6900 50  0001 C CNN
-	1    10000 6900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C17
+L Device:C C17
 U 1 1 17DFBEA3
-P 6200 2650
-F 0 "C17" V 6315 2490 59  0000 R TNN
-F 1 "100n/50V" V 6215 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 6200 2650 50  0001 C CNN
-F 3 "" H 6200 2650 50  0001 C CNN
-	1    6200 2650
+P 6200 2600
+F 0 "C17" V 6315 2440 59  0000 R TNN
+F 1 "100n/50V" V 6215 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 2600 50  0001 C CNN
+F 3 "~" H 6200 2600 50  0001 C CNN
+	1    6200 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C21
+L Device:C C21
 U 1 1 261D7B48
-P 6900 2650
-F 0 "C21" V 7015 2490 59  0000 R TNN
-F 1 "100n/50V" V 6915 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 6900 2650 50  0001 C CNN
-F 3 "" H 6900 2650 50  0001 C CNN
-	1    6900 2650
+P 6900 2600
+F 0 "C21" V 7015 2440 59  0000 R TNN
+F 1 "100n/50V" V 6915 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 2600 50  0001 C CNN
+F 3 "~" H 6900 2600 50  0001 C CNN
+	1    6900 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-013
-U 1 1 EF4A176C
-P 6600 4200
-F 0 "#P-013" H 6600 4200 50  0001 C CNN
-F 1 "-5V" V 6500 4100 59  0000 L BNN
-F 2 "" H 6600 4200 50  0001 C CNN
-F 3 "" H 6600 4200 50  0001 C CNN
-	1    6600 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-014
-U 1 1 82B74BC0
-P 7300 4200
-F 0 "#P-014" H 7300 4200 50  0001 C CNN
-F 1 "-5V" V 7200 4100 59  0000 L BNN
-F 2 "" H 7300 4200 50  0001 C CNN
-F 3 "" H 7300 4200 50  0001 C CNN
-	1    7300 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+09
-U 1 1 540F2EFD
-P 6600 1600
-F 0 "#P+09" H 6600 1600 50  0001 C CNN
-F 1 "+5V" V 6500 1650 59  0000 L BNN
-F 2 "" H 6600 1600 50  0001 C CNN
-F 3 "" H 6600 1600 50  0001 C CNN
-	1    6600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+010
-U 1 1 99CC31BE
-P 7300 1600
-F 0 "#P+010" H 7300 1600 50  0001 C CNN
-F 1 "+5V" V 7200 1650 59  0000 L BNN
-F 2 "" H 7300 1600 50  0001 C CNN
-F 3 "" H 7300 1600 50  0001 C CNN
-	1    7300 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C19
-U 1 1 9C9B221E
-P 6400 2550
-F 0 "C19" V 6331 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 6431 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 6400 2550 50  0001 C CNN
-F 3 "" H 6400 2550 50  0001 C CNN
-	1    6400 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C23
+L Device:CP C23
 U 1 1 B32C41D8
-P 7100 2550
-F 0 "C23" V 7031 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 7131 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 7100 2550 50  0001 C CNN
-F 3 "" H 7100 2550 50  0001 C CNN
-	1    7100 2550
+P 7100 2600
+F 0 "C23" V 7031 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 7131 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7100 2600 50  0001 C CNN
+F 3 "~" H 7100 2600 50  0001 C CNN
+	1    7100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R20
-U 1 1 79DA5694
-P 6600 2000
-F 0 "R20" H 6700 1941 59  0000 R TNN
-F 1 "1" H 6650 2130 59  0000 R TNN
-F 2 "signal_processing:R0603" H 6600 2000 50  0001 C CNN
-F 3 "" H 6600 2000 50  0001 C CNN
-	1    6600 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R23
-U 1 1 C41135BF
-P 7300 2000
-F 0 "R23" H 7400 1941 59  0000 R TNN
-F 1 "1" H 7350 2130 59  0000 R TNN
-F 2 "signal_processing:R0603" H 7300 2000 50  0001 C CNN
-F 3 "" H 7300 2000 50  0001 C CNN
-	1    7300 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R21
-U 1 1 41E09116
-P 6600 3800
-F 0 "R21" H 6900 3741 59  0000 R TNN
-F 1 "1" H 6850 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 6600 3800 50  0001 C CNN
-F 3 "" H 6600 3800 50  0001 C CNN
-	1    6600 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R24
-U 1 1 7236E3D9
-P 7300 3800
-F 0 "R24" H 7600 3741 59  0000 R TNN
-F 1 "1" H 7550 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 7300 3800 50  0001 C CNN
-F 3 "" H 7300 3800 50  0001 C CNN
-	1    7300 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C18
+L Device:C C18
 U 1 1 7D5BCDFE
-P 6200 3250
-F 0 "C18" V 6315 3690 59  0000 R TNN
-F 1 "100n/50V" V 6215 3690 59  0000 R TNN
-F 2 "signal_processing:C0603" H 6200 3250 50  0001 C CNN
-F 3 "" H 6200 3250 50  0001 C CNN
-	1    6200 3250
+P 6200 3200
+F 0 "C18" V 6315 3640 59  0000 R TNN
+F 1 "100n/50V" V 6215 3640 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 3200 50  0001 C CNN
+F 3 "~" H 6200 3200 50  0001 C CNN
+	1    6200 3200
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C20
+L Device:CP C20
 U 1 1 DC68D076
-P 6400 3150
-F 0 "C20" V 6331 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 6431 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 6400 3150 50  0001 C CNN
-F 3 "" H 6400 3150 50  0001 C CNN
-	1    6400 3150
+P 6400 3200
+F 0 "C20" V 6331 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 6431 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6400 3200 50  0001 C CNN
+F 3 "~" H 6400 3200 50  0001 C CNN
+	1    6400 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C22
+L Device:C C22
 U 1 1 492534D0
-P 6900 3250
-F 0 "C22" V 7015 3790 59  0000 R TNN
-F 1 "100n/50V" V 6915 3790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 6900 3250 50  0001 C CNN
-F 3 "" H 6900 3250 50  0001 C CNN
-	1    6900 3250
+P 6900 3200
+F 0 "C22" V 7015 3740 59  0000 R TNN
+F 1 "100n/50V" V 6915 3740 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C24
+L Device:CP C24
 U 1 1 042004A6
-P 7100 3150
-F 0 "C24" V 7031 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 7131 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 7100 3150 50  0001 C CNN
-F 3 "" H 7100 3150 50  0001 C CNN
-	1    7100 3150
+P 7100 3200
+F 0 "C24" V 7031 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 7131 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7100 3200 50  0001 C CNN
+F 3 "~" H 7100 3200 50  0001 C CNN
+	1    7100 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND027
-U 1 1 419D9C11
-P 6100 3100
-F 0 "#GND027" H 6100 3100 50  0001 C CNN
-F 1 "GND" H 5950 3000 59  0000 L BNN
-F 2 "" H 6100 3100 50  0001 C CNN
-F 3 "" H 6100 3100 50  0001 C CNN
-	1    6100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND028
-U 1 1 0345B4CC
-P 6800 3100
-F 0 "#GND028" H 6800 3100 50  0001 C CNN
-F 1 "GND" V 6800 2850 59  0000 L BNN
-F 2 "" H 6800 3100 50  0001 C CNN
-F 3 "" H 6800 3100 50  0001 C CNN
-	1    6800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:AD8066 IC3
+L semiconductor_radiation_detector:AD8066 IC3
 U 3 1 A7372D85
 P 6600 2900
 F 0 "IC3" V 6550 2800 59  0000 L BNN
 F 1 "AD8066" V 6700 2750 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 6600 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 6600 2900 50  0001 C CNN
 F 3 "" H 6600 2900 50  0001 C CNN
 	3    6600 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC7
+L semiconductor_radiation_detector:AD8066 IC7
 U 2 1 BF308945
 P 3400 8400
 F 0 "IC7" H 3550 8100 59  0000 L BNN
 F 1 "AD8066" H 3550 8200 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 3400 8400 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3400 8400 50  0001 C CNN
 F 3 "" H 3400 8400 50  0001 C CNN
 	2    3400 8400
 	1    0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC7
+L semiconductor_radiation_detector:AD8066 IC7
 U 3 1 BF308941
 P 7300 2900
 F 0 "IC7" V 7400 2800 59  0000 L BNN
 F 1 "AD8066" V 7250 2750 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 7300 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 7300 2900 50  0001 C CNN
 F 3 "" H 7300 2900 50  0001 C CNN
 	3    7300 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R19
-U 1 1 3C820581
-P 6400 5500
-F 0 "R19" H 6300 5559 59  0000 L BNN
-F 1 "3k" H 6300 5370 59  0000 L BNN
-F 2 "signal_processing:R0603" H 6400 5500 50  0001 C CNN
-F 3 "" H 6400 5500 50  0001 C CNN
-	1    6400 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C3
+L Device:C C3
 U 1 1 0EF7083D
-P 2300 8300
-F 0 "C3" V 2185 8210 59  0000 L BNN
-F 1 "10n/50V" V 2485 8060 59  0000 L BNN
-F 2 "signal_processing:C0603" H 2300 8300 50  0001 C CNN
-F 3 "" H 2300 8300 50  0001 C CNN
-	1    2300 8300
+P 2250 8300
+F 0 "C3" V 2135 8210 59  0000 L BNN
+F 1 "10n/50V" V 2435 8060 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 8300 50  0001 C CNN
+F 3 "~" H 2250 8300 50  0001 C CNN
+	1    2250 8300
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R3
+L Device:R R3
 U 1 1 D483747B
 P 2800 8300
 F 0 "R3" H 2700 8359 59  0000 L BNN
 F 1 "1k" H 2700 8170 59  0000 L BNN
-F 2 "signal_processing:R0603" H 2800 8300 50  0001 C CNN
-F 3 "" H 2800 8300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 8300 50  0001 C CNN
+F 3 "~" H 2800 8300 50  0001 C CNN
 	1    2800 8300
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R5
+L Device:R R5
 U 1 1 3D30C464
 P 2900 8800
 F 0 "R5" V 2909 9000 59  0000 R TNN
-F 1 "100" V 2820 9000 59  0000 R TNN
-F 2 "signal_processing:R0603" H 2900 8800 50  0001 C CNN
-F 3 "" H 2900 8800 50  0001 C CNN
+F 1 "100" H 2820 9000 59  0000 R TNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 8800 50  0001 C CNN
+F 3 "~" H 2900 8800 50  0001 C CNN
 	1    2900 8800
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R8
+L Device:R R8
 U 1 1 41D07F0A
 P 3500 8800
 F 0 "R8" H 3600 8641 59  0000 R TNN
 F 1 "10k" H 3600 8730 59  0000 R TNN
-F 2 "signal_processing:R0603" H 3500 8800 50  0001 C CNN
-F 3 "" H 3500 8800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 8800 50  0001 C CNN
+F 3 "~" H 3500 8800 50  0001 C CNN
 	1    3500 8800
-	-1   0    0    1   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R7
+L Device:R R7
 U 1 1 4319E79C
 P 3500 8000
 F 0 "R7" H 3550 7841 59  0000 R TNN
 F 1 "2,2k" H 3550 7930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 3500 8000 50  0001 C CNN
-F 3 "" H 3500 8000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 8000 50  0001 C CNN
+F 3 "~" H 3500 8000 50  0001 C CNN
 	1    3500 8000
-	-1   0    0    1   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R13
+L Device:R R13
 U 1 1 50247816
 P 3900 9100
 F 0 "R13" V 3891 9150 59  0000 L BNN
 F 1 "1,6k" V 3980 9150 59  0000 L BNN
-F 2 "signal_processing:R0603" H 3900 9100 50  0001 C CNN
-F 3 "" H 3900 9100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 9100 50  0001 C CNN
+F 3 "~" H 3900 9100 50  0001 C CNN
 	1    3900 9100
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R14
+L Device:R R14
 U 1 1 AB6B3656
 P 4200 9400
 F 0 "R14" V 4191 9450 59  0000 L BNN
 F 1 "1,6k" V 4280 9450 59  0000 L BNN
-F 2 "signal_processing:R0603" H 4200 9400 50  0001 C CNN
-F 3 "" H 4200 9400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 9400 50  0001 C CNN
+F 3 "~" H 4200 9400 50  0001 C CNN
 	1    4200 9400
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R15
+L Device:R R15
 U 1 1 0FC3E147
 P 4500 8700
 F 0 "R15" V 4491 8750 59  0000 L BNN
 F 1 "1,6k" V 4580 8750 59  0000 L BNN
-F 2 "signal_processing:R0603" H 4500 8700 50  0001 C CNN
-F 3 "" H 4500 8700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 8700 50  0001 C CNN
+F 3 "~" H 4500 8700 50  0001 C CNN
 	1    4500 8700
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R18
+L Device:R R18
 U 1 1 E4C00CA8
 P 4900 8700
 F 0 "R18" V 4891 8750 59  0000 L BNN
 F 1 "1,6k" V 4980 8750 59  0000 L BNN
-F 2 "signal_processing:R0603" H 4900 8700 50  0001 C CNN
-F 3 "" H 4900 8700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 8700 50  0001 C CNN
+F 3 "~" H 4900 8700 50  0001 C CNN
 	1    4900 8700
-	0    1    1    0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-05
-U 1 1 B0008035
-P 3900 9500
-F 0 "#P-05" H 3900 9500 50  0001 C CNN
-F 1 "-5V" V 3900 9450 59  0000 L BNN
-F 2 "" H 3900 9500 50  0001 C CNN
-F 3 "" H 3900 9500 50  0001 C CNN
-	1    3900 9500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-06
-U 1 1 3EA6D6F1
-P 4200 9800
-F 0 "#P-06" H 4200 9800 50  0001 C CNN
-F 1 "-5V" V 4200 9750 59  0000 L BNN
-F 2 "" H 4200 9800 50  0001 C CNN
-F 3 "" H 4200 9800 50  0001 C CNN
-	1    4200 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND07
-U 1 1 9CDE76EF
-P 2900 9300
-F 0 "#GND07" H 2900 9300 50  0001 C CNN
-F 1 "GND" H 2800 9200 59  0000 L BNN
-F 2 "" H 2900 9300 50  0001 C CNN
-F 3 "" H 2900 9300 50  0001 C CNN
-	1    2900 9300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND022
-U 1 1 FB1CD9CF
-P 4900 9100
-F 0 "#GND022" H 4900 9100 50  0001 C CNN
-F 1 "GND" H 4800 9000 59  0000 L BNN
-F 2 "" H 4900 9100 50  0001 C CNN
-F 3 "" H 4900 9100 50  0001 C CNN
-	1    4900 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:AD8066 IC1
+L semiconductor_radiation_detector:AD8066 IC1
 U 1 1 FF1C511D
 P 2000 10800
 F 0 "IC1" H 2050 10950 59  0000 L BNN
 F 1 "AD8066" H 2050 11050 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 2000 10800 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 2000 10800 50  0001 C CNN
 F 3 "" H 2000 10800 50  0001 C CNN
 	1    2000 10800
 	1    0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC1
+L semiconductor_radiation_detector:AD8066 IC1
 U 2 1 FF1C5111
 P 4300 10700
 F 0 "IC1" H 4550 10750 59  0000 L BNN
 F 1 "AD8066" H 4550 10850 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 4300 10700 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4300 10700 50  0001 C CNN
 F 3 "" H 4300 10700 50  0001 C CNN
 	2    4300 10700
 	1    0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC1
+L semiconductor_radiation_detector:AD8066 IC1
 U 3 1 FF1C5115
 P 8000 2900
 F 0 "IC1" V 8100 2800 59  0000 L BNN
 F 1 "AD8066" V 7950 2750 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 8000 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8000 2900 50  0001 C CNN
 F 3 "" H 8000 2900 50  0001 C CNN
 	3    8000 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:BAS140 D4
-U 1 1 DCE5EB0D
-P 3500 9100
-F 0 "D4" H 3410 9175 70  0000 L BNN
-F 1 "BAS140" H 3410 8965 70  0000 L BNN
-F 2 "signal_processing:SOD2514X100N" H 3500 9100 50  0001 C CNN
-F 3 "" H 3500 9100 50  0001 C CNN
-	1    3500 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:BAS140 D7
+L Device:D_Schottky D7
 U 1 1 64AFC188
 P 4700 8400
 F 0 "D7" H 4510 8575 70  0000 L BNN
 F 1 "BAS140" H 4510 8465 70  0000 L BNN
-F 2 "signal_processing:SOD2514X100N" H 4700 8400 50  0001 C CNN
-F 3 "" H 4700 8400 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4700 8400 50  0001 C CNN
+F 3 "~" H 4700 8400 50  0001 C CNN
 	1    4700 8400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:BAS140 D6
-U 1 1 0CA8CD4D
-P 4200 8600
-F 0 "D6" H 4440 8575 70  0000 R TNN
-F 1 "BAS140" H 4440 8735 70  0000 R TNN
-F 2 "signal_processing:SOD2514X100N" H 4200 8600 50  0001 C CNN
-F 3 "" H 4200 8600 50  0001 C CNN
-	1    4200 8600
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:BAS140 D5
-U 1 1 73B70CE6
-P 3900 8600
-F 0 "D5" H 4040 8525 70  0000 R TNN
-F 1 "BAS140" H 4090 8735 70  0000 R TNN
-F 2 "signal_processing:SOD2514X100N" H 3900 8600 50  0001 C CNN
-F 3 "" H 3900 8600 50  0001 C CNN
-	1    3900 8600
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:BAS140 D1
+L Device:D_Schottky D1
 U 1 1 8D141E84
 P 2500 10600
 F 0 "D1" V 2425 10160 70  0000 L BNN
 F 1 "BAS140" V 2535 10160 70  0000 L BNN
-F 2 "signal_processing:SOD2514X100N" H 2500 10600 50  0001 C CNN
-F 3 "" H 2500 10600 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2500 10600 50  0001 C CNN
+F 3 "~" H 2500 10600 50  0001 C CNN
 	1    2500 10600
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R4
+L Device:R R4
 U 1 1 A2882DFC
 P 2800 10400
 F 0 "R4" H 2700 10459 59  0000 L BNN
 F 1 "100" H 2700 10270 59  0000 L BNN
-F 2 "signal_processing:R0603" H 2800 10400 50  0001 C CNN
-F 3 "" H 2800 10400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 10400 50  0001 C CNN
+F 3 "~" H 2800 10400 50  0001 C CNN
 	1    2800 10400
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:BAS140 D2
-U 1 1 20478EC3
-P 2700 10800
-F 0 "D2" H 2560 10675 70  0000 L BNN
-F 1 "BAS140" H 2560 10565 70  0000 L BNN
-F 2 "signal_processing:SOD2514X100N" H 2700 10800 50  0001 C CNN
-F 3 "" H 2700 10800 50  0001 C CNN
-	1    2700 10800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:BAS140 D3
+L Device:D_Schottky D3
 U 1 1 39967F7A
-P 3100 10800
-F 0 "D3" H 3010 10675 70  0000 L BNN
-F 1 "BAS140" H 3010 10565 70  0000 L BNN
-F 2 "signal_processing:SOD2514X100N" H 3100 10800 50  0001 C CNN
-F 3 "" H 3100 10800 50  0001 C CNN
-	1    3100 10800
-	1    0    0    -1  
+P 3200 10800
+F 0 "D3" H 3110 10675 70  0000 L BNN
+F 1 "BAS140" H 3110 10565 70  0000 L BNN
+F 2 "Diode_SMD:D_SOD-323" H 3200 10800 50  0001 C CNN
+F 3 "~" H 3200 10800 50  0001 C CNN
+	1    3200 10800
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R6
+L Device:R R6
 U 1 1 ACB3C639
 P 3200 10600
 F 0 "R6" H 3150 10659 59  0000 L BNN
 F 1 "100" H 3150 10470 59  0000 L BNN
-F 2 "signal_processing:R0603" H 3200 10600 50  0001 C CNN
-F 3 "" H 3200 10600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3200 10600 50  0001 C CNN
+F 3 "~" H 3200 10600 50  0001 C CNN
 	1    3200 10600
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C8
+L Device:C C8
 U 1 1 E495EDD8
-P 3500 11000
-F 0 "C8" H 3160 10815 59  0000 L BNN
-F 1 "1n/50V" H 3160 10715 59  0000 L BNN
-F 2 "signal_processing:C0603" H 3500 11000 50  0001 C CNN
-F 3 "" H 3500 11000 50  0001 C CNN
-	1    3500 11000
+P 3500 11050
+F 0 "C8" H 3160 10865 59  0000 L BNN
+F 1 "1n/50V" H 3160 10765 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 11050 50  0001 C CNN
+F 3 "~" H 3500 11050 50  0001 C CNN
+	1    3500 11050
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R9
+L Device:R R9
 U 1 1 783C991F
 P 3500 11500
 F 0 "R9" V 3509 11750 59  0000 R TNN
 F 1 "22" V 3420 11700 59  0000 R TNN
-F 2 "signal_processing:R0603" H 3500 11500 50  0001 C CNN
-F 3 "" H 3500 11500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 11500 50  0001 C CNN
+F 3 "~" H 3500 11500 50  0001 C CNN
 	1    3500 11500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND012
-U 1 1 A5F18D96
-P 3500 11900
-F 0 "#GND012" H 3500 11900 50  0001 C CNN
-F 1 "GND" H 3400 11800 59  0000 L BNN
-F 2 "" H 3500 11900 50  0001 C CNN
-F 3 "" H 3500 11900 50  0001 C CNN
-	1    3500 11900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND013
-U 1 1 9E3D6951
-P 3700 11900
-F 0 "#GND013" H 3700 11900 50  0001 C CNN
-F 1 "GND" H 3600 11800 59  0000 L BNN
-F 2 "" H 3700 11900 50  0001 C CNN
-F 3 "" H 3700 11900 50  0001 C CNN
-	1    3700 11900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R10
+L Device:R R10
 U 1 1 305250D9
 P 3700 11500
 F 0 "R10" V 3709 11450 59  0000 R TNN
 F 1 "100" V 3620 11450 59  0000 R TNN
-F 2 "signal_processing:R0603" H 3700 11500 50  0001 C CNN
-F 3 "" H 3700 11500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3700 11500 50  0001 C CNN
+F 3 "~" H 3700 11500 50  0001 C CNN
 	1    3700 11500
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC4
+L semiconductor_radiation_detector:AD8066 IC4
 U 1 1 BF800D69
 P 8300 9100
 F 0 "IC4" H 8350 9250 59  0000 L BNN
 F 1 "AD8066" H 8350 9350 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 8300 9100 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8300 9100 50  0001 C CNN
 F 3 "" H 8300 9100 50  0001 C CNN
 	1    8300 9100
 	1    0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC4
+L semiconductor_radiation_detector:AD8066 IC4
 U 2 1 BF800D65
 P 10100 10100
 F 0 "IC4" H 10250 10250 59  0000 L BNN
 F 1 "AD8066" H 10250 10350 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 10100 10100 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 10100 10100 50  0001 C CNN
 F 3 "" H 10100 10100 50  0001 C CNN
 	2    10100 10100
 	1    0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC4
+L semiconductor_radiation_detector:AD8066 IC4
 U 3 1 BF800D61
 P 8700 2900
 F 0 "IC4" V 8650 2800 59  0000 L BNN
 F 1 "AD8066" V 8800 2750 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 8700 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8700 2900 50  0001 C CNN
 F 3 "" H 8700 2900 50  0001 C CNN
 	3    8700 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R26
+L Device:R R26
 U 1 1 BB6FCBA0
 P 7700 9000
 F 0 "R26" H 7600 9059 59  0000 L BNN
 F 1 "1k" H 7600 8870 59  0000 L BNN
-F 2 "signal_processing:R0603" H 7700 9000 50  0001 C CNN
-F 3 "" H 7700 9000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 9000 50  0001 C CNN
+F 3 "~" H 7700 9000 50  0001 C CNN
 	1    7700 9000
-	1    0    0    -1  
+	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C26
+L Device:C C26
 U 1 1 04EF1578
-P 7300 9000
-F 0 "C26" V 7485 8860 59  0000 L BNN
-F 1 "100n/50V" V 7585 8860 59  0000 L BNN
-F 2 "signal_processing:C0603" H 7300 9000 50  0001 C CNN
-F 3 "" H 7300 9000 50  0001 C CNN
-	1    7300 9000
+P 7250 9000
+F 0 "C26" V 7435 8860 59  0000 L BNN
+F 1 "100n/50V" V 7535 8860 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7250 9000 50  0001 C CNN
+F 3 "~" H 7250 9000 50  0001 C CNN
+	1    7250 9000
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R31
+L Device:R R31
 U 1 1 5AEF6CA1
 P 8400 8700
 F 0 "R31" H 8300 8759 59  0000 L BNN
 F 1 "1k" H 8300 8570 59  0000 L BNN
-F 2 "signal_processing:R0603" H 8400 8700 50  0001 C CNN
-F 3 "" H 8400 8700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 8700 50  0001 C CNN
+F 3 "~" H 8400 8700 50  0001 C CNN
 	1    8400 8700
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R30
+L Device:R R30
 U 1 1 3BB257A6
 P 8000 9500
 F 0 "R30" V 8091 9550 59  0000 L BNN
 F 1 "100" V 7980 9550 59  0000 L BNN
-F 2 "signal_processing:R0603" H 8000 9500 50  0001 C CNN
-F 3 "" H 8000 9500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 9500 50  0001 C CNN
+F 3 "~" H 8000 9500 50  0001 C CNN
 	1    8000 9500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND032
-U 1 1 BDD76BF8
-P 8000 9900
-F 0 "#GND032" H 8000 9900 50  0001 C CNN
-F 1 "GND" H 7900 9800 59  0000 L BNN
-F 2 "" H 8000 9900 50  0001 C CNN
-F 3 "" H 8000 9900 50  0001 C CNN
-	1    8000 9900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R35
+L Device:R R35
 U 1 1 589838D7
 P 9100 10000
 F 0 "R35" H 9000 10059 59  0000 L BNN
 F 1 "1" H 9100 9930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 9100 10000 50  0001 C CNN
-F 3 "" H 9100 10000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 10000 50  0001 C CNN
+F 3 "~" H 9100 10000 50  0001 C CNN
 	1    9100 10000
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C38
+L Device:C C38
 U 1 1 1A045C94
-P 9600 10000
-F 0 "C38" V 9485 9860 59  0000 L BNN
-F 1 "470p/50V" V 9785 9760 59  0000 L BNN
-F 2 "signal_processing:C0603" H 9600 10000 50  0001 C CNN
-F 3 "" H 9600 10000 50  0001 C CNN
-	1    9600 10000
+P 9550 10000
+F 0 "C38" V 9435 9860 59  0000 L BNN
+F 1 "470p/50V" V 9735 9760 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9550 10000 50  0001 C CNN
+F 3 "~" H 9550 10000 50  0001 C CNN
+	1    9550 10000
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C45
+L Device:C C45
 U 1 1 50FFE4AE
-P 10300 9600
-F 0 "C45" V 10085 9410 59  0000 L BNN
-F 1 "1p/50V" V 10185 9410 59  0000 L BNN
-F 2 "signal_processing:C0603" H 10300 9600 50  0001 C CNN
-F 3 "" H 10300 9600 50  0001 C CNN
-	1    10300 9600
+P 10250 9600
+F 0 "C45" V 10035 9410 59  0000 L BNN
+F 1 "1p/50V" V 10135 9410 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10250 9600 50  0001 C CNN
+F 3 "~" H 10250 9600 50  0001 C CNN
+	1    10250 9600
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R42
+L Device:R R42
 U 1 1 68EF9633
 P 10200 9800
 F 0 "R42" H 10500 9891 59  0000 R TNN
 F 1 "470k" H 10550 9780 59  0000 R TNN
-F 2 "signal_processing:R0603" H 10200 9800 50  0001 C CNN
-F 3 "" H 10200 9800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10200 9800 50  0001 C CNN
+F 3 "~" H 10200 9800 50  0001 C CNN
 	1    10200 9800
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R38
+L Device:R R38
 U 1 1 32030C9E
 P 9800 10500
 F 0 "R38" V 9809 10450 59  0000 R TNN
 F 1 "100" V 9720 10450 59  0000 R TNN
-F 2 "signal_processing:R0603" H 9800 10500 50  0001 C CNN
-F 3 "" H 9800 10500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9800 10500 50  0001 C CNN
+F 3 "~" H 9800 10500 50  0001 C CNN
 	1    9800 10500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND037
-U 1 1 7CFE796D
-P 9800 10900
-F 0 "#GND037" H 9800 10900 50  0001 C CNN
-F 1 "GND" H 9700 10800 59  0000 L BNN
-F 2 "" H 9800 10900 50  0001 C CNN
-F 3 "" H 9800 10900 50  0001 C CNN
-	1    9800 10900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:ADG701BRTZN IC2
+L semiconductor_radiation_detector:ADG701 U1
 U 1 1 541775CA
-P 4000 11100
-F 0 "IC2" H 3950 11250 59  0000 R TNN
-F 1 "ADG701BRTZN" H 3950 11350 59  0000 R TNN
-F 2 "signal_processing:SOT23-6" H 4000 11100 50  0001 C CNN
-F 3 "" H 4000 11100 50  0001 C CNN
-	1    4000 11100
+P 4000 11150
+F 0 "U1" H 4050 11400 59  0000 R TNN
+F 1 "ADG701" H 4000 11500 59  0000 R TNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4000 11150 50  0001 C CNN
+F 3 "" H 4000 11150 50  0001 C CNN
+	1    4000 11150
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:ADG701BRTZN IC2
+L semiconductor_radiation_detector:ADG701 IC2
 U 2 1 541775C6
 P 9400 2900
 F 0 "IC2" V 9350 2800 59  0000 L BNN
 F 1 "ADG701BRTZN" V 9500 2550 59  0000 L BNN
-F 2 "signal_processing:SOT23-6" H 9400 2900 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9400 2900 50  0001 C CNN
 F 3 "" H 9400 2900 50  0001 C CNN
 	2    9400 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC6
+L semiconductor_radiation_detector:LT1713 IC6
 U 1 1 6A4BA564
 P 12400 10500
 F 0 "IC6" H 12350 10850 59  0001 L BNN
 F 1 "LT1713" H 12350 10750 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 12400 10500 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 12400 10500 50  0001 C CNN
 F 3 "" H 12400 10500 50  0001 C CNN
 	1    12400 10500
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC6
+L semiconductor_radiation_detector:LT1713 IC6
 U 2 1 6A4BA568
 P 10200 2900
 F 0 "IC6" V 10150 2450 59  0001 L BNN
 F 1 "LT1713" V 10300 2450 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 10200 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 10200 2900 50  0001 C CNN
 F 3 "" H 10200 2900 50  0001 C CNN
 	2    10200 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC6
+L semiconductor_radiation_detector:LT1713 IC6
 U 3 1 6A4BA56C
 P 10100 2900
 F 0 "IC6" H 10150 3050 59  0001 L BNN
 F 1 "LT1713" H 10150 2700 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 10100 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 10100 2900 50  0001 C CNN
 F 3 "" H 10100 2900 50  0001 C CNN
 	3    10100 2900
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND046
-U 1 1 D2AB3227
-P 12400 11100
-F 0 "#GND046" H 12400 11100 50  0001 C CNN
-F 1 "GND" H 12300 11000 59  0000 L BNN
-F 2 "" H 12400 11100 50  0001 C CNN
-F 3 "" H 12400 11100 50  0001 C CNN
-	1    12400 11100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R57
+L Device:R R57
 U 1 1 B398B834
 P 12400 10900
 F 0 "R57" H 12400 10959 59  0000 L BNN
 F 1 "22k" H 12400 10770 59  0000 L BNN
-F 2 "signal_processing:R0603" H 12400 10900 50  0001 C CNN
-F 3 "" H 12400 10900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12400 10900 50  0001 C CNN
+F 3 "~" H 12400 10900 50  0001 C CNN
 	1    12400 10900
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R52
+L Device:R R52
 U 1 1 641A5C71
 P 11800 10900
 F 0 "R52" H 11700 10959 59  0000 L BNN
 F 1 "1k" H 11750 10770 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11800 10900 50  0001 C CNN
-F 3 "" H 11800 10900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11800 10900 50  0001 C CNN
+F 3 "~" H 11800 10900 50  0001 C CNN
 	1    11800 10900
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R50
+L Device:R R50
 U 1 1 D57088B1
-P 11400 11200
-F 0 "R50" V 11391 11250 59  0000 L BNN
-F 1 "2,2k" V 11480 11250 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11400 11200 50  0001 C CNN
-F 3 "" H 11400 11200 50  0001 C CNN
-	1    11400 11200
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R49
-U 1 1 558C5EBC
-P 11400 10600
-F 0 "R49" H 11500 10541 59  0000 R TNN
-F 1 "3,3k" H 11500 10730 59  0000 R TNN
-F 2 "signal_processing:R0603" H 11400 10600 50  0001 C CNN
-F 3 "" H 11400 10600 50  0001 C CNN
-	1    11400 10600
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C51
-U 1 1 18FDC541
-P 11000 11200
-F 0 "C51" V 10985 10910 59  0000 L BNN
-F 1 "100n/50V" V 10915 11640 59  0000 R TNN
-F 2 "signal_processing:C0603" H 11000 11200 50  0001 C CNN
-F 3 "" H 11000 11200 50  0001 C CNN
-	1    11000 11200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-022
-U 1 1 10175FE7
-P 11200 11600
-F 0 "#P-022" H 11200 11600 50  0001 C CNN
-F 1 "-5V" V 11100 11500 59  0000 L BNN
-F 2 "" H 11200 11600 50  0001 C CNN
-F 3 "" H 11200 11600 50  0001 C CNN
-	1    11200 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-024
-U 1 1 B1C7D277
-P 11400 11600
-F 0 "#P-024" H 11400 11600 50  0001 C CNN
-F 1 "-5V" V 11300 11500 59  0000 L BNN
-F 2 "" H 11400 11600 50  0001 C CNN
-F 3 "" H 11400 11600 50  0001 C CNN
-	1    11400 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-019
-U 1 1 B926DEEE
-P 11000 11600
-F 0 "#P-019" H 11000 11600 50  0001 C CNN
-F 1 "-5V" V 10900 11500 59  0000 L BNN
-F 2 "" H 11000 11600 50  0001 C CNN
-F 3 "" H 11000 11600 50  0001 C CNN
-	1    11000 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND041
-U 1 1 D9BFE6C2
-P 11400 10200
-F 0 "#GND041" H 11400 10200 50  0001 C CNN
-F 1 "GND" H 11300 10100 59  0000 L BNN
-F 2 "" H 11400 10200 50  0001 C CNN
-F 3 "" H 11400 10200 50  0001 C CNN
-	1    11400 10200
+P 11000 11275
+F 0 "R50" V 10991 11325 59  0000 L BNN
+F 1 "2,2k" V 11080 11325 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11000 11275 50  0001 C CNN
+F 3 "~" H 11000 11275 50  0001 C CNN
+	1    11000 11275
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R55
+L Device:R R49
+U 1 1 558C5EBC
+P 11000 10525
+F 0 "R49" H 11100 10466 59  0000 R TNN
+F 1 "3,3k" H 11100 10655 59  0000 R TNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11000 10525 50  0001 C CNN
+F 3 "~" H 11000 10525 50  0001 C CNN
+	1    11000 10525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 18FDC541
+P 11275 11275
+F 0 "C51" V 11260 10985 59  0000 L BNN
+F 1 "100n/50V" V 11190 11715 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11275 11275 50  0001 C CNN
+F 3 "~" H 11275 11275 50  0001 C CNN
+	1    11275 11275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R55
 U 1 1 417BAB79
 P 11900 10400
 F 0 "R55" H 11800 10459 59  0000 L BNN
 F 1 "100" H 11800 10270 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11900 10400 50  0001 C CNN
-F 3 "" H 11900 10400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11900 10400 50  0001 C CNN
+F 3 "~" H 11900 10400 50  0001 C CNN
 	1    11900 10400
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC5
+L semiconductor_radiation_detector:LT1713 IC5
 U 1 1 E57833A7
-P 12400 9200
-F 0 "IC5" H 12550 8950 59  0001 L BNN
-F 1 "LT1713" H 12550 8850 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 12400 9200 50  0001 C CNN
-F 3 "" H 12400 9200 50  0001 C CNN
-	1    12400 9200
+P 12475 9200
+F 0 "IC5" H 12625 8950 59  0001 L BNN
+F 1 "LT1713" H 12625 8850 59  0001 L BNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 12475 9200 50  0001 C CNN
+F 3 "" H 12475 9200 50  0001 C CNN
+	1    12475 9200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC5
+L semiconductor_radiation_detector:LT1713 IC5
 U 3 1 E57833AF
 P 11000 2900
 F 0 "IC5" H 11050 3050 59  0001 L BNN
 F 1 "LT1713" H 11050 2700 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 11000 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 11000 2900 50  0001 C CNN
 F 3 "" H 11000 2900 50  0001 C CNN
 	3    11000 2900
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:LT1713 IC5
+L semiconductor_radiation_detector:LT1713 IC5
 U 2 1 E57833AB
 P 11100 2900
 F 0 "IC5" V 11050 2450 59  0001 L BNN
 F 1 "LT1713" V 11200 2450 59  0001 L BNN
-F 2 "signal_processing:MSOP8" H 11100 2900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 11100 2900 50  0001 C CNN
 F 3 "" H 11100 2900 50  0001 C CNN
 	2    11100 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R54
-U 1 1 D87EE8BE
-P 11900 9300
-F 0 "R54" H 11800 9359 59  0000 L BNN
-F 1 "100" H 11800 9170 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11900 9300 50  0001 C CNN
-F 3 "" H 11900 9300 50  0001 C CNN
-	1    11900 9300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R53
+L Device:R R53
 U 1 1 696C7AD7
-P 11900 8800
-F 0 "R53" H 11800 8859 59  0000 L BNN
-F 1 "520" H 11800 8670 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11900 8800 50  0001 C CNN
-F 3 "" H 11900 8800 50  0001 C CNN
-	1    11900 8800
-	1    0    0    -1  
+P 11975 8800
+F 0 "R53" H 11875 8859 59  0000 L BNN
+F 1 "520" H 11875 8670 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11975 8800 50  0001 C CNN
+F 3 "~" H 11975 8800 50  0001 C CNN
+	1    11975 8800
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R58
+L Device:R R58
 U 1 1 2244B3A6
-P 12500 8800
-F 0 "R58" H 12400 8859 59  0000 L BNN
-F 1 "100k" H 12400 8670 59  0000 L BNN
-F 2 "signal_processing:R0603" H 12500 8800 50  0001 C CNN
-F 3 "" H 12500 8800 50  0001 C CNN
-	1    12500 8800
-	1    0    0    -1  
+P 12575 8800
+F 0 "R58" H 12475 8859 59  0000 L BNN
+F 1 "100k" H 12475 8670 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12575 8800 50  0001 C CNN
+F 3 "~" H 12575 8800 50  0001 C CNN
+	1    12575 8800
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND045
-U 1 1 9E0B3A99
-P 12400 9600
-F 0 "#GND045" H 12400 9600 50  0001 C CNN
-F 1 "GND" H 12300 9500 59  0000 L BNN
-F 2 "" H 12400 9600 50  0001 C CNN
-F 3 "" H 12400 9600 50  0001 C CNN
-	1    12400 9600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R48
+L Device:R R48
 U 1 1 6B01623F
-P 11400 9100
-F 0 "R48" V 11291 9150 59  0000 L BNN
-F 1 "1" V 11380 9150 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11400 9100 50  0001 C CNN
-F 3 "" H 11400 9100 50  0001 C CNN
-	1    11400 9100
-	0    1    1    0   
+P 11150 9175
+F 0 "R48" V 11041 9225 59  0000 L BNN
+F 1 "1" V 11130 9225 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11150 9175 50  0001 C CNN
+F 3 "~" H 11150 9175 50  0001 C CNN
+	1    11150 9175
+	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R47
+L Device:R R47
 U 1 1 E19D9C61
-P 11400 8500
-F 0 "R47" V 11391 8550 59  0000 L BNN
-F 1 "1k" V 11480 8550 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11400 8500 50  0001 C CNN
-F 3 "" H 11400 8500 50  0001 C CNN
-	1    11400 8500
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C50
-U 1 1 2C927A83
-P 11000 9100
-F 0 "C50" V 10885 9110 59  0000 L BNN
-F 1 "100n/50V" V 10915 9540 59  0000 R TNN
-F 2 "signal_processing:C0603" H 11000 9100 50  0001 C CNN
-F 3 "" H 11000 9100 50  0001 C CNN
-	1    11000 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-021
-U 1 1 63AF3D9D
-P 11200 9500
-F 0 "#P-021" H 11200 9500 50  0001 C CNN
-F 1 "-5V" V 11100 9400 59  0000 L BNN
-F 2 "" H 11200 9500 50  0001 C CNN
-F 3 "" H 11200 9500 50  0001 C CNN
-	1    11200 9500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-023
-U 1 1 3E43870C
-P 11400 9500
-F 0 "#P-023" H 11400 9500 50  0001 C CNN
-F 1 "-5V" V 11300 9400 59  0000 L BNN
-F 2 "" H 11400 9500 50  0001 C CNN
-F 3 "" H 11400 9500 50  0001 C CNN
-	1    11400 9500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-018
-U 1 1 A65161A7
-P 11000 9500
-F 0 "#P-018" H 11000 9500 50  0001 C CNN
-F 1 "-5V" V 10900 9400 59  0000 L BNN
-F 2 "" H 11000 9500 50  0001 C CNN
-F 3 "" H 11000 9500 50  0001 C CNN
-	1    11000 9500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND040
-U 1 1 E4BD4CA6
-P 11400 8100
-F 0 "#GND040" H 11400 8100 50  0001 C CNN
-F 1 "GND" H 11500 8050 59  0000 R TNN
-F 2 "" H 11400 8100 50  0001 C CNN
-F 3 "" H 11400 8100 50  0001 C CNN
-	1    11400 8100
+P 11150 8425
+F 0 "R47" V 11141 8475 59  0000 L BNN
+F 1 "1k" V 11230 8475 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11150 8425 50  0001 C CNN
+F 3 "~" H 11150 8425 50  0001 C CNN
+	1    11150 8425
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND048
-U 1 1 6421A367
-P 13100 3500
-F 0 "#GND048" H 13100 3500 50  0001 C CNN
-F 1 "GND" H 13000 3400 59  0000 L BNN
-F 2 "" H 13100 3500 50  0001 C CNN
-F 3 "" H 13100 3500 50  0001 C CNN
-	1    13100 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C27
+L Device:C C27
 U 1 1 060F2AE1
-P 7600 2650
-F 0 "C27" V 7715 2490 59  0000 R TNN
-F 1 "100n/50V" V 7615 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 7600 2650 50  0001 C CNN
-F 3 "" H 7600 2650 50  0001 C CNN
-	1    7600 2650
+P 7600 2600
+F 0 "C27" V 7715 2440 59  0000 R TNN
+F 1 "100n/50V" V 7615 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7600 2600 50  0001 C CNN
+F 3 "~" H 7600 2600 50  0001 C CNN
+	1    7600 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-015
-U 1 1 D5A771A6
-P 8000 4200
-F 0 "#P-015" H 8000 4200 50  0001 C CNN
-F 1 "-5V" V 7900 4100 59  0000 L BNN
-F 2 "" H 8000 4200 50  0001 C CNN
-F 3 "" H 8000 4200 50  0001 C CNN
-	1    8000 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+011
-U 1 1 FBD5C941
-P 8000 1600
-F 0 "#P+011" H 8000 1600 50  0001 C CNN
-F 1 "+5V" V 7900 1650 59  0000 L BNN
-F 2 "" H 8000 1600 50  0001 C CNN
-F 3 "" H 8000 1600 50  0001 C CNN
-	1    8000 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C30
+L Device:CP C30
 U 1 1 A8179C02
-P 7800 2550
-F 0 "C30" V 7731 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 7831 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 7800 2550 50  0001 C CNN
-F 3 "" H 7800 2550 50  0001 C CNN
-	1    7800 2550
+P 7800 2600
+F 0 "C30" V 7731 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 7831 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7800 2600 50  0001 C CNN
+F 3 "~" H 7800 2600 50  0001 C CNN
+	1    7800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R28
-U 1 1 FD2B2D54
-P 8000 2000
-F 0 "R28" H 8100 1941 59  0000 R TNN
-F 1 "1" H 8050 2130 59  0000 R TNN
-F 2 "signal_processing:R0603" H 8000 2000 50  0001 C CNN
-F 3 "" H 8000 2000 50  0001 C CNN
-	1    8000 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R29
-U 1 1 42B5D82A
-P 8000 3800
-F 0 "R29" H 8300 3741 59  0000 R TNN
-F 1 "1" H 8250 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 8000 3800 50  0001 C CNN
-F 3 "" H 8000 3800 50  0001 C CNN
-	1    8000 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C28
-U 1 1 351D94A7
-P 7600 3250
-F 0 "C28" V 7715 3790 59  0000 R TNN
-F 1 "100n/50V" V 7615 3790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 7600 3250 50  0001 C CNN
-F 3 "" H 7600 3250 50  0001 C CNN
-	1    7600 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C31
+L Device:CP C31
 U 1 1 00D7E2E8
-P 7800 3150
-F 0 "C31" V 7731 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 7831 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 7800 3150 50  0001 C CNN
-F 3 "" H 7800 3150 50  0001 C CNN
-	1    7800 3150
+P 7800 3200
+F 0 "C31" V 7731 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 7831 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 7800 3200 50  0001 C CNN
+F 3 "~" H 7800 3200 50  0001 C CNN
+	1    7800 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND030
-U 1 1 E66C1352
-P 7500 3100
-F 0 "#GND030" H 7500 3100 50  0001 C CNN
-F 1 "GND" V 7500 2850 59  0000 L BNN
-F 2 "" H 7500 3100 50  0001 C CNN
-F 3 "" H 7500 3100 50  0001 C CNN
-	1    7500 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C32
+L Device:C C32
 U 1 1 99599FD9
-P 8300 2650
-F 0 "C32" V 8415 2490 59  0000 R TNN
-F 1 "100n/50V" V 8315 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 8300 2650 50  0001 C CNN
-F 3 "" H 8300 2650 50  0001 C CNN
-	1    8300 2650
+P 8300 2600
+F 0 "C32" V 8415 2440 59  0000 R TNN
+F 1 "100n/50V" V 8315 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 2600 50  0001 C CNN
+F 3 "~" H 8300 2600 50  0001 C CNN
+	1    8300 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-016
-U 1 1 55822F65
-P 8700 4200
-F 0 "#P-016" H 8700 4200 50  0001 C CNN
-F 1 "-5V" V 8600 4100 59  0000 L BNN
-F 2 "" H 8700 4200 50  0001 C CNN
-F 3 "" H 8700 4200 50  0001 C CNN
-	1    8700 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+012
-U 1 1 E517971B
-P 8700 1600
-F 0 "#P+012" H 8700 1600 50  0001 C CNN
-F 1 "+5V" V 8600 1650 59  0000 L BNN
-F 2 "" H 8700 1600 50  0001 C CNN
-F 3 "" H 8700 1600 50  0001 C CNN
-	1    8700 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C34
+L Device:CP C34
 U 1 1 03D57926
-P 8500 2550
-F 0 "C34" V 8431 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 8531 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 8500 2550 50  0001 C CNN
-F 3 "" H 8500 2550 50  0001 C CNN
-	1    8500 2550
+P 8500 2600
+F 0 "C34" V 8431 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 8531 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8500 2600 50  0001 C CNN
+F 3 "~" H 8500 2600 50  0001 C CNN
+	1    8500 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R32
-U 1 1 C8BF4F83
-P 8700 2000
-F 0 "R32" H 8800 1941 59  0000 R TNN
-F 1 "1" H 8750 2130 59  0000 R TNN
-F 2 "signal_processing:R0603" H 8700 2000 50  0001 C CNN
-F 3 "" H 8700 2000 50  0001 C CNN
-	1    8700 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R33
-U 1 1 1D25217E
-P 8700 3800
-F 0 "R33" H 9000 3741 59  0000 R TNN
-F 1 "1" H 8950 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 8700 3800 50  0001 C CNN
-F 3 "" H 8700 3800 50  0001 C CNN
-	1    8700 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C33
+L Device:C C33
 U 1 1 8A4D2404
-P 8300 3250
-F 0 "C33" V 8415 3790 59  0000 R TNN
-F 1 "100n/50V" V 8315 3790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 8300 3250 50  0001 C CNN
-F 3 "" H 8300 3250 50  0001 C CNN
-	1    8300 3250
+P 8300 3200
+F 0 "C33" V 8415 3740 59  0000 R TNN
+F 1 "100n/50V" V 8315 3740 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 3200 50  0001 C CNN
+F 3 "~" H 8300 3200 50  0001 C CNN
+	1    8300 3200
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C35
+L Device:CP C35
 U 1 1 9DFAE29E
-P 8500 3150
-F 0 "C35" V 8431 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 8531 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 8500 3150 50  0001 C CNN
-F 3 "" H 8500 3150 50  0001 C CNN
-	1    8500 3150
+P 8500 3200
+F 0 "C35" V 8431 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 8531 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8500 3200 50  0001 C CNN
+F 3 "~" H 8500 3200 50  0001 C CNN
+	1    8500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND033
-U 1 1 8D923520
-P 8200 3100
-F 0 "#GND033" H 8200 3100 50  0001 C CNN
-F 1 "GND" V 8200 2850 59  0000 L BNN
-F 2 "" H 8200 3100 50  0001 C CNN
-F 3 "" H 8200 3100 50  0001 C CNN
-	1    8200 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C36
+L Device:C C36
 U 1 1 E49EA012
-P 9000 2950
-F 0 "C36" V 9015 3190 59  0000 R TNN
-F 1 "100n/50V" V 9015 2790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 9000 2950 50  0001 C CNN
-F 3 "" H 9000 2950 50  0001 C CNN
-	1    9000 2950
+P 9000 2900
+F 0 "C36" V 9015 3140 59  0000 R TNN
+F 1 "100n/50V" V 9015 2740 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 2900 50  0001 C CNN
+F 3 "~" H 9000 2900 50  0001 C CNN
+	1    9000 2900
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND034
-U 1 1 0FD0C583
-P 9400 3500
-F 0 "#GND034" H 9400 3500 50  0001 C CNN
-F 1 "GND" H 9300 3400 59  0000 L BNN
-F 2 "" H 9400 3500 50  0001 C CNN
-F 3 "" H 9400 3500 50  0001 C CNN
-	1    9400 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+013
-U 1 1 9B33CC1C
-P 9400 1800
-F 0 "#P+013" H 9400 1800 50  0001 C CNN
-F 1 "+5V" V 9300 1850 59  0000 L BNN
-F 2 "" H 9400 1800 50  0001 C CNN
-F 3 "" H 9400 1800 50  0001 C CNN
-	1    9400 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C37
+L Device:CP C37
 U 1 1 CA8520D1
-P 9200 2850
-F 0 "C37" V 9131 2545 59  0000 L BNN
-F 1 "4,7u/6V" V 9131 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 9200 2850 50  0001 C CNN
-F 3 "" H 9200 2850 50  0001 C CNN
-	1    9200 2850
+P 9200 2900
+F 0 "C37" V 9131 2595 59  0000 L BNN
+F 1 "4,7u/6V" V 9131 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 9200 2900 50  0001 C CNN
+F 3 "~" H 9200 2900 50  0001 C CNN
+	1    9200 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R36
-U 1 1 C6129353
-P 9400 2200
-F 0 "R36" H 9500 2141 59  0000 R TNN
-F 1 "1" H 9450 2330 59  0000 R TNN
-F 2 "signal_processing:R0603" H 9400 2200 50  0001 C CNN
-F 3 "" H 9400 2200 50  0001 C CNN
-	1    9400 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C39
+L Device:C C39
 U 1 1 15481E43
-P 9700 2650
-F 0 "C39" V 9815 2490 59  0000 R TNN
-F 1 "100n/50V" V 9715 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 9700 2650 50  0001 C CNN
-F 3 "" H 9700 2650 50  0001 C CNN
-	1    9700 2650
+P 9700 2600
+F 0 "C39" V 9815 2440 59  0000 R TNN
+F 1 "100n/50V" V 9715 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9700 2600 50  0001 C CNN
+F 3 "~" H 9700 2600 50  0001 C CNN
+	1    9700 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-017
-U 1 1 2AED1B62
-P 10200 4200
-F 0 "#P-017" H 10200 4200 50  0001 C CNN
-F 1 "-5V" V 10100 4100 59  0000 L BNN
-F 2 "" H 10200 4200 50  0001 C CNN
-F 3 "" H 10200 4200 50  0001 C CNN
-	1    10200 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+014
-U 1 1 A9B0ECED
-P 10200 1600
-F 0 "#P+014" H 10200 1600 50  0001 C CNN
-F 1 "+5V" V 10100 1650 59  0000 L BNN
-F 2 "" H 10200 1600 50  0001 C CNN
-F 3 "" H 10200 1600 50  0001 C CNN
-	1    10200 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C42
+L Device:CP C42
 U 1 1 5A4F9F29
-P 9900 2550
-F 0 "C42" V 9831 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 9931 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 9900 2550 50  0001 C CNN
-F 3 "" H 9900 2550 50  0001 C CNN
-	1    9900 2550
+P 9900 2600
+F 0 "C42" V 9831 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 9931 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 9900 2600 50  0001 C CNN
+F 3 "~" H 9900 2600 50  0001 C CNN
+	1    9900 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R40
-U 1 1 F67CEB8C
-P 10200 2000
-F 0 "R40" H 10400 1941 59  0000 R TNN
-F 1 "1" H 10150 1930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 10200 2000 50  0001 C CNN
-F 3 "" H 10200 2000 50  0001 C CNN
-	1    10200 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R41
-U 1 1 C4B206CD
-P 10200 3800
-F 0 "R41" H 10500 3741 59  0000 R TNN
-F 1 "1" H 10450 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 10200 3800 50  0001 C CNN
-F 3 "" H 10200 3800 50  0001 C CNN
-	1    10200 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C40
-U 1 1 61A0A8FA
-P 9700 3250
-F 0 "C40" V 9715 3940 59  0000 R TNN
-F 1 "100n/50V" V 9615 3940 59  0000 R TNN
-F 2 "signal_processing:C0603" H 9700 3250 50  0001 C CNN
-F 3 "" H 9700 3250 50  0001 C CNN
-	1    9700 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C43
+L Device:CP C43
 U 1 1 2F9A7035
-P 9900 3150
-F 0 "C43" V 9931 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 10031 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 9900 3150 50  0001 C CNN
-F 3 "" H 9900 3150 50  0001 C CNN
-	1    9900 3150
+P 9900 3200
+F 0 "C43" V 9931 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 10031 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 9900 3200 50  0001 C CNN
+F 3 "~" H 9900 3200 50  0001 C CNN
+	1    9900 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND035
-U 1 1 CF03C53C
-P 9600 3100
-F 0 "#GND035" H 9600 3100 50  0001 C CNN
-F 1 "GND" V 9600 2850 59  0000 L BNN
-F 2 "" H 9600 3100 50  0001 C CNN
-F 3 "" H 9600 3100 50  0001 C CNN
-	1    9600 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C46
+L Device:C C46
 U 1 1 33D487C3
-P 10600 2650
-F 0 "C46" V 10715 2490 59  0000 R TNN
-F 1 "100n/50V" V 10615 2490 59  0000 R TNN
-F 2 "signal_processing:C0603" H 10600 2650 50  0001 C CNN
-F 3 "" H 10600 2650 50  0001 C CNN
-	1    10600 2650
+P 10600 2600
+F 0 "C46" V 10715 2440 59  0000 R TNN
+F 1 "100n/50V" V 10615 2440 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10600 2600 50  0001 C CNN
+F 3 "~" H 10600 2600 50  0001 C CNN
+	1    10600 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-020
-U 1 1 54DC06BC
-P 11100 4200
-F 0 "#P-020" H 11100 4200 50  0001 C CNN
-F 1 "-5V" V 11000 4100 59  0000 L BNN
-F 2 "" H 11100 4200 50  0001 C CNN
-F 3 "" H 11100 4200 50  0001 C CNN
-	1    11100 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+015
-U 1 1 E802E752
-P 11100 1600
-F 0 "#P+015" H 11100 1600 50  0001 C CNN
-F 1 "+5V" V 11000 1650 59  0000 L BNN
-F 2 "" H 11100 1600 50  0001 C CNN
-F 3 "" H 11100 1600 50  0001 C CNN
-	1    11100 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C48
+L Device:CP C48
 U 1 1 AC9C1EC3
-P 10800 2550
-F 0 "C48" V 10731 2845 59  0000 L BNN
-F 1 "4,7u/6V" V 10831 2845 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 10800 2550 50  0001 C CNN
-F 3 "" H 10800 2550 50  0001 C CNN
-	1    10800 2550
+P 10800 2600
+F 0 "C48" V 10731 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 10831 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 10800 2600 50  0001 C CNN
+F 3 "~" H 10800 2600 50  0001 C CNN
+	1    10800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R44
-U 1 1 82A0EB73
-P 11100 2000
-F 0 "R44" H 11300 1941 59  0000 R TNN
-F 1 "1" H 11050 1930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 11100 2000 50  0001 C CNN
-F 3 "" H 11100 2000 50  0001 C CNN
-	1    11100 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R45
-U 1 1 04E19614
-P 11100 3800
-F 0 "R45" H 11400 3741 59  0000 R TNN
-F 1 "1" H 11350 3930 59  0000 R TNN
-F 2 "signal_processing:R0603" H 11100 3800 50  0001 C CNN
-F 3 "" H 11100 3800 50  0001 C CNN
-	1    11100 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C47
+L Device:C C47
 U 1 1 312B5ADA
-P 10600 3250
-F 0 "C47" V 10615 3940 59  0000 R TNN
-F 1 "100n/50V" V 10515 3940 59  0000 R TNN
-F 2 "signal_processing:C0603" H 10600 3250 50  0001 C CNN
-F 3 "" H 10600 3250 50  0001 C CNN
-	1    10600 3250
+P 10600 3200
+F 0 "C47" V 10615 3890 59  0000 R TNN
+F 1 "100n/50V" V 10515 3890 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10600 3200 50  0001 C CNN
+F 3 "~" H 10600 3200 50  0001 C CNN
+	1    10600 3200
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C49
+L Device:CP C49
 U 1 1 407095BF
-P 10800 3150
-F 0 "C49" V 10831 2445 59  0000 L BNN
-F 1 "4,7u/6V" V 10931 2445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 10800 3150 50  0001 C CNN
-F 3 "" H 10800 3150 50  0001 C CNN
-	1    10800 3150
+P 10800 3200
+F 0 "C49" V 10831 2495 59  0000 L BNN
+F 1 "4,7u/6V" V 10931 2495 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 10800 3200 50  0001 C CNN
+F 3 "~" H 10800 3200 50  0001 C CNN
+	1    10800 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND039
-U 1 1 D092AC48
-P 10500 3100
-F 0 "#GND039" H 10500 3100 50  0001 C CNN
-F 1 "GND" V 10500 2850 59  0000 L BNN
-F 2 "" H 10500 3100 50  0001 C CNN
-F 3 "" H 10500 3100 50  0001 C CNN
-	1    10500 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:LINX-SMA-EDGE-0.062 A3
-U 1 1 9FD5BDE4
-P 13100 3800
-F 0 "A3" H 12500 3580 42  0000 L BNN
-F 1 "SMA-EDGE-0.062" H 12500 3520 42  0000 L BNN
-F 2 "signal_processing:CONSMA003.062" H 13100 3800 50  0001 C CNN
-F 3 "" H 13100 3800 50  0001 C CNN
-	1    13100 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND049
-U 1 1 141F4D3B
-P 13100 4200
-F 0 "#GND049" H 13100 4200 50  0001 C CNN
-F 1 "GND" H 13000 4100 59  0000 L BNN
-F 2 "" H 13100 4200 50  0001 C CNN
-F 3 "" H 13100 4200 50  0001 C CNN
-	1    13100 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C53
+L Device:CP C53
 U 1 1 1D366294
-P 11200 11150
-F 0 "C53" V 11131 11445 59  0000 L BNN
-F 1 "4,7u/6V" V 11231 11445 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 11200 11150 50  0001 C CNN
-F 3 "" H 11200 11150 50  0001 C CNN
-	1    11200 11150
+P 11475 11275
+F 0 "C53" V 11406 11570 59  0000 L BNN
+F 1 "4,7u/6V" V 11506 11570 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 11475 11275 50  0001 C CNN
+F 3 "~" H 11475 11275 50  0001 C CNN
+	1    11475 11275
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:CPOL-EUSMCA C52
-U 1 1 CC786638
-P 11200 9050
-F 0 "C52" V 11181 9345 59  0000 L BNN
-F 1 "4,7u/6V" V 11281 9345 59  0000 L BNN
-F 2 "signal_processing:SMC_A" H 11200 9050 50  0001 C CNN
-F 3 "" H 11200 9050 50  0001 C CNN
-	1    11200 9050
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R46
+L Device:R R46
 U 1 1 5E6C3924
 P 11100 5700
 F 0 "R46" H 11000 5759 59  0000 L BNN
 F 1 "6,2k" H 11000 5570 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11100 5700 50  0001 C CNN
-F 3 "" H 11100 5700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11100 5700 50  0001 C CNN
+F 3 "~" H 11100 5700 50  0001 C CNN
 	1    11100 5700
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R51
+L Device:R R51
 U 1 1 A79EC07D
 P 11700 5700
 F 0 "R51" H 11600 5759 59  0000 L BNN
 F 1 "18k" H 11600 5570 59  0000 L BNN
-F 2 "signal_processing:R0603" H 11700 5700 50  0001 C CNN
-F 3 "" H 11700 5700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11700 5700 50  0001 C CNN
+F 3 "~" H 11700 5700 50  0001 C CNN
 	1    11700 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C55
-U 1 1 8B8EF423
-P 12300 5300
-F 0 "C55" V 12235 5010 59  0000 L BNN
-F 1 "160p/50V" V 12235 5310 59  0000 L BNN
-F 2 "signal_processing:C0603" H 12300 5300 50  0001 C CNN
-F 3 "" H 12300 5300 50  0001 C CNN
-	1    12300 5300
 	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C54
+L Device:C C55
+U 1 1 8B8EF423
+P 12250 5300
+F 0 "C55" V 12185 5010 59  0000 L BNN
+F 1 "160p/50V" V 12185 5310 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12250 5300 50  0001 C CNN
+F 3 "~" H 12250 5300 50  0001 C CNN
+	1    12250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C54
 U 1 1 90D429DB
-P 12000 6000
-F 0 "C54" V 12215 6240 59  0000 R TNN
-F 1 "160p/50V" V 12115 6240 59  0000 R TNN
-F 2 "signal_processing:C0603" H 12000 6000 50  0001 C CNN
-F 3 "" H 12000 6000 50  0001 C CNN
-	1    12000 6000
+P 12000 5950
+F 0 "C54" V 12215 6190 59  0000 R TNN
+F 1 "160p/50V" V 12115 6190 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12000 5950 50  0001 C CNN
+F 3 "~" H 12000 5950 50  0001 C CNN
+	1    12000 5950
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:GND #GND043
-U 1 1 C96F3BDD
-P 12000 6300
-F 0 "#GND043" H 12000 6300 50  0001 C CNN
-F 1 "GND" H 11900 6200 59  0000 L BNN
-F 2 "" H 12000 6300 50  0001 C CNN
-F 3 "" H 12000 6300 50  0001 C CNN
-	1    12000 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R59
+L Device:R R59
 U 1 1 EC507F93
 P 12600 6200
 F 0 "R59" H 12500 6259 59  0000 L BNN
 F 1 "6,8k" H 12500 6070 59  0000 L BNN
-F 2 "signal_processing:R0603" H 12600 6200 50  0001 C CNN
-F 3 "" H 12600 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12600 6200 50  0001 C CNN
+F 3 "~" H 12600 6200 50  0001 C CNN
 	1    12600 6200
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:R-EU_R0603 R56
+L Device:R R56
 U 1 1 4938F53B
 P 12200 6600
 F 0 "R56" V 12209 6550 59  0000 R TNN
 F 1 "3,3k" V 12120 6550 59  0000 R TNN
-F 2 "signal_processing:R0603" H 12200 6600 50  0001 C CNN
-F 3 "" H 12200 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12200 6600 50  0001 C CNN
+F 3 "~" H 12200 6600 50  0001 C CNN
 	1    12200 6600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND044
-U 1 1 1165F8F0
-P 12200 7000
-F 0 "#GND044" H 12200 7000 50  0001 C CNN
-F 1 "GND" H 12100 6900 59  0000 L BNN
-F 2 "" H 12200 7000 50  0001 C CNN
-F 3 "" H 12200 7000 50  0001 C CNN
-	1    12200 7000
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC7
+L semiconductor_radiation_detector:AD8066 IC7
 U 1 1 BF308949
 P 12500 5800
 F 0 "IC7" H 12650 5950 59  0000 L BNN
 F 1 "AD8066" H 12650 5600 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 12500 5800 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 12500 5800 50  0001 C CNN
 F 3 "" H 12500 5800 50  0001 C CNN
 	1    12500 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC3
+L semiconductor_radiation_detector:AD8066 IC3
 U 1 1 A7372D8D
 P 7800 5600
 F 0 "IC3" H 7950 5750 59  0000 L BNN
 F 1 "AD8066" H 7950 5400 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 7800 5600 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 7800 5600 50  0001 C CNN
 F 3 "" H 7800 5600 50  0001 C CNN
 	1    7800 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:AD8066 IC3
+L semiconductor_radiation_detector:AD8066 IC3
 U 2 1 A7372D81
 P 10300 5700
 F 0 "IC3" H 10450 5850 59  0000 L BNN
 F 1 "AD8066" H 10450 5500 59  0000 L BNN
-F 2 "signal_processing:MSOP8" H 10300 5700 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 10300 5700 50  0001 C CNN
 F 3 "" H 10300 5700 50  0001 C CNN
 	2    10300 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:LINX-SMA-EDGE-0.062 A1
-U 1 1 72C413EE
-P 12000 1800
-F 0 "A1" H 12100 2020 42  0000 R TNN
-F 1 "SMA-EDGE-0.062" H 12100 2080 42  0000 R TNN
-F 2 "signal_processing:CONSMA003.062" H 12000 1800 50  0001 C CNN
-F 3 "" H 12000 1800 50  0001 C CNN
-	1    12000 1800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND042
-U 1 1 C4E41BBE
-P 12000 2200
-F 0 "#GND042" H 12000 2200 50  0001 C CNN
-F 1 "GND" H 11900 2100 59  0000 L BNN
-F 2 "" H 12000 2200 50  0001 C CNN
-F 3 "" H 12000 2200 50  0001 C CNN
-	1    12000 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C2
+L Device:C C2
 U 1 1 46E414EB
-P 2100 9350
-F 0 "C2" V 2215 9640 59  0000 R TNN
-F 1 "100n/50V" V 2215 9390 59  0000 R TNN
-F 2 "signal_processing:C0603" H 2100 9350 50  0001 C CNN
-F 3 "" H 2100 9350 50  0001 C CNN
-	1    2100 9350
+P 2100 9300
+F 0 "C2" V 2215 9590 59  0000 R TNN
+F 1 "100n/50V" V 2215 9340 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2100 9300 50  0001 C CNN
+F 3 "~" H 2100 9300 50  0001 C CNN
+	1    2100 9300
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C1
+L Device:C C1
 U 1 1 0E612AC8
-P 1800 9350
-F 0 "C1" V 1915 9640 59  0000 R TNN
-F 1 "100n/50V" V 1915 9390 59  0000 R TNN
-F 2 "signal_processing:C0603" H 1800 9350 50  0001 C CNN
-F 3 "" H 1800 9350 50  0001 C CNN
-	1    1800 9350
+P 1800 9300
+F 0 "C1" V 1915 9590 59  0000 R TNN
+F 1 "100n/50V" V 1915 9340 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1800 9300 50  0001 C CNN
+F 3 "~" H 1800 9300 50  0001 C CNN
+	1    1800 9300
 	-1   0    0    1   
 $EndComp
 $Comp
-L signal_processing-eagle-import:-5V #P-02
-U 1 1 C2D528AC
-P 2100 9650
-F 0 "#P-02" H 2100 9650 50  0001 C CNN
-F 1 "-5V" V 2000 9500 59  0000 L BNN
-F 2 "" H 2100 9650 50  0001 C CNN
-F 3 "" H 2100 9650 50  0001 C CNN
-	1    2100 9650
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-01
-U 1 1 4A0E12CB
-P 1800 9650
-F 0 "#P-01" H 1800 9650 50  0001 C CNN
-F 1 "-5V" V 1700 9500 59  0000 L BNN
-F 2 "" H 1800 9650 50  0001 C CNN
-F 3 "" H 1800 9650 50  0001 C CNN
-	1    1800 9650
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND02
-U 1 1 13A376EC
-P 2100 8950
-F 0 "#GND02" H 2100 8950 50  0001 C CNN
-F 1 "GND" H 2000 8850 59  0000 L BNN
-F 2 "" H 2100 8950 50  0001 C CNN
-F 3 "" H 2100 8950 50  0001 C CNN
-	1    2100 8950
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND01
-U 1 1 DB8695AC
-P 1800 8950
-F 0 "#GND01" H 1800 8950 50  0001 C CNN
-F 1 "GND" H 1700 8850 59  0000 L BNN
-F 2 "" H 1800 8950 50  0001 C CNN
-F 3 "" H 1800 8950 50  0001 C CNN
-	1    1800 8950
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-09
-U 1 1 C6F41DEF
-P 5050 2900
-F 0 "#P-09" H 5050 2900 50  0001 C CNN
-F 1 "-5V" V 4950 2800 59  0000 L BNN
-F 2 "" H 5050 2900 50  0001 C CNN
-F 3 "" H 5050 2900 50  0001 C CNN
-	1    5050 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+05
-U 1 1 33ACA7EC
-P 4000 1700
-F 0 "#P+05" H 4000 1700 50  0001 C CNN
-F 1 "+5V" V 3900 1750 59  0000 L BNN
-F 2 "" H 4000 1700 50  0001 C CNN
-F 3 "" H 4000 1700 50  0001 C CNN
-	1    4000 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND014
-U 1 1 109F320A
-P 3800 2900
-F 0 "#GND014" H 3800 2900 50  0001 C CNN
-F 1 "GND" H 3700 2800 59  0000 L BNN
-F 2 "" H 3800 2900 50  0001 C CNN
-F 3 "" H 3800 2900 50  0001 C CNN
-	1    3800 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C13
-U 1 1 B516155C
-P 5050 2300
-F 0 "C13" V 5065 2190 59  0000 R TNN
-F 1 "100n/50V" V 4965 2190 59  0000 R TNN
-F 2 "signal_processing:C0603" H 5050 2300 50  0001 C CNN
-F 3 "" H 5050 2300 50  0001 C CNN
-	1    5050 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED5
-U 1 1 728AD106
-P 4850 2000
-F 0 "LED5" V 4590 1820 59  0000 L BNN
-F 1 "GREEN" V 4675 1820 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 4850 2000 50  0001 C CNN
-F 3 "" H 4850 2000 50  0001 C CNN
-	1    4850 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-07
-U 1 1 5B1877AD
-P 4850 2900
-F 0 "#P-07" H 4850 2900 50  0001 C CNN
-F 1 "-5V" V 4750 2800 59  0000 L BNN
-F 2 "" H 4850 2900 50  0001 C CNN
-F 3 "" H 4850 2900 50  0001 C CNN
-	1    4850 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R16
+L Device:R R16
 U 1 1 34902D38
 P 4850 2500
 F 0 "R16" H 4750 2559 59  0000 L BNN
 F 1 "300" H 4750 2370 59  0000 L BNN
-F 2 "signal_processing:R0603" H 4850 2500 50  0001 C CNN
-F 3 "" H 4850 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 2500 50  0001 C CNN
+F 3 "~" H 4850 2500 50  0001 C CNN
 	1    4850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED3
+U 1 1 BE584E05
+P 3800 2550
+F 0 "LED3" V 3540 2270 59  0000 L BNN
+F 1 "GREEN" V 3625 2270 59  0000 L BNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3800 2550 50  0001 C CNN
+F 3 "~" H 3800 2550 50  0001 C CNN
+	1    3800 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:+5V #P+03
-U 1 1 00F05DF6
-P 3800 1700
-F 0 "#P+03" H 3800 1700 50  0001 C CNN
-F 1 "+5V" V 3700 1750 59  0000 L BNN
-F 2 "" H 3800 1700 50  0001 C CNN
-F 3 "" H 3800 1700 50  0001 C CNN
-	1    3800 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED3
-U 1 1 BE584E05
-P 3800 2500
-F 0 "LED3" V 3540 2220 59  0000 L BNN
-F 1 "GREEN" V 3625 2220 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 3800 2500 50  0001 C CNN
-F 3 "" H 3800 2500 50  0001 C CNN
-	1    3800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R11
+L Device:R R11
 U 1 1 5D119B4E
 P 3800 2100
 F 0 "R11" H 3700 2259 59  0000 L BNN
 F 1 "300" H 3700 2170 59  0000 L BNN
-F 2 "signal_processing:R0603" H 3800 2100 50  0001 C CNN
-F 3 "" H 3800 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3800 2100 50  0001 C CNN
+F 3 "~" H 3800 2100 50  0001 C CNN
 	1    3800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 0806FA8A
+P 4000 2250
+F 0 "C9" V 4015 2140 59  0000 R TNN
+F 1 "100n/50V" V 3915 2140 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 2250 50  0001 C CNN
+F 3 "~" H 4000 2250 50  0001 C CNN
+	1    4000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C11
+U 1 1 BF3275FE
+P 4200 2250
+F 0 "C11" V 4281 1995 59  0000 L BNN
+F 1 "47u/6V" V 4381 1995 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 4200 2250 50  0001 C CNN
+F 3 "~" H 4200 2250 50  0001 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C15
+U 1 1 7BBB621E
+P 5250 2250
+F 0 "C15" V 5356 1945 59  0000 L BNN
+F 1 "47u/6V" V 5456 1945 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 5250 2250 50  0001 C CNN
+F 3 "~" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED1
+U 1 1 3C888371
+P 2800 2550
+F 0 "LED1" V 2540 2370 59  0000 L BNN
+F 1 "GREEN" V 2625 2370 59  0000 L BNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2800 2550 50  0001 C CNN
+F 3 "~" H 2800 2550 50  0001 C CNN
+	1    2800 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC0603 C9
-U 1 1 0806FA8A
-P 4000 2300
-F 0 "C9" V 4015 2190 59  0000 R TNN
-F 1 "100n/50V" V 3915 2190 59  0000 R TNN
-F 2 "signal_processing:C0603" H 4000 2300 50  0001 C CNN
-F 3 "" H 4000 2300 50  0001 C CNN
-	1    4000 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND016
-U 1 1 99D4D269
-P 4000 2900
-F 0 "#GND016" H 4000 2900 50  0001 C CNN
-F 1 "GND" H 3900 2800 59  0000 L BNN
-F 2 "" H 4000 2900 50  0001 C CNN
-F 3 "" H 4000 2900 50  0001 C CNN
-	1    4000 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND020
-U 1 1 2DF12463
-P 4850 1700
-F 0 "#GND020" H 4850 1700 50  0001 C CNN
-F 1 "GND" H 4800 1600 59  0000 L BNN
-F 2 "" H 4850 1700 50  0001 C CNN
-F 3 "" H 4850 1700 50  0001 C CNN
-	1    4850 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND023
-U 1 1 C7080FD3
-P 5050 1700
-F 0 "#GND023" H 5050 1700 50  0001 C CNN
-F 1 "GND" H 4950 1600 59  0000 L BNN
-F 2 "" H 5050 1700 50  0001 C CNN
-F 3 "" H 5050 1700 50  0001 C CNN
-	1    5050 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCB C11
-U 1 1 BF3275FE
-P 4200 2200
-F 0 "C11" V 4281 1945 59  0000 L BNN
-F 1 "47u/6V" V 4381 1945 59  0000 L BNN
-F 2 "signal_processing:SMC_B" H 4200 2200 50  0001 C CNN
-F 3 "" H 4200 2200 50  0001 C CNN
-	1    4200 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCB C15
-U 1 1 7BBB621E
-P 5250 2200
-F 0 "C15" V 5356 1895 59  0000 L BNN
-F 1 "47u/6V" V 5456 1895 59  0000 L BNN
-F 2 "signal_processing:SMC_B" H 5250 2200 50  0001 C CNN
-F 3 "" H 5250 2200 50  0001 C CNN
-	1    5250 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+07
-U 1 1 BC2DCEA9
-P 4200 1700
-F 0 "#P+07" H 4200 1700 50  0001 C CNN
-F 1 "+5V" V 4100 1750 59  0000 L BNN
-F 2 "" H 4200 1700 50  0001 C CNN
-F 3 "" H 4200 1700 50  0001 C CNN
-	1    4200 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND018
-U 1 1 E0081D19
-P 4200 2900
-F 0 "#GND018" H 4200 2900 50  0001 C CNN
-F 1 "GND" H 4100 2800 59  0000 L BNN
-F 2 "" H 4200 2900 50  0001 C CNN
-F 3 "" H 4200 2900 50  0001 C CNN
-	1    4200 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND025
-U 1 1 2EE633C3
-P 5250 1700
-F 0 "#GND025" H 5250 1700 50  0001 C CNN
-F 1 "GND" H 5100 1600 59  0000 L BNN
-F 2 "" H 5250 1700 50  0001 C CNN
-F 3 "" H 5250 1700 50  0001 C CNN
-	1    5250 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-011
-U 1 1 351667FB
-P 5250 2900
-F 0 "#P-011" H 5250 2900 50  0001 C CNN
-F 1 "-5V" V 5150 2800 59  0000 L BNN
-F 2 "" H 5250 2900 50  0001 C CNN
-F 3 "" H 5250 2900 50  0001 C CNN
-	1    5250 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND05
-U 1 1 EF27308A
-P 2800 2900
-F 0 "#GND05" H 2800 2900 50  0001 C CNN
-F 1 "GND" H 2650 2800 59  0000 L BNN
-F 2 "" H 2800 2900 50  0001 C CNN
-F 3 "" H 2800 2900 50  0001 C CNN
-	1    2800 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED1
-U 1 1 3C888371
-P 2800 2500
-F 0 "LED1" V 2540 2320 59  0000 L BNN
-F 1 "GREEN" V 2625 2320 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 2800 2500 50  0001 C CNN
-F 3 "" H 2800 2500 50  0001 C CNN
-	1    2800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R1
+L Device:R R1
 U 1 1 29D00E75
 P 2800 2100
 F 0 "R1" H 2700 2259 59  0000 L BNN
 F 1 "43k" H 2700 2170 59  0000 L BNN
-F 2 "signal_processing:R0603" H 2800 2100 50  0001 C CNN
-F 3 "" H 2800 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 2100 50  0001 C CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
 	1    2800 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C4
-U 1 1 925C27D1
-P 3000 2300
-F 0 "C4" V 3015 2690 59  0000 R TNN
-F 1 "1n/100V" V 2915 2690 59  0000 R TNN
-F 2 "signal_processing:C0603" H 3000 2300 50  0001 C CNN
-F 3 "" H 3000 2300 50  0001 C CNN
-	1    3000 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND08
-U 1 1 DF24F9E8
-P 3000 2900
-F 0 "#GND08" H 3000 2900 50  0001 C CNN
-F 1 "GND" H 2900 2800 59  0000 L BNN
-F 2 "" H 3000 2900 50  0001 C CNN
-F 3 "" H 3000 2900 50  0001 C CNN
-	1    3000 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L signal_processing-eagle-import:C-EUC1206 C6
+L Device:C C6
 U 1 1 A7F4D2FC
-P 3200 2200
-F 0 "C6" V 3281 1945 59  0000 L BNN
-F 1 "4,7u/50V" V 3381 1945 59  0000 L BNN
-F 2 "signal_processing:C1206" H 3200 2200 50  0001 C CNN
-F 3 "" H 3200 2200 50  0001 C CNN
-	1    3200 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND010
-U 1 1 845C69E3
-P 3200 2900
-F 0 "#GND010" H 3200 2900 50  0001 C CNN
-F 1 "GND" H 3150 2800 59  0000 L BNN
-F 2 "" H 3200 2900 50  0001 C CNN
-F 3 "" H 3200 2900 50  0001 C CNN
-	1    3200 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X1
-U 1 1 61AEF4C8
-P 2000 2400
-F 0 "X1" H 2100 2370 51  0000 L BNN
-F 1 "87437-0443 " H 2380 2345 59  0001 R TNN
-F 2 "signal_processing:87437-0443" H 2000 2400 50  0001 C CNN
-F 3 "" H 2000 2400 50  0001 C CNN
-	1    2000 2400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X1
-U 2 1 61AEF4C4
-P 2000 2300
-F 0 "X1" H 2100 2270 51  0000 L BNN
-F 1 "87437-0443 " H 1970 2355 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 2300 50  0001 C CNN
-F 3 "" H 2000 2300 50  0001 C CNN
-	2    2000 2300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X1
-U 3 1 61AEF4C0
-P 2000 2200
-F 0 "X1" H 2100 2170 51  0000 L BNN
-F 1 "87437-0443 " H 1970 2255 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 2200 50  0001 C CNN
-F 3 "" H 2000 2200 50  0001 C CNN
-	3    2000 2200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X1
-U 4 1 61AEF4DC
-P 2000 2100
-F 0 "X1" H 2100 2070 51  0000 L BNN
-F 1 "87437-0443 " H 1970 2155 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 2100 50  0001 C CNN
-F 3 "" H 2000 2100 50  0001 C CNN
-	4    2000 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND03
-U 1 1 7679BDCC
-P 2300 1900
-F 0 "#GND03" H 2300 1900 50  0001 C CNN
-F 1 "GND" H 2385 1880 59  0000 R TNN
-F 2 "" H 2300 1900 50  0001 C CNN
-F 3 "" H 2300 1900 50  0001 C CNN
-	1    2300 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+01
-U 1 1 BCDF72C5
-P 2300 2600
-F 0 "#P+01" H 2300 2600 50  0001 C CNN
-F 1 "+5V" V 2330 2690 59  0000 R TNN
-F 2 "" H 2300 2600 50  0001 C CNN
-F 3 "" H 2300 2600 50  0001 C CNN
-	1    2300 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-03
-U 1 1 034A1A5F
-P 2200 1600
-F 0 "#P-03" H 2200 1600 50  0001 C CNN
-F 1 "-5V" V 2250 1450 59  0000 L BNN
-F 2 "" H 2200 1600 50  0001 C CNN
-F 3 "" H 2200 1600 50  0001 C CNN
-	1    2200 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-010
-U 1 1 625867A0
-P 5050 4500
-F 0 "#P-010" H 5050 4500 50  0001 C CNN
-F 1 "-5V" V 4950 4400 59  0000 L BNN
-F 2 "" H 5050 4500 50  0001 C CNN
-F 3 "" H 5050 4500 50  0001 C CNN
-	1    5050 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+06
-U 1 1 B0F39303
-P 4000 3300
-F 0 "#P+06" H 4000 3300 50  0001 C CNN
-F 1 "+5V" V 3900 3350 59  0000 L BNN
-F 2 "" H 4000 3300 50  0001 C CNN
-F 3 "" H 4000 3300 50  0001 C CNN
-	1    4000 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND015
-U 1 1 257B06B4
-P 3800 4500
-F 0 "#GND015" H 3800 4500 50  0001 C CNN
-F 1 "GND" H 3700 4400 59  0000 L BNN
-F 2 "" H 3800 4500 50  0001 C CNN
-F 3 "" H 3800 4500 50  0001 C CNN
-	1    3800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C14
-U 1 1 51C3D7B0
-P 5050 3900
-F 0 "C14" V 5065 3790 59  0000 R TNN
-F 1 "100n/50V" V 4965 3790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 5050 3900 50  0001 C CNN
-F 3 "" H 5050 3900 50  0001 C CNN
-	1    5050 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED6
-U 1 1 D358F7AD
-P 4850 3600
-F 0 "LED6" V 4590 3420 59  0000 L BNN
-F 1 "GREEN" V 4675 3420 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 4850 3600 50  0001 C CNN
-F 3 "" H 4850 3600 50  0001 C CNN
-	1    4850 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-08
-U 1 1 74834727
-P 4850 4500
-F 0 "#P-08" H 4850 4500 50  0001 C CNN
-F 1 "-5V" V 4750 4400 59  0000 L BNN
-F 2 "" H 4850 4500 50  0001 C CNN
-F 3 "" H 4850 4500 50  0001 C CNN
-	1    4850 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R17
-U 1 1 3A4C1FE9
-P 4850 4100
-F 0 "R17" H 4750 4159 59  0000 L BNN
-F 1 "300" H 4750 3970 59  0000 L BNN
-F 2 "signal_processing:R0603" H 4850 4100 50  0001 C CNN
-F 3 "" H 4850 4100 50  0001 C CNN
-	1    4850 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+04
-U 1 1 A7FDB2D8
-P 3800 3300
-F 0 "#P+04" H 3800 3300 50  0001 C CNN
-F 1 "+5V" V 3700 3350 59  0000 L BNN
-F 2 "" H 3800 3300 50  0001 C CNN
-F 3 "" H 3800 3300 50  0001 C CNN
-	1    3800 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED4
-U 1 1 E47C4FF9
-P 3800 4100
-F 0 "LED4" V 3540 3820 59  0000 L BNN
-F 1 "GREEN" V 3625 3820 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 3800 4100 50  0001 C CNN
-F 3 "" H 3800 4100 50  0001 C CNN
-	1    3800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R12
-U 1 1 EFB8AA66
-P 3800 3700
-F 0 "R12" H 3700 3859 59  0000 L BNN
-F 1 "300" H 3700 3770 59  0000 L BNN
-F 2 "signal_processing:R0603" H 3800 3700 50  0001 C CNN
-F 3 "" H 3800 3700 50  0001 C CNN
-	1    3800 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C10
-U 1 1 90757F85
-P 4000 3900
-F 0 "C10" V 4015 3790 59  0000 R TNN
-F 1 "100n/50V" V 3915 3790 59  0000 R TNN
-F 2 "signal_processing:C0603" H 4000 3900 50  0001 C CNN
-F 3 "" H 4000 3900 50  0001 C CNN
-	1    4000 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND017
-U 1 1 0A5A0AC8
-P 4000 4500
-F 0 "#GND017" H 4000 4500 50  0001 C CNN
-F 1 "GND" H 3900 4400 59  0000 L BNN
-F 2 "" H 4000 4500 50  0001 C CNN
-F 3 "" H 4000 4500 50  0001 C CNN
-	1    4000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND021
-U 1 1 CF593DC2
-P 4850 3300
-F 0 "#GND021" H 4850 3300 50  0001 C CNN
-F 1 "GND" H 4800 3200 59  0000 L BNN
-F 2 "" H 4850 3300 50  0001 C CNN
-F 3 "" H 4850 3300 50  0001 C CNN
-	1    4850 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND024
-U 1 1 664B2FAE
-P 5050 3300
-F 0 "#GND024" H 5050 3300 50  0001 C CNN
-F 1 "GND" H 4950 3200 59  0000 L BNN
-F 2 "" H 5050 3300 50  0001 C CNN
-F 3 "" H 5050 3300 50  0001 C CNN
-	1    5050 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCB C12
-U 1 1 B471DCA3
-P 4200 3800
-F 0 "C12" V 4281 3545 59  0000 L BNN
-F 1 "47u/6V" V 4381 3545 59  0000 L BNN
-F 2 "signal_processing:SMC_B" H 4200 3800 50  0001 C CNN
-F 3 "" H 4200 3800 50  0001 C CNN
-	1    4200 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:CPOL-EUSMCB C16
-U 1 1 04538D95
-P 5250 3800
-F 0 "C16" V 5356 3495 59  0000 L BNN
-F 1 "47u/6V" V 5456 3495 59  0000 L BNN
-F 2 "signal_processing:SMC_B" H 5250 3800 50  0001 C CNN
-F 3 "" H 5250 3800 50  0001 C CNN
-	1    5250 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+08
-U 1 1 B54CCCBB
-P 4200 3300
-F 0 "#P+08" H 4200 3300 50  0001 C CNN
-F 1 "+5V" V 4100 3350 59  0000 L BNN
-F 2 "" H 4200 3300 50  0001 C CNN
-F 3 "" H 4200 3300 50  0001 C CNN
-	1    4200 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND019
-U 1 1 48B3EBD8
-P 4200 4500
-F 0 "#GND019" H 4200 4500 50  0001 C CNN
-F 1 "GND" H 4100 4400 59  0000 L BNN
-F 2 "" H 4200 4500 50  0001 C CNN
-F 3 "" H 4200 4500 50  0001 C CNN
-	1    4200 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND026
-U 1 1 9E0685E6
-P 5250 3300
-F 0 "#GND026" H 5250 3300 50  0001 C CNN
-F 1 "GND" H 5100 3200 59  0000 L BNN
-F 2 "" H 5250 3300 50  0001 C CNN
-F 3 "" H 5250 3300 50  0001 C CNN
-	1    5250 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-012
-U 1 1 13A4ABFD
-P 5250 4500
-F 0 "#P-012" H 5250 4500 50  0001 C CNN
-F 1 "-5V" V 5150 4400 59  0000 L BNN
-F 2 "" H 5250 4500 50  0001 C CNN
-F 3 "" H 5250 4500 50  0001 C CNN
-	1    5250 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND06
-U 1 1 A07C0193
-P 2800 4500
-F 0 "#GND06" H 2800 4500 50  0001 C CNN
-F 1 "GND" H 2650 4400 59  0000 L BNN
-F 2 "" H 2800 4500 50  0001 C CNN
-F 3 "" H 2800 4500 50  0001 C CNN
-	1    2800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:LEDCHIPLED_0603 LED2
-U 1 1 836D62AD
-P 2800 4100
-F 0 "LED2" V 2540 3920 59  0000 L BNN
-F 1 "GREEN" V 2625 3920 59  0000 L BNN
-F 2 "signal_processing:CHIPLED_0603" H 2800 4100 50  0001 C CNN
-F 3 "" H 2800 4100 50  0001 C CNN
-	1    2800 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:R-EU_R0603 R2
-U 1 1 11D63CE0
-P 2800 3700
-F 0 "R2" H 2700 3859 59  0000 L BNN
-F 1 "43k" H 2700 3770 59  0000 L BNN
-F 2 "signal_processing:R0603" H 2800 3700 50  0001 C CNN
-F 3 "" H 2800 3700 50  0001 C CNN
-	1    2800 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC0603 C5
-U 1 1 43020D74
-P 3000 3900
-F 0 "C5" V 3015 4290 59  0000 R TNN
-F 1 "1n/100V" V 2915 4290 59  0000 R TNN
-F 2 "signal_processing:C0603" H 3000 3900 50  0001 C CNN
-F 3 "" H 3000 3900 50  0001 C CNN
-	1    3000 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND09
-U 1 1 928DF91D
-P 3000 4500
-F 0 "#GND09" H 3000 4500 50  0001 C CNN
-F 1 "GND" H 2900 4400 59  0000 L BNN
-F 2 "" H 3000 4500 50  0001 C CNN
-F 3 "" H 3000 4500 50  0001 C CNN
-	1    3000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:C-EUC1206 C7
-U 1 1 E070C42B
-P 3200 3800
-F 0 "C7" V 3281 3545 59  0000 L BNN
-F 1 "4,7u/50V" V 3381 3545 59  0000 L BNN
-F 2 "signal_processing:C1206" H 3200 3800 50  0001 C CNN
-F 3 "" H 3200 3800 50  0001 C CNN
-	1    3200 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND011
-U 1 1 19DA8D48
-P 3200 4500
-F 0 "#GND011" H 3200 4500 50  0001 C CNN
-F 1 "GND" H 3150 4400 59  0000 L BNN
-F 2 "" H 3200 4500 50  0001 C CNN
-F 3 "" H 3200 4500 50  0001 C CNN
-	1    3200 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X2
-U 1 1 C96C5EEE
-P 2000 4000
-F 0 "X2" H 2100 3970 51  0000 L BNN
-F 1 "87437-0443 " H 2370 3935 59  0001 R TNN
-F 2 "signal_processing:87437-0443" H 2000 4000 50  0001 C CNN
-F 3 "" H 2000 4000 50  0001 C CNN
-	1    2000 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X2
-U 2 1 C96C5EE2
-P 2000 3900
-F 0 "X2" H 2100 3870 51  0000 L BNN
-F 1 "87437-0443 " H 1970 3955 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 3900 50  0001 C CNN
-F 3 "" H 2000 3900 50  0001 C CNN
-	2    2000 3900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X2
-U 3 1 C96C5EE6
-P 2000 3800
-F 0 "X2" H 2100 3770 51  0000 L BNN
-F 1 "87437-0443 " H 1970 3855 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 3800 50  0001 C CNN
-F 3 "" H 2000 3800 50  0001 C CNN
-	3    2000 3800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X2
-U 4 1 C96C5EFA
-P 2000 3700
-F 0 "X2" H 2100 3670 51  0000 L BNN
-F 1 "87437-0443 " H 1970 3755 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 2000 3700 50  0001 C CNN
-F 3 "" H 2000 3700 50  0001 C CNN
-	4    2000 3700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND04
-U 1 1 D896219B
-P 2300 4200
-F 0 "#GND04" H 2300 4200 50  0001 C CNN
-F 1 "GND" H 2225 4100 59  0000 L BNN
-F 2 "" H 2300 4200 50  0001 C CNN
-F 3 "" H 2300 4200 50  0001 C CNN
-	1    2300 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:+5V #P+02
-U 1 1 339DE9D3
-P 2300 3500
-F 0 "#P+02" H 2300 3500 50  0001 C CNN
-F 1 "+5V" V 2350 3450 59  0000 L BNN
-F 2 "" H 2300 3500 50  0001 C CNN
-F 3 "" H 2300 3500 50  0001 C CNN
-	1    2300 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:-5V #P-04
-U 1 1 FE0A0260
-P 2200 4500
-F 0 "#P-04" H 2200 4500 50  0001 C CNN
-F 1 "-5V" V 2250 4350 59  0000 L BNN
-F 2 "" H 2200 4500 50  0001 C CNN
-F 3 "" H 2200 4500 50  0001 C CNN
-	1    2200 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X3
-U 1 1 173D4B14
-P 13100 2600
-F 0 "X3" H 13200 2570 51  0000 L BNN
-F 1 "87437-0443 " H 12930 2465 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 13100 2600 50  0001 C CNN
-F 3 "" H 13100 2600 50  0001 C CNN
-	1    13100 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X3
-U 2 1 173D4B18
-P 13100 2500
-F 0 "X3" H 13200 2470 51  0000 L BNN
-F 1 "87437-0443 " H 13070 2555 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 13100 2500 50  0001 C CNN
-F 3 "" H 13100 2500 50  0001 C CNN
-	2    13100 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X3
-U 3 1 173D4B1C
-P 13100 2400
-F 0 "X3" H 13200 2370 51  0000 L BNN
-F 1 "87437-0443 " H 13070 2455 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 13100 2400 50  0001 C CNN
-F 3 "" H 13100 2400 50  0001 C CNN
-	3    13100 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:87438-0487437-0443 X3
-U 4 1 173D4B00
-P 13100 2300
-F 0 "X3" H 13200 2270 51  0000 L BNN
-F 1 "87437-0443 " H 13070 2355 59  0001 L BNN
-F 2 "signal_processing:87437-0443" H 13100 2300 50  0001 C CNN
-F 3 "" H 13100 2300 50  0001 C CNN
-	4    13100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L signal_processing-eagle-import:GND #GND047
-U 1 1 D3B7AFF0
-P 12900 2800
-F 0 "#GND047" H 12900 2800 50  0001 C CNN
-F 1 "GND" H 12800 2700 59  0000 L BNN
-F 2 "" H 12900 2800 50  0001 C CNN
-F 3 "" H 12900 2800 50  0001 C CNN
-	1    12900 2800
+P 3200 2250
+F 0 "C6" V 3281 1995 59  0000 L BNN
+F 1 "4,7u/50V" V 3381 1995 59  0000 L BNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3200 2250 50  0001 C CNN
+F 3 "~" H 3200 2250 50  0001 C CNN
+	1    3200 2250
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -3921,10 +1807,8 @@ Wire Notes Line
 	5600 1400 5600 4700
 Wire Notes Line
 	5600 4700 1500 4700
-Wire Notes Line
-	1500 4700 1500 1400
 Text Notes 1500 1300 0    85   ~ 0
-Power supply connector and fowarding
+Power supply filtering and fowarding
 Wire Notes Line
 	5800 1400 11500 1400
 Wire Notes Line
@@ -3935,14 +1819,12 @@ Wire Notes Line
 	5800 4400 5800 1400
 Text Notes 5800 1300 0    85   ~ 0
 Local power supply filters
-Text Notes 5900 4300 0    42   ~ 0
-Common resistors \nor ferrite beads
 Wire Notes Line
-	11600 1400 13500 1400
+	11600 1400 13750 1400
 Wire Notes Line
-	13500 1400 13500 4400
+	13750 1400 13750 4400
 Wire Notes Line
-	13500 4400 11600 4400
+	13750 4400 11600 4400
 Wire Notes Line
 	11600 4400 11600 1400
 Text Notes 11600 1350 0    85   ~ 0
@@ -3987,4 +1869,1602 @@ Wire Notes Line
 	5800 12100 5800 7700
 Text Notes 5800 7600 0    85   ~ 0
 Pulse detecting comparators
+Wire Wire Line
+	4200 1800 4200 2100
+Wire Wire Line
+	4000 1800 4000 2100
+$Comp
+L Device:C C13
+U 1 1 B516155C
+P 5050 2250
+F 0 "C13" V 5065 2140 59  0000 R TNN
+F 1 "100n/50V" V 4965 2140 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 2250 50  0001 C CNN
+F 3 "~" H 5050 2250 50  0001 C CNN
+	1    5050 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C19
+U 1 1 9C9B221E
+P 6400 2600
+F 0 "C19" V 6331 2895 59  0000 L BNN
+F 1 "4,7u/6V" V 6431 2895 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6400 2600 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 351D94A7
+P 7600 3200
+F 0 "C28" V 7715 3740 59  0000 R TNN
+F 1 "100n/50V" V 7615 3740 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7600 3200 50  0001 C CNN
+F 3 "~" H 7600 3200 50  0001 C CNN
+	1    7600 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0101
+U 1 1 62631238
+P 2200 1700
+F 0 "#PWR0101" H 2200 1800 50  0001 C CNN
+F 1 "-5V" H 2215 1873 50  0000 C CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0001 C CNN
+	1    2200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0102
+U 1 1 62663381
+P 4850 2800
+F 0 "#PWR0102" H 4850 2900 50  0001 C CNN
+F 1 "-5V" H 4865 2973 50  0000 C CNN
+F 2 "" H 4850 2800 50  0001 C CNN
+F 3 "" H 4850 2800 50  0001 C CNN
+	1    4850 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0103
+U 1 1 6268E31A
+P 5050 2800
+F 0 "#PWR0103" H 5050 2900 50  0001 C CNN
+F 1 "-5V" H 5065 2973 50  0000 C CNN
+F 2 "" H 5050 2800 50  0001 C CNN
+F 3 "" H 5050 2800 50  0001 C CNN
+	1    5050 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0104
+U 1 1 626B9216
+P 5250 2800
+F 0 "#PWR0104" H 5250 2900 50  0001 C CNN
+F 1 "-5V" H 5265 2973 50  0000 C CNN
+F 2 "" H 5250 2800 50  0001 C CNN
+F 3 "" H 5250 2800 50  0001 C CNN
+	1    5250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0105
+U 1 1 62715AD4
+P 2200 4400
+F 0 "#PWR0105" H 2200 4500 50  0001 C CNN
+F 1 "-5V" H 2215 4573 50  0000 C CNN
+F 2 "" H 2200 4400 50  0001 C CNN
+F 3 "" H 2200 4400 50  0001 C CNN
+	1    2200 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0106
+U 1 1 6277E4BD
+P 6600 4100
+F 0 "#PWR0106" H 6600 4200 50  0001 C CNN
+F 1 "-5V" H 6615 4273 50  0000 C CNN
+F 2 "" H 6600 4100 50  0001 C CNN
+F 3 "" H 6600 4100 50  0001 C CNN
+	1    6600 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0107
+U 1 1 627A9356
+P 7300 4100
+F 0 "#PWR0107" H 7300 4200 50  0001 C CNN
+F 1 "-5V" H 7315 4273 50  0000 C CNN
+F 2 "" H 7300 4100 50  0001 C CNN
+F 3 "" H 7300 4100 50  0001 C CNN
+	1    7300 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0108
+U 1 1 627D41DD
+P 8000 4100
+F 0 "#PWR0108" H 8000 4200 50  0001 C CNN
+F 1 "-5V" H 8015 4273 50  0000 C CNN
+F 2 "" H 8000 4100 50  0001 C CNN
+F 3 "" H 8000 4100 50  0001 C CNN
+	1    8000 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0109
+U 1 1 627FF094
+P 8700 4100
+F 0 "#PWR0109" H 8700 4200 50  0001 C CNN
+F 1 "-5V" H 8715 4273 50  0000 C CNN
+F 2 "" H 8700 4100 50  0001 C CNN
+F 3 "" H 8700 4100 50  0001 C CNN
+	1    8700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0110
+U 1 1 6285CEF4
+P 10200 4100
+F 0 "#PWR0110" H 10200 4200 50  0001 C CNN
+F 1 "-5V" H 10215 4273 50  0000 C CNN
+F 2 "" H 10200 4100 50  0001 C CNN
+F 3 "" H 10200 4100 50  0001 C CNN
+	1    10200 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0111
+U 1 1 6288803C
+P 11100 4100
+F 0 "#PWR0111" H 11100 4200 50  0001 C CNN
+F 1 "-5V" H 11115 4273 50  0000 C CNN
+F 2 "" H 11100 4100 50  0001 C CNN
+F 3 "" H 11100 4100 50  0001 C CNN
+	1    11100 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0112
+U 1 1 628F214E
+P 1800 9550
+F 0 "#PWR0112" H 1800 9650 50  0001 C CNN
+F 1 "-5V" H 1815 9723 50  0000 C CNN
+F 2 "" H 1800 9550 50  0001 C CNN
+F 3 "" H 1800 9550 50  0001 C CNN
+	1    1800 9550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0113
+U 1 1 6291CFD9
+P 2100 9550
+F 0 "#PWR0113" H 2100 9650 50  0001 C CNN
+F 1 "-5V" H 2115 9723 50  0000 C CNN
+F 2 "" H 2100 9550 50  0001 C CNN
+F 3 "" H 2100 9550 50  0001 C CNN
+	1    2100 9550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0114
+U 1 1 6297689E
+P 4200 9700
+F 0 "#PWR0114" H 4200 9800 50  0001 C CNN
+F 1 "-5V" H 4215 9873 50  0000 C CNN
+F 2 "" H 4200 9700 50  0001 C CNN
+F 3 "" H 4200 9700 50  0001 C CNN
+	1    4200 9700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0115
+U 1 1 629D9C23
+P 11275 11500
+F 0 "#PWR0115" H 11275 11600 50  0001 C CNN
+F 1 "-5V" H 11290 11673 50  0000 C CNN
+F 2 "" H 11275 11500 50  0001 C CNN
+F 3 "" H 11275 11500 50  0001 C CNN
+	1    11275 11500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0116
+U 1 1 62A0476E
+P 11475 11500
+F 0 "#PWR0116" H 11475 11600 50  0001 C CNN
+F 1 "-5V" H 11490 11673 50  0000 C CNN
+F 2 "" H 11475 11500 50  0001 C CNN
+F 3 "" H 11475 11500 50  0001 C CNN
+	1    11475 11500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0117
+U 1 1 62A2F28A
+P 11000 11500
+F 0 "#PWR0117" H 11000 11600 50  0001 C CNN
+F 1 "-5V" H 11015 11673 50  0000 C CNN
+F 2 "" H 11000 11500 50  0001 C CNN
+F 3 "" H 11000 11500 50  0001 C CNN
+	1    11000 11500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0120
+U 1 1 62ADDB7E
+P 11150 9400
+F 0 "#PWR0120" H 11150 9500 50  0001 C CNN
+F 1 "-5V" H 11165 9573 50  0000 C CNN
+F 2 "" H 11150 9400 50  0001 C CNN
+F 3 "" H 11150 9400 50  0001 C CNN
+	1    11150 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 62B1C1B4
+P 3800 1800
+F 0 "#PWR0121" H 3800 1650 50  0001 C CNN
+F 1 "+5V" H 3815 1973 50  0000 C CNN
+F 2 "" H 3800 1800 50  0001 C CNN
+F 3 "" H 3800 1800 50  0001 C CNN
+	1    3800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 62B2059B
+P 4000 1800
+F 0 "#PWR0122" H 4000 1650 50  0001 C CNN
+F 1 "+5V" H 4015 1973 50  0000 C CNN
+F 2 "" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0001 C CNN
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 62B4B8BF
+P 4200 1800
+F 0 "#PWR0123" H 4200 1650 50  0001 C CNN
+F 1 "+5V" H 4215 1973 50  0000 C CNN
+F 2 "" H 4200 1800 50  0001 C CNN
+F 3 "" H 4200 1800 50  0001 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0124
+U 1 1 62BA412B
+P 2300 2500
+F 0 "#PWR0124" H 2300 2350 50  0001 C CNN
+F 1 "+5V" H 2315 2673 50  0000 C CNN
+F 2 "" H 2300 2500 50  0001 C CNN
+F 3 "" H 2300 2500 50  0001 C CNN
+	1    2300 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0125
+U 1 1 62BFBCD6
+P 2300 3600
+F 0 "#PWR0125" H 2300 3450 50  0001 C CNN
+F 1 "+5V" H 2315 3773 50  0000 C CNN
+F 2 "" H 2300 3600 50  0001 C CNN
+F 3 "" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 62C91D98
+P 6600 1700
+F 0 "#PWR0126" H 6600 1550 50  0001 C CNN
+F 1 "+5V" H 6615 1873 50  0000 C CNN
+F 2 "" H 6600 1700 50  0001 C CNN
+F 3 "" H 6600 1700 50  0001 C CNN
+	1    6600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0127
+U 1 1 62CBCC0A
+P 7300 1700
+F 0 "#PWR0127" H 7300 1550 50  0001 C CNN
+F 1 "+5V" H 7315 1873 50  0000 C CNN
+F 2 "" H 7300 1700 50  0001 C CNN
+F 3 "" H 7300 1700 50  0001 C CNN
+	1    7300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0128
+U 1 1 62CE7A4B
+P 8000 1700
+F 0 "#PWR0128" H 8000 1550 50  0001 C CNN
+F 1 "+5V" H 8015 1873 50  0000 C CNN
+F 2 "" H 8000 1700 50  0001 C CNN
+F 3 "" H 8000 1700 50  0001 C CNN
+	1    8000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 62D12866
+P 8700 1700
+F 0 "#PWR0129" H 8700 1550 50  0001 C CNN
+F 1 "+5V" H 8715 1873 50  0000 C CNN
+F 2 "" H 8700 1700 50  0001 C CNN
+F 3 "" H 8700 1700 50  0001 C CNN
+	1    8700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 62D961D5
+P 9400 1900
+F 0 "#PWR0130" H 9400 1750 50  0001 C CNN
+F 1 "+5V" H 9415 2073 50  0000 C CNN
+F 2 "" H 9400 1900 50  0001 C CNN
+F 3 "" H 9400 1900 50  0001 C CNN
+	1    9400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0131
+U 1 1 62DC254E
+P 10200 1700
+F 0 "#PWR0131" H 10200 1550 50  0001 C CNN
+F 1 "+5V" H 10215 1873 50  0000 C CNN
+F 2 "" H 10200 1700 50  0001 C CNN
+F 3 "" H 10200 1700 50  0001 C CNN
+	1    10200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 62DED35F
+P 11100 1700
+F 0 "#PWR0132" H 11100 1550 50  0001 C CNN
+F 1 "+5V" H 11115 1873 50  0000 C CNN
+F 2 "" H 11100 1700 50  0001 C CNN
+F 3 "" H 11100 1700 50  0001 C CNN
+	1    11100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 62EC3EF2
+P 2300 2000
+F 0 "#PWR0133" H 2300 1750 50  0001 C CNN
+F 1 "GND" H 2305 1827 50  0000 C CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 62F1B5C9
+P 2300 4100
+F 0 "#PWR0134" H 2300 3850 50  0001 C CNN
+F 1 "GND" H 2305 3927 50  0000 C CNN
+F 2 "" H 2300 4100 50  0001 C CNN
+F 3 "" H 2300 4100 50  0001 C CNN
+	1    2300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 62F743CA
+P 2800 2800
+F 0 "#PWR0135" H 2800 2550 50  0001 C CNN
+F 1 "GND" H 2805 2627 50  0000 C CNN
+F 2 "" H 2800 2800 50  0001 C CNN
+F 3 "" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 62F9F282
+P 3000 2800
+F 0 "#PWR0136" H 3000 2550 50  0001 C CNN
+F 1 "GND" H 3005 2627 50  0000 C CNN
+F 2 "" H 3000 2800 50  0001 C CNN
+F 3 "" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 62FCA16F
+P 3200 2800
+F 0 "#PWR0137" H 3200 2550 50  0001 C CNN
+F 1 "GND" H 3205 2627 50  0000 C CNN
+F 2 "" H 3200 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 62FF5056
+P 3800 2800
+F 0 "#PWR0138" H 3800 2550 50  0001 C CNN
+F 1 "GND" H 3805 2627 50  0000 C CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "" H 3800 2800 50  0001 C CNN
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0139
+U 1 1 6301FE6A
+P 4000 2800
+F 0 "#PWR0139" H 4000 2550 50  0001 C CNN
+F 1 "GND" H 4005 2627 50  0000 C CNN
+F 2 "" H 4000 2800 50  0001 C CNN
+F 3 "" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 6304AC56
+P 4200 2800
+F 0 "#PWR0140" H 4200 2550 50  0001 C CNN
+F 1 "GND" H 4205 2627 50  0000 C CNN
+F 2 "" H 4200 2800 50  0001 C CNN
+F 3 "" H 4200 2800 50  0001 C CNN
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 630A468B
+P 4850 1800
+F 0 "#PWR0141" H 4850 1550 50  0001 C CNN
+F 1 "GND" H 4855 1627 50  0000 C CNN
+F 2 "" H 4850 1800 50  0001 C CNN
+F 3 "" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 630CF4DD
+P 5050 1800
+F 0 "#PWR0142" H 5050 1550 50  0001 C CNN
+F 1 "GND" H 5055 1627 50  0000 C CNN
+F 2 "" H 5050 1800 50  0001 C CNN
+F 3 "" H 5050 1800 50  0001 C CNN
+	1    5050 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 630FA300
+P 5250 1800
+F 0 "#PWR0143" H 5250 1550 50  0001 C CNN
+F 1 "GND" H 5255 1627 50  0000 C CNN
+F 2 "" H 5250 1800 50  0001 C CNN
+F 3 "" H 5250 1800 50  0001 C CNN
+	1    5250 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C40
+U 1 1 61A0A8FA
+P 9700 3200
+F 0 "C40" V 9715 3890 59  0000 R TNN
+F 1 "100n/50V" V 9615 3890 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9700 3200 50  0001 C CNN
+F 3 "~" H 9700 3200 50  0001 C CNN
+	1    9700 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 63161FFB
+P 10500 3000
+F 0 "#PWR0144" H 10500 2750 50  0001 C CNN
+F 1 "GND" H 10505 2827 50  0000 C CNN
+F 2 "" H 10500 3000 50  0001 C CNN
+F 3 "" H 10500 3000 50  0001 C CNN
+	1    10500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 6318D14C
+P 9600 3000
+F 0 "#PWR0145" H 9600 2750 50  0001 C CNN
+F 1 "GND" H 9605 2827 50  0000 C CNN
+F 2 "" H 9600 3000 50  0001 C CNN
+F 3 "" H 9600 3000 50  0001 C CNN
+	1    9600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 631BAEF0
+P 8200 3000
+F 0 "#PWR0146" H 8200 2750 50  0001 C CNN
+F 1 "GND" H 8205 2827 50  0000 C CNN
+F 2 "" H 8200 3000 50  0001 C CNN
+F 3 "" H 8200 3000 50  0001 C CNN
+	1    8200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 631E61D5
+P 7500 3000
+F 0 "#PWR0147" H 7500 2750 50  0001 C CNN
+F 1 "GND" H 7505 2827 50  0000 C CNN
+F 2 "" H 7500 3000 50  0001 C CNN
+F 3 "" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 63213019
+P 6800 3000
+F 0 "#PWR0148" H 6800 2750 50  0001 C CNN
+F 1 "GND" H 6805 2827 50  0000 C CNN
+F 2 "" H 6800 3000 50  0001 C CNN
+F 3 "" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 6323E12E
+P 6100 3000
+F 0 "#PWR0149" H 6100 2750 50  0001 C CNN
+F 1 "GND" H 6105 2827 50  0000 C CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 6326A995
+P 9400 3400
+F 0 "#PWR0150" H 9400 3150 50  0001 C CNN
+F 1 "GND" H 9405 3227 50  0000 C CNN
+F 2 "" H 9400 3400 50  0001 C CNN
+F 3 "" H 9400 3400 50  0001 C CNN
+	1    9400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 632CC543
+P 11950 2050
+F 0 "#PWR0151" H 11950 1800 50  0001 C CNN
+F 1 "GND" H 11955 1877 50  0000 C CNN
+F 2 "" H 11950 2050 50  0001 C CNN
+F 3 "" H 11950 2050 50  0001 C CNN
+	1    11950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 632F723B
+P 12950 2800
+F 0 "#PWR0152" H 12950 2550 50  0001 C CNN
+F 1 "GND" H 12955 2627 50  0000 C CNN
+F 2 "" H 12950 2800 50  0001 C CNN
+F 3 "" H 12950 2800 50  0001 C CNN
+	1    12950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 633228A7
+P 13200 3500
+F 0 "#PWR0153" H 13200 3250 50  0001 C CNN
+F 1 "GND" H 13205 3327 50  0000 C CNN
+F 2 "" H 13200 3500 50  0001 C CNN
+F 3 "" H 13200 3500 50  0001 C CNN
+	1    13200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 6334D4CB
+P 13200 4100
+F 0 "#PWR0154" H 13200 3850 50  0001 C CNN
+F 1 "GND" H 13205 3927 50  0000 C CNN
+F 2 "" H 13200 4100 50  0001 C CNN
+F 3 "" H 13200 4100 50  0001 C CNN
+	1    13200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 633AEFAA
+P 12200 6900
+F 0 "#PWR0155" H 12200 6650 50  0001 C CNN
+F 1 "GND" H 12205 6727 50  0000 C CNN
+F 2 "" H 12200 6900 50  0001 C CNN
+F 3 "" H 12200 6900 50  0001 C CNN
+	1    12200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 633D9ADE
+P 12000 6200
+F 0 "#PWR0156" H 12000 5950 50  0001 C CNN
+F 1 "GND" H 12005 6027 50  0000 C CNN
+F 2 "" H 12000 6200 50  0001 C CNN
+F 3 "" H 12000 6200 50  0001 C CNN
+	1    12000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 63404674
+P 10000 6800
+F 0 "#PWR0157" H 10000 6550 50  0001 C CNN
+F 1 "GND" H 10005 6627 50  0000 C CNN
+F 2 "" H 10000 6800 50  0001 C CNN
+F 3 "" H 10000 6800 50  0001 C CNN
+	1    10000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 6342F192
+P 9800 6100
+F 0 "#PWR0158" H 9800 5850 50  0001 C CNN
+F 1 "GND" H 9805 5927 50  0000 C CNN
+F 2 "" H 9800 6100 50  0001 C CNN
+F 3 "" H 9800 6100 50  0001 C CNN
+	1    9800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 6345B3BC
+P 7300 6000
+F 0 "#PWR0159" H 7300 5750 50  0001 C CNN
+F 1 "GND" H 7305 5827 50  0000 C CNN
+F 2 "" H 7300 6000 50  0001 C CNN
+F 3 "" H 7300 6000 50  0001 C CNN
+	1    7300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 63485EDD
+P 7500 6600
+F 0 "#PWR0160" H 7500 6350 50  0001 C CNN
+F 1 "GND" H 7505 6427 50  0000 C CNN
+F 2 "" H 7500 6600 50  0001 C CNN
+F 3 "" H 7500 6600 50  0001 C CNN
+	1    7500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0161
+U 1 1 634E7C91
+P 2900 9200
+F 0 "#PWR0161" H 2900 8950 50  0001 C CNN
+F 1 "GND" H 2905 9027 50  0000 C CNN
+F 2 "" H 2900 9200 50  0001 C CNN
+F 3 "" H 2900 9200 50  0001 C CNN
+	1    2900 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0162
+U 1 1 63513661
+P 3900 9400
+F 0 "#PWR0162" H 3900 9500 50  0001 C CNN
+F 1 "-5V" H 3915 9573 50  0000 C CNN
+F 2 "" H 3900 9400 50  0001 C CNN
+F 3 "" H 3900 9400 50  0001 C CNN
+	1    3900 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 635C2F80
+P 4900 9000
+F 0 "#PWR0163" H 4900 8750 50  0001 C CNN
+F 1 "GND" H 4905 8827 50  0000 C CNN
+F 2 "" H 4900 9000 50  0001 C CNN
+F 3 "" H 4900 9000 50  0001 C CNN
+	1    4900 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 6361D6AE
+P 3500 11800
+F 0 "#PWR0164" H 3500 11550 50  0001 C CNN
+F 1 "GND" H 3505 11627 50  0000 C CNN
+F 2 "" H 3500 11800 50  0001 C CNN
+F 3 "" H 3500 11800 50  0001 C CNN
+	1    3500 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0165
+U 1 1 6364816D
+P 3700 11800
+F 0 "#PWR0165" H 3700 11550 50  0001 C CNN
+F 1 "GND" H 3705 11627 50  0000 C CNN
+F 2 "" H 3700 11800 50  0001 C CNN
+F 3 "" H 3700 11800 50  0001 C CNN
+	1    3700 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 63726CE6
+P 8000 9800
+F 0 "#PWR0166" H 8000 9550 50  0001 C CNN
+F 1 "GND" H 8005 9627 50  0000 C CNN
+F 2 "" H 8000 9800 50  0001 C CNN
+F 3 "" H 8000 9800 50  0001 C CNN
+	1    8000 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 63751A57
+P 9800 10800
+F 0 "#PWR0167" H 9800 10550 50  0001 C CNN
+F 1 "GND" H 9805 10627 50  0000 C CNN
+F 2 "" H 9800 10800 50  0001 C CNN
+F 3 "" H 9800 10800 50  0001 C CNN
+	1    9800 10800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 6377C956
+P 12400 11000
+F 0 "#PWR0168" H 12400 10750 50  0001 C CNN
+F 1 "GND" H 12405 10827 50  0000 C CNN
+F 2 "" H 12400 11000 50  0001 C CNN
+F 3 "" H 12400 11000 50  0001 C CNN
+	1    12400 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 637A76C7
+P 12475 9500
+F 0 "#PWR0169" H 12475 9250 50  0001 C CNN
+F 1 "GND" H 12480 9327 50  0000 C CNN
+F 2 "" H 12475 9500 50  0001 C CNN
+F 3 "" H 12475 9500 50  0001 C CNN
+	1    12475 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 6382AB1B
+P 11000 10300
+F 0 "#PWR0170" H 11000 10050 50  0001 C CNN
+F 1 "GND" H 11005 10127 50  0000 C CNN
+F 2 "" H 11000 10300 50  0001 C CNN
+F 3 "" H 11000 10300 50  0001 C CNN
+	1    11000 10300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 63881880
+P 11150 8200
+F 0 "#PWR0171" H 11150 7950 50  0001 C CNN
+F 1 "GND" H 11155 8027 50  0000 C CNN
+F 2 "" H 11150 8200 50  0001 C CNN
+F 3 "" H 11150 8200 50  0001 C CNN
+	1    11150 8200
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	1500 4700 1500 1400
+$Comp
+L semiconductor_radiation_detector:874380443 J1
+U 1 1 638FA0B4
+P 1900 2200
+F 0 "J1" H 1943 2567 50  0000 C CNN
+F 1 "874380443" H 1943 2476 50  0000 C CNN
+F 2 "semiconductor_radiation_detector:87438-0443" H 1900 2200 50  0001 L BNN
+F 3 "" H 1900 2200 50  0001 L BNN
+F 4 "4.45 mm" H 1900 2200 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "C" H 1900 2200 50  0001 L BNN "PARTREV"
+F 6 "Molex" H 1900 2200 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 1900 2200 50  0001 L BNN "STANDARD"
+	1    1900 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L semiconductor_radiation_detector:874380443 J2
+U 1 1 639DF6C1
+P 1900 3800
+F 0 "J2" H 1943 4167 50  0000 C CNN
+F 1 "874380443" H 1943 4076 50  0000 C CNN
+F 2 "semiconductor_radiation_detector:87438-0443" H 1900 3800 50  0001 L BNN
+F 3 "" H 1900 3800 50  0001 L BNN
+F 4 "4.45 mm" H 1900 3800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "C" H 1900 3800 50  0001 L BNN "PARTREV"
+F 6 "Molex" H 1900 3800 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 1900 3800 50  0001 L BNN "STANDARD"
+	1    1900 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L semiconductor_radiation_detector:874380443 J6
+U 1 1 63A3E9D1
+P 13250 2500
+F 0 "J6" H 13580 2496 50  0000 L CNN
+F 1 "874380443" H 13580 2405 50  0000 L CNN
+F 2 "semiconductor_radiation_detector:87438-0443" H 13250 2500 50  0001 L BNN
+F 3 "" H 13250 2500 50  0001 L BNN
+F 4 "4.45 mm" H 13250 2500 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "C" H 13250 2500 50  0001 L BNN "PARTREV"
+F 6 "Molex" H 13250 2500 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 13250 2500 50  0001 L BNN "STANDARD"
+	1    13250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 925C27D1
+P 3000 2250
+F 0 "C4" V 3015 2640 59  0000 R TNN
+F 1 "1n/100V" V 2915 2640 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3000 2250 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 3C820581
+P 6400 5500
+F 0 "R19" H 6300 5559 59  0000 L BNN
+F 1 "3k" H 6300 5370 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 5500 50  0001 C CNN
+F 3 "~" H 6400 5500 50  0001 C CNN
+	1    6400 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 1800 4850 1900
+$Comp
+L Device:LED LED5
+U 1 1 728AD106
+P 4850 2050
+F 0 "LED5" V 4590 1870 59  0000 L BNN
+F 1 "GREEN" V 4675 1870 59  0000 L BNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4850 2050 50  0001 C CNN
+F 3 "~" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 5200 9900 5200
+$Comp
+L Device:C C44
+U 1 1 66CBEE65
+P 10050 5200
+F 0 "C44" V 9985 4910 59  0000 L BNN
+F 1 "180p/50V" V 9985 5210 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10050 5200 50  0001 C CNN
+F 3 "~" H 10050 5200 50  0001 C CNN
+	1    10050 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 1800 2800 1950
+Wire Wire Line
+	2800 2250 2800 2400
+Wire Wire Line
+	3800 1800 3800 1950
+Wire Wire Line
+	3800 2250 3800 2400
+Wire Wire Line
+	4850 2200 4850 2350
+Wire Wire Line
+	4850 2650 4850 2800
+$Comp
+L Device:L L1
+U 1 1 6470BFE1
+P 6600 2000
+F 0 "L1" H 6653 2046 50  0000 L CNN
+F 1 "1u" H 6653 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 6600 2000 50  0001 C CNN
+F 3 "~" H 6600 2000 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 6471196C
+P 7300 2000
+F 0 "L3" H 7353 2046 50  0000 L CNN
+F 1 "1u" H 7353 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7300 2000 50  0001 C CNN
+F 3 "~" H 7300 2000 50  0001 C CNN
+	1    7300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 6473CDB2
+P 8000 2000
+F 0 "L5" H 8053 2046 50  0000 L CNN
+F 1 "1u" H 8053 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8000 2000 50  0001 C CNN
+F 3 "~" H 8000 2000 50  0001 C CNN
+	1    8000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L7
+U 1 1 64768221
+P 8700 2000
+F 0 "L7" H 8753 2046 50  0000 L CNN
+F 1 "1u" H 8753 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8700 2000 50  0001 C CNN
+F 3 "~" H 8700 2000 50  0001 C CNN
+	1    8700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L9
+U 1 1 647937EC
+P 9400 2200
+F 0 "L9" H 9453 2246 50  0000 L CNN
+F 1 "1u" H 9453 2155 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 9400 2200 50  0001 C CNN
+F 3 "~" H 9400 2200 50  0001 C CNN
+	1    9400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L10
+U 1 1 647BEDB1
+P 10200 2000
+F 0 "L10" H 10253 2046 50  0000 L CNN
+F 1 "1u" H 10253 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10200 2000 50  0001 C CNN
+F 3 "~" H 10200 2000 50  0001 C CNN
+	1    10200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L12
+U 1 1 647EA32E
+P 11100 2000
+F 0 "L12" H 11153 2046 50  0000 L CNN
+F 1 "1u" H 11153 1955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 11100 2000 50  0001 C CNN
+F 3 "~" H 11100 2000 50  0001 C CNN
+	1    11100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L13
+U 1 1 648157FE
+P 11100 3800
+F 0 "L13" H 11153 3846 50  0000 L CNN
+F 1 "1u" H 11153 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 11100 3800 50  0001 C CNN
+F 3 "~" H 11100 3800 50  0001 C CNN
+	1    11100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L11
+U 1 1 64840E8A
+P 10200 3800
+F 0 "L11" H 10253 3846 50  0000 L CNN
+F 1 "1u" H 10253 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10200 3800 50  0001 C CNN
+F 3 "~" H 10200 3800 50  0001 C CNN
+	1    10200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L8
+U 1 1 6486C3C7
+P 8700 3800
+F 0 "L8" H 8753 3846 50  0000 L CNN
+F 1 "1u" H 8753 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8700 3800 50  0001 C CNN
+F 3 "~" H 8700 3800 50  0001 C CNN
+	1    8700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L6
+U 1 1 64897928
+P 8000 3800
+F 0 "L6" H 8053 3846 50  0000 L CNN
+F 1 "1u" H 8053 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8000 3800 50  0001 C CNN
+F 3 "~" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 648C2F17
+P 7300 3800
+F 0 "L4" H 7353 3846 50  0000 L CNN
+F 1 "1u" H 7353 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7300 3800 50  0001 C CNN
+F 3 "~" H 7300 3800 50  0001 C CNN
+	1    7300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 648EE5F6
+P 6600 3800
+F 0 "L2" H 6653 3846 50  0000 L CNN
+F 1 "1u" H 6653 3755 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 6600 3800 50  0001 C CNN
+F 3 "~" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1700 6600 1850
+Wire Wire Line
+	6600 2150 6600 2300
+Wire Wire Line
+	6600 3500 6600 3650
+Wire Wire Line
+	6600 3950 6600 4100
+Wire Wire Line
+	7300 3950 7300 4100
+Wire Wire Line
+	8000 3950 8000 4100
+Wire Wire Line
+	8700 3950 8700 4100
+Wire Wire Line
+	7300 3500 7300 3650
+Wire Wire Line
+	8000 3500 8000 3650
+Wire Wire Line
+	8700 3500 8700 3650
+Wire Wire Line
+	10200 3500 10200 3650
+Wire Wire Line
+	10200 3950 10200 4100
+Wire Wire Line
+	11100 3950 11100 4100
+Wire Wire Line
+	11100 3500 11100 3650
+Wire Wire Line
+	11100 1700 11100 1850
+Wire Wire Line
+	11100 2150 11100 2300
+Wire Wire Line
+	10200 2150 10200 2300
+Wire Wire Line
+	10200 1700 10200 1850
+Wire Wire Line
+	9400 1900 9400 2050
+Wire Wire Line
+	9400 2350 9400 2500
+Wire Wire Line
+	8700 1700 8700 1850
+Wire Wire Line
+	8700 2150 8700 2300
+Wire Wire Line
+	8000 2150 8000 2300
+Wire Wire Line
+	8000 1700 8000 1850
+Wire Wire Line
+	7300 1700 7300 1850
+Wire Wire Line
+	7300 2150 7300 2300
+$Comp
+L semiconductor_radiation_detector:CON-SMA-EDGE-S J4
+U 1 1 64E7E2F5
+P 13200 3200
+F 0 "J4" H 13300 3175 50  0000 L CNN
+F 1 "CON-SMA-EDGE-S" H 13300 3084 50  0000 L CNN
+F 2 "semiconductor_radiation_detector:CON-SMA-EDGE-S" H 13350 950 50  0001 L CNN
+F 3 "https://www.rfsolutions.co.uk/downloads/1498648656DS-CON-EDGE-SMA-4.pdf" H 13350 1050 50  0001 L CNN
+F 4 "No" H 13350 1150 50  0001 L CNN "automotive"
+F 5 "Conn" H 13350 1250 50  0001 L CNN "category"
+F 6 "Gold" H 13350 1350 50  0001 L CNN "contact material"
+F 7 "Connectors" H 13350 1450 50  0001 L CNN "device class L1"
+F 8 "RF / Coaxial Connectors" H 13350 1550 50  0001 L CNN "device class L2"
+F 9 "unset" H 13350 1650 50  0001 L CNN "device class L3"
+F 10 "CONN SMA JACK STR EDGE MNT" H 13350 1750 50  0001 L CNN "digikey description"
+F 11 "CON-SMA-EDGE-S-ND" H 13350 1850 50  0001 L CNN "digikey part number"
+F 12 "https://forum.upverter.com/uploads/default/original/3X/b/e/be75b907af57498775929d6d9099689c472e0307.pdf" H 13350 1950 50  0001 L CNN "footprint url"
+F 13 "18GHz" H 13350 2050 50  0001 L CNN "frequency"
+F 14 "6.35mm" H 13350 2150 50  0001 L CNN "height"
+F 15 "50Ω" H 13350 2250 50  0001 L CNN "impedance"
+F 16 "yes" H 13350 2350 50  0001 L CNN "is connector"
+F 17 "yes" H 13350 2450 50  0001 L CNN "is female"
+F 18 "Yes" H 13350 2550 50  0001 L CNN "lead free"
+F 19 "311856913ef645a6" H 13350 2650 50  0001 L CNN "library id"
+F 20 "RF Solutions Ltd." H 13350 2750 50  0001 L CNN "manufacturer"
+F 21 "1" H 13350 2850 50  0001 L CNN "number of contacts"
+F 22 "CONN_JACK" H 13350 2950 50  0001 L CNN "package"
+F 23 "Yes" H 13350 3050 50  0001 L CNN "rohs"
+F 24 "true" H 13350 3150 50  0001 L CNN "shielding"
+	1    13200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L semiconductor_radiation_detector:CON-SMA-EDGE-S J5
+U 1 1 64E823E7
+P 13200 3800
+F 0 "J5" H 13300 3775 50  0000 L CNN
+F 1 "CON-SMA-EDGE-S" H 13300 3684 50  0000 L CNN
+F 2 "semiconductor_radiation_detector:CON-SMA-EDGE-S" H 13350 1550 50  0001 L CNN
+F 3 "https://www.rfsolutions.co.uk/downloads/1498648656DS-CON-EDGE-SMA-4.pdf" H 13350 1650 50  0001 L CNN
+F 4 "No" H 13350 1750 50  0001 L CNN "automotive"
+F 5 "Conn" H 13350 1850 50  0001 L CNN "category"
+F 6 "Gold" H 13350 1950 50  0001 L CNN "contact material"
+F 7 "Connectors" H 13350 2050 50  0001 L CNN "device class L1"
+F 8 "RF / Coaxial Connectors" H 13350 2150 50  0001 L CNN "device class L2"
+F 9 "unset" H 13350 2250 50  0001 L CNN "device class L3"
+F 10 "CONN SMA JACK STR EDGE MNT" H 13350 2350 50  0001 L CNN "digikey description"
+F 11 "CON-SMA-EDGE-S-ND" H 13350 2450 50  0001 L CNN "digikey part number"
+F 12 "https://forum.upverter.com/uploads/default/original/3X/b/e/be75b907af57498775929d6d9099689c472e0307.pdf" H 13350 2550 50  0001 L CNN "footprint url"
+F 13 "18GHz" H 13350 2650 50  0001 L CNN "frequency"
+F 14 "6.35mm" H 13350 2750 50  0001 L CNN "height"
+F 15 "50Ω" H 13350 2850 50  0001 L CNN "impedance"
+F 16 "yes" H 13350 2950 50  0001 L CNN "is connector"
+F 17 "yes" H 13350 3050 50  0001 L CNN "is female"
+F 18 "Yes" H 13350 3150 50  0001 L CNN "lead free"
+F 19 "311856913ef645a6" H 13350 3250 50  0001 L CNN "library id"
+F 20 "RF Solutions Ltd." H 13350 3350 50  0001 L CNN "manufacturer"
+F 21 "1" H 13350 3450 50  0001 L CNN "number of contacts"
+F 22 "CONN_JACK" H 13350 3550 50  0001 L CNN "package"
+F 23 "Yes" H 13350 3650 50  0001 L CNN "rohs"
+F 24 "true" H 13350 3750 50  0001 L CNN "shielding"
+	1    13200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L semiconductor_radiation_detector:CON-SMA-EDGE-S J3
+U 1 1 64F0B583
+P 11950 1750
+F 0 "J3" H 11878 1988 50  0000 C CNN
+F 1 "CON-SMA-EDGE-S" H 11878 1897 50  0000 C CNN
+F 2 "semiconductor_radiation_detector:CON-SMA-EDGE-S" H 12100 -500 50  0001 L CNN
+F 3 "https://www.rfsolutions.co.uk/downloads/1498648656DS-CON-EDGE-SMA-4.pdf" H 12100 -400 50  0001 L CNN
+F 4 "No" H 12100 -300 50  0001 L CNN "automotive"
+F 5 "Conn" H 12100 -200 50  0001 L CNN "category"
+F 6 "Gold" H 12100 -100 50  0001 L CNN "contact material"
+F 7 "Connectors" H 12100 0   50  0001 L CNN "device class L1"
+F 8 "RF / Coaxial Connectors" H 12100 100 50  0001 L CNN "device class L2"
+F 9 "unset" H 12100 200 50  0001 L CNN "device class L3"
+F 10 "CONN SMA JACK STR EDGE MNT" H 12100 300 50  0001 L CNN "digikey description"
+F 11 "CON-SMA-EDGE-S-ND" H 12100 400 50  0001 L CNN "digikey part number"
+F 12 "https://forum.upverter.com/uploads/default/original/3X/b/e/be75b907af57498775929d6d9099689c472e0307.pdf" H 12100 500 50  0001 L CNN "footprint url"
+F 13 "18GHz" H 12100 600 50  0001 L CNN "frequency"
+F 14 "6.35mm" H 12100 700 50  0001 L CNN "height"
+F 15 "50Ω" H 12100 800 50  0001 L CNN "impedance"
+F 16 "yes" H 12100 900 50  0001 L CNN "is connector"
+F 17 "yes" H 12100 1000 50  0001 L CNN "is female"
+F 18 "Yes" H 12100 1100 50  0001 L CNN "lead free"
+F 19 "311856913ef645a6" H 12100 1200 50  0001 L CNN "library id"
+F 20 "RF Solutions Ltd." H 12100 1300 50  0001 L CNN "manufacturer"
+F 21 "1" H 12100 1400 50  0001 L CNN "number of contacts"
+F 22 "CONN_JACK" H 12100 1500 50  0001 L CNN "package"
+F 23 "Yes" H 12100 1600 50  0001 L CNN "rohs"
+F 24 "true" H 12100 1700 50  0001 L CNN "shielding"
+	1    11950 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 1950 11950 2050
+Wire Wire Line
+	6000 5500 6250 5500
+Wire Wire Line
+	6550 5500 6700 5500
+Wire Wire Line
+	6700 5500 6850 5500
+Wire Wire Line
+	7150 5500 7300 5500
+Wire Wire Line
+	7500 6000 7500 6150
+Wire Wire Line
+	7500 6000 7750 6000
+Wire Wire Line
+	8050 6000 8300 6000
+Wire Wire Line
+	7500 6450 7500 6600
+Wire Wire Line
+	8500 5600 8750 5600
+Wire Wire Line
+	9050 5600 9200 5600
+Wire Wire Line
+	9200 5600 9350 5600
+Wire Wire Line
+	9650 5600 9800 5600
+Wire Wire Line
+	10000 6100 10000 6350
+Wire Wire Line
+	10000 6100 10250 6100
+Wire Wire Line
+	10550 6100 10800 6100
+Wire Wire Line
+	10800 5700 10950 5700
+Wire Wire Line
+	11250 5700 11400 5700
+Wire Wire Line
+	11400 5700 11550 5700
+Wire Wire Line
+	11850 5700 12000 5700
+Wire Wire Line
+	12200 6200 12200 6450
+Wire Wire Line
+	12200 6750 12200 6900
+Wire Wire Line
+	12200 6200 12450 6200
+Wire Wire Line
+	12750 6200 13000 6200
+Wire Wire Line
+	2500 8300 2650 8300
+Wire Wire Line
+	2950 8300 3100 8300
+Wire Wire Line
+	2900 8500 2900 8650
+Wire Wire Line
+	2900 8950 2900 9200
+Wire Wire Line
+	3100 8800 3350 8800
+Wire Wire Line
+	3650 8800 3900 8800
+Wire Wire Line
+	3100 8000 3350 8000
+Wire Wire Line
+	3650 8000 4900 8000
+Wire Wire Line
+	3900 8800 3900 8950
+Wire Wire Line
+	3900 9250 3900 9400
+Wire Wire Line
+	4200 9100 4200 9250
+Wire Wire Line
+	4500 8400 4500 8550
+Wire Wire Line
+	4500 8850 4500 9100
+Wire Wire Line
+	4900 8400 4900 8550
+Wire Wire Line
+	4900 8850 4900 9000
+Wire Wire Line
+	2950 10400 3500 10400
+Wire Wire Line
+	2900 10600 3050 10600
+Wire Wire Line
+	3350 10600 3500 10600
+Wire Wire Line
+	3500 11200 3500 11350
+Wire Wire Line
+	3700 11650 3700 11800
+Wire Wire Line
+	3500 11650 3500 11800
+Wire Wire Line
+	4200 9550 4200 9700
+Wire Wire Line
+	7400 9000 7550 9000
+Wire Wire Line
+	7850 9000 8000 9000
+Wire Wire Line
+	8000 8700 8250 8700
+Wire Wire Line
+	8550 8700 8800 8700
+Wire Wire Line
+	8000 9200 8000 9350
+Wire Wire Line
+	8000 9650 8000 9800
+Wire Wire Line
+	8800 10000 8950 10000
+Wire Wire Line
+	9250 10000 9400 10000
+Wire Wire Line
+	9800 9800 10050 9800
+Wire Wire Line
+	10350 9800 10600 9800
+Wire Wire Line
+	9800 10200 9800 10350
+Wire Wire Line
+	9800 10650 9800 10800
+Wire Wire Line
+	11000 10300 11000 10375
+Wire Wire Line
+	11000 11425 11000 11500
+Wire Wire Line
+	11600 10400 11750 10400
+Wire Wire Line
+	12050 10400 12200 10400
+Wire Wire Line
+	11950 10900 12100 10900
+Wire Wire Line
+	12100 10900 12250 10900
+Wire Wire Line
+	12550 10900 12900 10900
+Wire Wire Line
+	11150 9325 11150 9400
+Wire Wire Line
+	11150 8200 11150 8275
+Wire Wire Line
+	12725 8800 12975 8800
+Wire Wire Line
+	12125 9300 12275 9300
+Wire Wire Line
+	12125 8800 12225 8800
+Wire Wire Line
+	12225 8800 12225 9100
+Wire Wire Line
+	12225 9100 12275 9100
+Connection ~ 12225 8800
+Wire Wire Line
+	12225 8800 12425 8800
+Wire Wire Line
+	3500 10800 3700 10800
+Wire Wire Line
+	3800 11250 3700 11250
+Wire Wire Line
+	3700 11250 3700 11350
+Wire Wire Line
+	3800 11050 3700 11050
+Wire Wire Line
+	3700 11050 3700 10800
+Connection ~ 3700 10800
+Wire Wire Line
+	3700 10800 4100 10800
+Wire Wire Line
+	4300 11150 5200 11150
+Text Label 5200 11150 0    70   ~ 0
+RESET
+$Comp
+L Device:D_Schottky D6
+U 1 1 0CA8CD4D
+P 4200 8650
+F 0 "D6" H 4440 8625 70  0000 R TNN
+F 1 "BAS140" H 4440 8785 70  0000 R TNN
+F 2 "Diode_SMD:D_SOD-323" H 4200 8650 50  0001 C CNN
+F 3 "~" H 4200 8650 50  0001 C CNN
+	1    4200 8650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 9100 2500 9100
+Wire Wire Line
+	3600 9100 4200 9100
+$Comp
+L Device:D_Schottky D4
+U 1 1 DCE5EB0D
+P 3450 9100
+F 0 "D4" H 3360 9175 70  0000 L BNN
+F 1 "BAS140" H 3360 8965 70  0000 L BNN
+F 2 "Diode_SMD:D_SOD-323" H 3450 9100 50  0001 C CNN
+F 3 "~" H 3450 9100 50  0001 C CNN
+	1    3450 9100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 8400 3900 8400
+$Comp
+L Device:D_Schottky D5
+U 1 1 73B70CE6
+P 3900 8600
+F 0 "D5" H 4040 8525 70  0000 R TNN
+F 1 "BAS140" H 4090 8735 70  0000 R TNN
+F 2 "Diode_SMD:D_SOD-323" H 3900 8600 50  0001 C CNN
+F 3 "~" H 3900 8600 50  0001 C CNN
+	1    3900 8600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 8450 3900 8400
+Connection ~ 3900 8400
+Wire Wire Line
+	3900 8400 4200 8400
+Wire Wire Line
+	3900 8750 3900 8800
+Connection ~ 3900 8800
+Wire Wire Line
+	4550 8400 4500 8400
+Connection ~ 4500 8400
+Wire Wire Line
+	4850 8400 4900 8400
+Wire Wire Line
+	1700 10400 2500 10400
+Wire Wire Line
+	2400 10800 2500 10800
+Wire Wire Line
+	2500 10450 2500 10400
+Connection ~ 2500 10400
+Wire Wire Line
+	2500 10400 2650 10400
+Wire Wire Line
+	2500 10750 2500 10800
+$Comp
+L Device:D_Schottky D2
+U 1 1 20478EC3
+P 2700 10800
+F 0 "D2" H 2560 10675 70  0000 L BNN
+F 1 "BAS140" H 2560 10565 70  0000 L BNN
+F 2 "Diode_SMD:D_SOD-323" H 2700 10800 50  0001 C CNN
+F 3 "~" H 2700 10800 50  0001 C CNN
+	1    2700 10800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 10800 2550 10800
+Connection ~ 2500 10800
+Wire Wire Line
+	2850 10800 2900 10800
+Wire Wire Line
+	2900 10800 3050 10800
+Connection ~ 2900 10800
+Wire Wire Line
+	3350 10800 3500 10800
+Connection ~ 3500 10800
+$Comp
+L power:GND #PWR0172
+U 1 1 615C26E3
+P 1800 9050
+F 0 "#PWR0172" H 1800 8800 50  0001 C CNN
+F 1 "GND" H 1805 8877 50  0000 C CNN
+F 2 "" H 1800 9050 50  0001 C CNN
+F 3 "" H 1800 9050 50  0001 C CNN
+	1    1800 9050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 615EF328
+P 2100 9050
+F 0 "#PWR0173" H 2100 8800 50  0001 C CNN
+F 1 "GND" H 2105 8877 50  0000 C CNN
+F 2 "" H 2100 9050 50  0001 C CNN
+F 3 "" H 2100 9050 50  0001 C CNN
+	1    2100 9050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 6650 10000 6800
+Wire Wire Line
+	12875 9100 13175 9100
+Wire Wire Line
+	12800 10600 13100 10600
+$Comp
+L Device:R_POT RV1
+U 1 1 617B44E5
+P 11000 10900
+F 0 "RV1" H 10931 10946 50  0000 R CNN
+F 1 "500" H 10931 10855 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical" H 11000 10900 50  0001 C CNN
+F 3 "~" H 11000 10900 50  0001 C CNN
+	1    11000 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 10675 11000 10750
+Wire Wire Line
+	11000 11050 11000 11125
+Wire Wire Line
+	11150 10900 11275 10900
+Connection ~ 11275 10900
+Wire Wire Line
+	11275 11425 11275 11500
+Wire Wire Line
+	11275 10900 11275 11125
+Wire Wire Line
+	11475 10900 11475 11125
+Wire Wire Line
+	11450 9250 11450 9400
+Wire Wire Line
+	11650 9250 11650 9400
+Wire Wire Line
+	11450 8800 11650 8800
+Wire Wire Line
+	11650 8800 11825 8800
+Wire Wire Line
+	11650 8950 11650 8800
+Connection ~ 11650 8800
+$Comp
+L Device:CP C7
+U 1 1 61BF86EC
+P 11650 9100
+F 0 "C7" V 11631 9395 59  0000 L BNN
+F 1 "4,7u/6V" V 11731 9395 59  0000 L BNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 11650 9100 50  0001 C CNN
+F 3 "~" H 11650 9100 50  0001 C CNN
+	1    11650 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0118
+U 1 1 61BF86F2
+P 11450 9400
+F 0 "#PWR0118" H 11450 9500 50  0001 C CNN
+F 1 "-5V" H 11465 9573 50  0000 C CNN
+F 2 "" H 11450 9400 50  0001 C CNN
+F 3 "" H 11450 9400 50  0001 C CNN
+	1    11450 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0119
+U 1 1 61BF86F8
+P 11650 9400
+F 0 "#PWR0119" H 11650 9500 50  0001 C CNN
+F 1 "-5V" H 11665 9573 50  0000 C CNN
+F 2 "" H 11650 9400 50  0001 C CNN
+F 3 "" H 11650 9400 50  0001 C CNN
+	1    11650 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 61CC1650
+P 11150 8800
+F 0 "RV2" H 11080 8846 50  0000 R CNN
+F 1 "10" H 11080 8755 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3224W_Vertical" H 11150 8800 50  0001 C CNN
+F 3 "~" H 11150 8800 50  0001 C CNN
+	1    11150 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 8575 11150 8650
+Wire Wire Line
+	11300 8800 11450 8800
+Connection ~ 11450 8800
+Wire Wire Line
+	11150 8950 11150 9025
+$Comp
+L Device:R R54
+U 1 1 D87EE8BE
+P 11975 9300
+F 0 "R54" H 11875 9359 59  0000 L BNN
+F 1 "100" H 11875 9170 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11975 9300 50  0001 C CNN
+F 3 "~" H 11975 9300 50  0001 C CNN
+	1    11975 9300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11450 8950 11450 8800
+$Comp
+L Device:C C5
+U 1 1 61BF86E6
+P 11450 9100
+F 0 "C5" V 11335 9110 59  0000 L BNN
+F 1 "100n/50V" V 11365 9540 59  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11450 9100 50  0001 C CNN
+F 3 "~" H 11450 9100 50  0001 C CNN
+	1    11450 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11825 9300 10600 9300
+Wire Wire Line
+	10600 9300 10600 9100
+Wire Wire Line
+	10600 9100 8800 9100
 $EndSCHEMATC

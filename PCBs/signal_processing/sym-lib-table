@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name signal_processing-eagle-import)(type Legacy)(uri ${KIPRJMOD}/signal_processing-eagle-import.lib)(options "")(descr ""))
+  (lib (name semiconductor_radiation_detector)(type Legacy)(uri ${KIPRJMOD}/../lib/semiconductor_radiation_detector.lib)(options "")(descr ""))
 )

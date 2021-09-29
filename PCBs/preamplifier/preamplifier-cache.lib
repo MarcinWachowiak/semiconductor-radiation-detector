@@ -1,256 +1,278 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# preamplifier-eagle-import_+5V
+# Amplifier_Operational_LTC6228xS6
 #
-DEF preamplifier-eagle-import_+5V #P+ 0 40 Y Y 1 L P
-F0 "#P+" 0 0 50 H I C CNN
-F1 "preamplifier-eagle-import_+5V" -100 -200 59 V V L BNN
-F2 "" 0 0 50 H I C CNN
+DEF Amplifier_Operational_LTC6228xS6 U 0 20 Y Y 1 F N
+F0 "U" 0 250 50 H V L CNN
+F1 "Amplifier_Operational_LTC6228xS6" 0 150 50 H V L CNN
+F2 "Package_TO_SOT_SMD:TSOT-23-6" 0 -600 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
 DRAW
-P 2 1 0 0 0 0 -50 -75 N
-P 2 1 0 0 50 -75 0 0 N
-X +5V 1 0 -100 100 U 0 0 1 0 W
+P 4 0 1 10 200 0 -200 200 -200 -200 200 0 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X V- 2 -100 -300 150 U 50 25 1 1 W
+X + 3 -300 100 100 R 50 50 1 1 I
+X - 4 -300 -100 100 R 50 50 1 1 I
+X ~SHDN 5 0 -300 200 U 50 25 1 1 I
+X V+ 6 -100 300 150 D 50 25 1 1 W
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_-5V
+# Device_C
 #
-DEF preamplifier-eagle-import_-5V #P- 0 40 Y Y 1 L P
-F0 "#P-" 0 0 50 H I C CNN
-F1 "preamplifier-eagle-import_-5V" -100 -100 59 V V L BNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
 DRAW
-P 2 1 0 0 -50 75 0 0 N
-P 2 1 0 0 0 0 50 75 N
-X -5V 1 0 100 100 D 0 0 1 0 W
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_87438-0487437-0443
+# Device_CP
 #
-DEF preamplifier-eagle-import_87438-0487437-0443 X 0 40 Y Y 4 L N
-F0 "X" 100 -30 51 H V L BNN
-F1 "preamplifier-eagle-import_87438-0487437-0443" -30 55 59 H I L BNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
 DRAW
-P 2 1 0 0 50 0 0 0 N
-P 2 2 0 0 50 0 0 0 N
-P 2 3 0 0 50 0 0 0 N
-P 2 4 0 0 50 0 0 0 N
-X S 1 -100 0 100 R 0 0 1 0 P
-X S 5 -100 0 100 R 0 0 1 0 P
-X S 2 -100 0 100 R 0 0 2 0 P
-X S 6 -100 0 100 R 0 0 2 0 P
-X S 3 -100 0 100 R 0 0 3 0 P
-X S 7 -100 0 100 R 0 0 3 0 P
-X S 4 -100 0 100 R 0 0 4 0 P
-X S 8 -100 0 100 R 0 0 4 0 P
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_C-EUC0603
+# Device_L
 #
-DEF preamplifier-eagle-import_C-EUC0603 C 0 40 Y Y 1 L N
-F0 "C" 60 15 59 H V L BNN
-F1 "preamplifier-eagle-import_C-EUC0603" 60 -185 59 H V L BNN
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
 DRAW
-S -80 -80 80 -60 1 0 0 F
-S -80 -40 80 -20 1 0 0 F
-P 2 1 0 0 0 -100 0 -80 N
-P 2 1 0 0 0 0 0 -20 N
-X 1 1 0 100 100 D 0 0 1 0 P
-X 2 2 0 -200 100 U 0 0 1 0 P
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_C-EUC1206
+# Device_Q_NJFET_SDG
 #
-DEF preamplifier-eagle-import_C-EUC1206 C 0 40 Y Y 1 L N
-F0 "C" 60 15 59 H V L BNN
-F1 "preamplifier-eagle-import_C-EUC1206" 60 -185 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_Q_NJFET_SDG Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "Device_Q_NJFET_SDG" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-S -80 -80 80 -60 1 0 0 F
-S -80 -40 80 -20 1 0 0 F
-P 2 1 0 0 0 -100 0 -80 N
-P 2 1 0 0 0 0 0 -20 N
-X 1 1 0 100 100 D 0 0 1 0 P
-X 2 2 0 -200 100 U 0 0 1 0 P
+C 50 0 111 0 1 10 N
+P 3 0 1 10 10 75 10 -75 10 -75 N
+P 3 0 1 0 100 -100 100 -50 10 -50 N
+P 3 0 1 0 100 100 100 55 10 55 N
+P 4 0 1 0 0 0 -40 15 -40 -15 0 0 F
+X S 1 100 -200 100 U 50 50 1 1 P
+X D 2 100 200 100 D 50 50 1 1 P
+X G 3 -200 0 210 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_CPH3910
+# Device_R
 #
-DEF preamplifier-eagle-import_CPH3910 T 0 40 Y Y 1 L N
-F0 "T" -400 100 59 H V L BNN
-F1 "preamplifier-eagle-import_CPH3910" -401 200 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
 DRAW
-P 2 1 0 0 -60 -75 -10 -100 N
-P 2 1 0 0 -10 -100 -60 -125 N
-P 2 1 0 0 0 -150 0 150 N
-X S 1 200 -100 200 L 50 0 1 0 P
-X D 2 200 100 200 L 50 0 1 0 P
-X G 3 -200 -100 200 R 50 0 1 0 P
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_CPOL-EUSMCA
+# Device_R_POT
 #
-DEF preamplifier-eagle-import_CPOL-EUSMCA C 0 40 Y Y 1 L N
-F0 "C" 45 19 59 H V L BNN
-F1 "preamplifier-eagle-import_CPOL-EUSMCA" 45 -181 59 H V L BNN
+DEF Device_R_POT RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
 DRAW
-T 900 -23 16 42 0 1 0 + Normal 0 L B
-S -65 -100 65 -65 1 0 0 F
-P 2 1 0 0 -60 -35 60 -35 N
-P 2 1 0 0 -60 0 -60 -35 N
-P 2 1 0 0 -60 0 60 0 N
-P 2 1 0 0 60 -35 60 0 N
-X + + 0 100 100 D 0 0 1 0 P
-X - - 0 -200 100 U 0 0 1 0 P
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_CPOL-EUSMCB
+# power_+5V
 #
-DEF preamplifier-eagle-import_CPOL-EUSMCB C 0 40 Y Y 1 L N
-F0 "C" 45 19 59 H V L BNN
-F1 "preamplifier-eagle-import_CPOL-EUSMCB" 45 -181 59 H V L BNN
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 900 -23 16 42 0 1 0 + Normal 0 L B
-S -65 -100 65 -65 1 0 0 F
-P 2 1 0 0 -60 -35 60 -35 N
-P 2 1 0 0 -60 0 -60 -35 N
-P 2 1 0 0 -60 0 60 0 N
-P 2 1 0 0 60 -35 60 0 N
-X + + 0 100 100 D 0 0 1 0 P
-X - - 0 -200 100 U 0 0 1 0 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_DINA4_L
+# power_-5V
 #
-DEF preamplifier-eagle-import_DINA4_L #FRAME 0 40 Y Y 2 L N
-F0 "#FRAME" 0 0 50 H I C CNN
-F1 "preamplifier-eagle-import_DINA4_L" 0 0 50 H I C CNN
+DEF power_-5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 100 50 H I C CNN
+F1 "power_-5V" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 0 700 750 100 0 2 0 >DRAWING_NAME Normal 0 L B
-T 0 500 50 100 0 2 0 >LAST_DATE_TIME Normal 0 L B
-T 0 3400 50 100 0 2 0 >SHEET Normal 0 L B
-T 0 50 50 100 0 2 0 Date: Normal 0 L B
-T 0 50 450 100 0 2 0 "Document Number:" Normal 0 L B
-T 0 3500 450 100 0 2 0 REV: Normal 0 L B
-T 0 2850 50 100 0 2 0 Sheet: Normal 0 L B
-T 0 50 750 100 0 2 0 TITLE: Normal 0 L B
-P 2 2 0 0 0 0 0 200 N
-P 2 2 0 0 0 0 2800 0 N
-P 2 2 0 0 0 200 0 600 N
-P 2 2 0 0 0 200 2800 200 N
-P 2 2 0 0 0 600 0 900 N
-P 2 2 0 0 0 900 0 1400 N
-P 2 2 0 0 0 900 4000 900 N
-P 2 2 0 0 2800 0 4000 0 N
-P 2 2 0 0 2800 200 2800 0 N
-P 2 2 0 0 2800 200 3450 200 N
-P 2 2 0 0 3450 200 4000 200 N
-P 2 2 0 0 3450 600 0 600 N
-P 2 2 0 0 3450 600 3450 200 N
-P 2 2 0 0 4000 200 4000 0 N
-P 2 2 0 0 4000 600 3450 600 N
-P 2 2 0 0 4000 600 4000 200 N
-P 2 2 0 0 4000 900 4000 600 N
-P 2 2 0 0 4000 1400 0 1400 N
-P 2 2 0 0 4000 1400 4000 900 N
+P 6 0 1 0 0 0 0 50 30 50 0 100 -30 50 0 50 F
+X -5V 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_GND
+# power_GND
 #
-DEF preamplifier-eagle-import_GND #GND 0 40 Y Y 1 L P
-F0 "#GND" 0 0 50 H I C CNN
-F1 "preamplifier-eagle-import_GND" -100 -100 59 H V L BNN
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 1 0 0 -75 0 75 0 N
-X GND 1 0 100 100 D 0 0 1 0 W
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_LEDCHIPLED_0603
+# semiconductor_radiation_detector_874370443
 #
-DEF preamplifier-eagle-import_LEDCHIPLED_0603 LED 0 40 Y Y 1 L N
-F0 "LED" 140 -180 59 V V L BNN
-F1 "preamplifier-eagle-import_LEDCHIPLED_0603" 225 -180 59 V V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF semiconductor_radiation_detector_874370443 J 0 40 Y Y 1 F N
+F0 "J" 0 250 50 H V L BNN
+F1 "semiconductor_radiation_detector_874370443" 0 -400 50 H V L BNN
+F2 "semiconductor_radiation_detector:87437-0443" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "5.75 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F5 "A" 0 0 50 H I L BNN "PARTREV"
+F6 "Molex" 0 0 50 H I L BNN "MANUFACTURER"
+F7 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
 DRAW
-P 2 1 0 0 -80 -30 -135 -85 N
-P 2 1 0 0 -75 -75 -130 -130 N
-P 2 1 0 0 0 -100 -50 -100 N
-P 2 1 0 0 0 -100 -50 0 N
-P 2 1 0 0 0 0 -50 0 N
-P 2 1 0 0 0 0 0 -100 N
-P 2 1 0 0 50 -100 0 -100 N
-P 2 1 0 0 50 0 0 -100 N
-P 2 1 0 0 50 0 0 0 N
-P 3 1 0 0 -135 -85 -120 -50 -100 -70 F
-P 3 1 0 0 -130 -130 -115 -95 -95 -115 F
-X A A 0 100 100 D 0 0 1 0 P
-X C C 0 -200 100 U 0 0 1 0 P
+S 24 -212 87 -187 0 0 0 F
+S 24 -112 87 -87 0 0 0 F
+S 24 -12 87 12 0 0 0 F
+S 24 87 87 112 0 0 0 F
+P 2 0 0 10 0 -250 50 -300 N
+P 2 0 0 10 0 -200 75 -200 N
+P 2 0 0 10 0 -100 75 -100 N
+P 2 0 0 10 0 0 75 0 N
+P 2 0 0 10 0 100 0 -250 N
+P 2 0 0 10 0 100 75 100 N
+P 2 0 0 10 0 150 0 100 N
+P 2 0 0 10 50 -300 300 -300 N
+P 2 0 0 10 50 200 0 150 N
+P 2 0 0 10 300 -300 300 200 N
+P 2 0 0 10 300 200 50 200 N
+X 1 1_1 -200 100 200 R 40 40 0 0 P
+X 1 1_2 -200 100 200 R 40 40 0 0 P
+X 2 2_1 -200 0 200 R 40 40 0 0 P
+X 2 2_2 -200 0 200 R 40 40 0 0 P
+X 3 3_1 -200 -100 200 R 40 40 0 0 P
+X 3 3_2 -200 -100 200 R 40 40 0 0 P
+X 4 4_1 -200 -200 200 R 40 40 0 0 P
+X 4 4_2 -200 -200 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_LINX-SMA-EDGE-0.062
+# semiconductor_radiation_detector_CON-SMA-EDGE-S
 #
-DEF preamplifier-eagle-import_LINX-SMA-EDGE-0.062 A 0 40 Y Y 1 L N
-F0 "A" 0 120 42 H V L BNN
-F1 "preamplifier-eagle-import_LINX-SMA-EDGE-0.062" 100 -100 42 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF semiconductor_radiation_detector_CON-SMA-EDGE-S J 0 0 Y Y 1 F N
+F0 "J" 100 -50 50 H V L CNN
+F1 "semiconductor_radiation_detector_CON-SMA-EDGE-S" 100 50 50 H V L CNN
+F2 "semiconductor_radiation_detector:CON-SMA-EDGE-S" 150 -2250 50 H I L CNN
+F3 "" 150 -2150 50 H I L CNN
+F4 "No" 150 -2050 50 H I L CNN "automotive"
+F5 "Conn" 150 -1950 50 H I L CNN "category"
+F6 "Gold" 150 -1850 50 H I L CNN "contact material"
+F7 "Connectors" 150 -1750 50 H I L CNN "device class L1"
+F8 "RF / Coaxial Connectors" 150 -1650 50 H I L CNN "device class L2"
+F9 "unset" 150 -1550 50 H I L CNN "device class L3"
+F10 "CONN SMA JACK STR EDGE MNT" 150 -1450 50 H I L CNN "digikey description"
+F11 "CON-SMA-EDGE-S-ND" 150 -1350 50 H I L CNN "digikey part number"
+F12 "https://forum.upverter.com/uploads/default/original/3X/b/e/be75b907af57498775929d6d9099689c472e0307.pdf" 150 -1250 50 H I L CNN "footprint url"
+F13 "18GHz" 150 -1150 50 H I L CNN "frequency"
+F14 "6.35mm" 150 -1050 50 H I L CNN "height"
+F15 "50Ω" 150 -950 50 H I L CNN "impedance"
+F16 "yes" 150 -850 50 H I L CNN "is connector"
+F17 "yes" 150 -750 50 H I L CNN "is female"
+F18 "Yes" 150 -650 50 H I L CNN "lead free"
+F19 "311856913ef645a6" 150 -550 50 H I L CNN "library id"
+F20 "RF Solutions Ltd." 150 -450 50 H I L CNN "manufacturer"
+F21 "1" 150 -350 50 H I L CNN "number of contacts"
+F22 "CONN_JACK" 150 -250 50 H I L CNN "package"
+F23 "Yes" 150 -150 50 H I L CNN "rohs"
+F24 "true" 150 -50 50 H I L CNN "shielding"
 DRAW
-C 0 0 100 1 0 10 N
-X ANT ANT -100 0 100 R 0 0 1 0 B
-X P$2 GND1 0 -200 100 U 0 0 1 0 B
-X P$2 GND2 0 -200 100 U 0 0 1 0 B
-X P$2 GND3 0 -200 100 U 0 0 1 0 B
-X P$2 GND4 0 -200 100 U 0 0 1 0 B
+A -2 0 71 1636 0 1 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 1 1 10 N 70 0 -70 -20
+C 0 0 20 1 1 8 N
+P 2 1 1 0 -100 0 -20 0 N
+P 2 1 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_LTC6268
+# semiconductor_radiation_detector_LTC6268
 #
-DEF preamplifier-eagle-import_LTC6268 IC 0 40 Y Y 2 L N
-F0 "IC" 100 125 59 H I L BNN
-F1 "preamplifier-eagle-import_LTC6268" 100 -200 59 H I L BNN
-F2 "" 0 0 50 H I C CNN
+DEF semiconductor_radiation_detector_LTC6268 U 0 40 Y Y 2 L N
+F0 "U" 100 125 59 H V L BNN
+F1 "semiconductor_radiation_detector_LTC6268" 100 -200 59 H V L BNN
+F2 "Package_TO_SOT_SMD:TSOT-23-6" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 T 900 50 -175 27 0 2 0 GND Normal 0 L B
 T 900 50 125 27 0 2 0 VDD Normal 0 L B
-P 2 1 0 0 -200 -200 200 0 N
-P 2 1 0 0 -200 200 -200 -200 N
 P 2 1 0 0 -175 -100 -125 -100 N
 P 2 1 0 0 -175 100 -125 100 N
 P 2 1 0 0 -150 125 -150 75 N
-P 2 1 0 0 100 50 -200 200 N
 P 2 1 0 0 100 100 100 50 N
 P 2 1 0 0 200 0 100 50 N
+P 4 1 0 0 -200 200 200 0 -200 -200 -200 200 f
 X OUT 1 300 0 100 L 50 0 1 0 O
 X +IN 3 -300 100 100 R 50 0 1 0 I
 X -IN 4 -300 -100 100 R 50 0 1 0 I
@@ -260,62 +282,38 @@ X VDD 6 0 300 200 D 50 0 2 0 W
 ENDDRAW
 ENDDEF
 #
-# preamplifier-eagle-import_R-EU_R0603
+# semiconductor_radiation_detector_VBPW34S
 #
-DEF preamplifier-eagle-import_R-EU_R0603 R 0 40 Y Y 1 L N
-F0 "R" -150 59 59 H V L BNN
-F1 "preamplifier-eagle-import_R-EU_R0603" -150 -130 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF semiconductor_radiation_detector_VBPW34S D 0 40 Y N 1 F N
+F0 "D" -22 177 50 H V L BNN
+F1 "semiconductor_radiation_detector_VBPW34S" -40 -130 50 H V L BNN
+F2 "semiconductor_radiation_detector:XDCR_VBPW34S" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F5 "1.4mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F6 "Vishay" 0 0 50 H I L BNN "MANUFACTURER"
+F7 "1.2" 0 0 50 H I L BNN "PARTREV"
 DRAW
-P 2 1 0 0 -100 -35 -100 35 N
-P 2 1 0 0 -100 -35 100 -35 N
-P 2 1 0 0 100 -35 100 35 N
-P 2 1 0 0 100 35 -100 35 N
-X 1 1 -200 0 100 R 0 0 1 0 P
-X 2 2 200 0 100 L 0 0 1 0 P
-ENDDRAW
-ENDDEF
-#
-# preamplifier-eagle-import_TEMD5010X01
-#
-DEF preamplifier-eagle-import_TEMD5010X01 D 0 40 Y Y 1 L N
-F0 "D" -300 200 59 H V L BNN
-F1 "preamplifier-eagle-import_TEMD5010X01" -300 -200 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -50 -75 50 0 N
-P 2 1 0 0 -50 75 -50 -75 N
-P 2 1 0 0 40 140 80 180 N
-P 2 1 0 0 50 0 -50 75 N
-P 2 1 0 0 55 75 55 -75 N
-P 2 1 0 0 70 110 110 150 N
-P 3 1 0 0 40 160 60 140 30 130 F
-P 3 1 0 0 70 130 90 110 60 100 F
-X C 1 200 0 200 L 0 0 1 0 P
-X A 2 -200 0 200 R 0 0 1 0 P
-ENDDRAW
-ENDDEF
-#
-# preamplifier-eagle-import_VBPW34S
-#
-DEF preamplifier-eagle-import_VBPW34S D 0 40 Y Y 1 L N
-F0 "D" -300 200 59 H V L BNN
-F1 "preamplifier-eagle-import_VBPW34S" -300 -200 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -50 -75 50 0 N
-P 2 1 0 0 -50 75 -50 -75 N
-P 2 1 0 0 40 140 80 180 N
-P 2 1 0 0 50 0 -50 75 N
-P 2 1 0 0 55 75 55 -75 N
-P 2 1 0 0 70 110 110 150 N
-P 3 1 0 0 40 160 60 140 30 130 F
-P 3 1 0 0 70 130 90 110 60 100 F
-X A A -200 0 200 R 0 0 1 0 P
-X C C 200 0 200 L 0 0 1 0 P
+P 2 0 0 10 0 -60 100 0 N
+P 2 0 0 10 0 60 0 -60 N
+P 2 0 0 10 30 80 43 118 N
+P 2 0 0 10 30 80 100 160 N
+P 2 0 0 10 42 89 47 89 N
+P 2 0 0 10 43 118 42 89 N
+P 2 0 0 10 43 118 65 99 N
+P 2 0 0 10 58 102 49 96 N
+P 2 0 0 10 65 99 30 80 N
+P 2 0 0 10 79 76 92 114 N
+P 2 0 0 10 79 76 149 156 N
+P 2 0 0 10 91 85 96 85 N
+P 2 0 0 10 92 114 91 85 N
+P 2 0 0 10 92 114 114 95 N
+P 2 0 0 10 100 0 0 60 N
+P 2 0 0 10 100 60 100 -60 N
+P 2 0 0 10 107 98 98 92 N
+P 2 0 0 10 114 95 79 76 N
+X ~ A -200 0 200 R 40 40 0 0 P
+X ~ K 300 0 200 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
