@@ -71,17 +71,17 @@ Wire Wire Line
 Wire Wire Line
 	2275 5375 2275 5675
 Text Label 2275 5375 1    70   ~ 0
-+65V
++60V
 Wire Wire Line
 	2475 5375 2475 5675
 Text Label 2475 5375 1    70   ~ 0
-+65V
++60V
 Wire Wire Line
 	1800 5675 1800 5375
 Wire Wire Line
 	1700 5675 1800 5675
 Text Label 1800 5375 1    70   ~ 0
-+65V
++60V
 Text Label 1575 1950 2    70   ~ 0
 +60V
 Wire Wire Line
