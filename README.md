@@ -5,25 +5,17 @@ Radiation detector based on PIN diode with extensive signal processing. The sign
 
 </div>
 
-
-
-<br />
-
   - **Manufactured prototypes**
   
     <img src="PCBs/img/brd_photo.jpg" alt="board_photo" width="600"/>
-
-<br />
 
   - **Preamplifier board**
 
     <img src="PCBs/preamplifier/doc/top.jpg" alt="preamplifier_top" width="600" />
     <img src="PCBs/preamplifier/doc/bottom.jpg" alt="preamplifier_bottom" width="600"/>
 
-<br />
-
   - **Signal processing board**
-    
+
     <img src="PCBs/signal_processing/doc/top.jpg" alt="signal_processing_top" width="600"/>
     <img src="PCBs/signal_processing/doc/bottom.jpg" alt="signal_processing_bottom" width="600"/>
 
