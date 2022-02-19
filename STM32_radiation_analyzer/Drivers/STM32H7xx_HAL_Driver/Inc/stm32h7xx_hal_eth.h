@@ -6,13 +6,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */ 
@@ -89,10 +88,15 @@ typedef struct __ETH_BufferTypeDef
   */
 typedef struct
 {
-  uint32_t  TxDesc[ETH_TX_DESC_CNT];     /*<! Tx DMA descriptors addresses */
+  uint32_t  TxDesc[ETH_TX_DESC_CNT];        /*<! Tx DMA descriptors addresses */
   
-  uint32_t  CurTxDesc;               /*<! Current Tx descriptor index for packet transmission */
-  
+  uint32_t  CurTxDesc;                      /*<! Current Tx descriptor index for packet transmission */
+
+  uint32_t* PacketAddress[ETH_TX_DESC_CNT];  /*<! Ethernet packet addresses array */
+
+  uint32_t* CurrentPacketAddress;           /*<! Current transmit NX_PACKET addresses */
+
+  uint32_t BuffersInUse;                   /*<! Buffers in Use */
 }ETH_TxDescListTypeDef;
 /** 
   * 
@@ -546,7 +550,7 @@ typedef struct{
   */
 
 /*
-   DMA Tx Normal Desciptor Read Format
+   DMA Tx Normal Descriptor Read Format
   -----------------------------------------------------------------------------------------------
   TDES0 |                         Buffer1 or Header Address  [31:0]                              |
   -----------------------------------------------------------------------------------------------
@@ -659,7 +663,7 @@ typedef struct{
 
 
 /*
-   DMA Tx Context Desciptor
+   DMA Tx Context Descriptor
   -----------------------------------------------------------------------------------------------
   TDES0 |                               Timestamp Low                                            |
   -----------------------------------------------------------------------------------------------
@@ -1679,4 +1683,3 @@ uint32_t             HAL_ETH_GetMACWakeUpSource(ETH_HandleTypeDef *heth);
 
 
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

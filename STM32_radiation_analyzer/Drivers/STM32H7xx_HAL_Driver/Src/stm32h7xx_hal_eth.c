@@ -9,7 +9,17 @@
   *           + IO operation functions
   *           + Peripheral Control functions
   *           + Peripheral State and Errors functions
+  ******************************************************************************
+  * @attention
   *
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
   @verbatim
   ==============================================================================
                     ##### How to use this driver #####
@@ -129,17 +139,6 @@
   are set to the corresponding weak functions.
 
   @endverbatim
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
   ******************************************************************************
   */
 
@@ -902,7 +901,7 @@ HAL_StatusTypeDef HAL_ETH_Stop_IT(ETH_HandleTypeDef *heth)
     /* Set the ETH peripheral state to BUSY */
     heth->gState = HAL_ETH_STATE_BUSY;
 
-    /* Disable intrrupts:
+    /* Disable interrupts:
     - Tx complete interrupt
     - Rx complete interrupt
     - Fatal bus interrupt
@@ -986,7 +985,7 @@ HAL_StatusTypeDef HAL_ETH_Transmit(ETH_HandleTypeDef *heth, ETH_TxPacketConfig *
 
     tickstart = HAL_GetTick();
 
-    /* Wait for data to be transmitted or timeout occured */
+    /* Wait for data to be transmitted or timeout occurred */
     while((dmatxdesc->DESC3 & ETH_DMATXNDESCWBF_OWN) != (uint32_t)RESET)
     {
       if((heth->Instance->DMACSR & ETH_DMACSR_FBE) != (uint32_t)RESET)
@@ -1232,7 +1231,7 @@ HAL_StatusTypeDef HAL_ETH_GetRxDataBuffer(ETH_HandleTypeDef *heth, ETH_BufferTyp
     }
   }
 
-  /* Get intermediate descriptors buffers: in case of the Packet is splitted into multi descriptors */
+  /* Get intermediate descriptors buffers: in case of the Packet is split into multi descriptors */
   for(index = 0; index < (dmarxdesclist->AppDescNbr - 1U); index++)
   {
     /* Get Address and length of the first buffer address */
@@ -1519,7 +1518,7 @@ void HAL_ETH_IRQHandler(ETH_HandleTypeDef *heth)
     {
       heth->ErrorCode |= HAL_ETH_ERROR_DMA;
 
-      /* if fatal bus error occured */
+      /* if fatal bus error occurred */
       if (__HAL_ETH_DMA_GET_IT(heth, ETH_DMACSR_FBE))
       {
         /* Get DMA error code  */
@@ -1562,7 +1561,7 @@ void HAL_ETH_IRQHandler(ETH_HandleTypeDef *heth)
 
 #if (USE_HAL_ETH_REGISTER_CALLBACKS == 1)
     /* Call registered MAC Error callback*/
-    heth->DMAErrorCallback(heth);
+    heth->MACErrorCallback(heth);
 #else
     /* Ethernet MAC Error callback */
     HAL_ETH_MACErrorCallback(heth);
@@ -2242,7 +2241,7 @@ void HAL_ETH_SetRxVLANIdentifier(ETH_HandleTypeDef *heth, uint32_t ComparisonBit
   * @param  heth: pointer to a ETH_HandleTypeDef structure that contains
   *         the configuration information for ETHERNET module
   * @param  pPowerDownConfig: a pointer to ETH_PowerDownConfigTypeDef structure
-  *         that contains the Power Down configration
+  *         that contains the Power Down configuration
   * @retval None.
   */
 void HAL_ETH_EnterPowerDownMode(ETH_HandleTypeDef *heth, ETH_PowerDownConfigTypeDef *pPowerDownConfig)
@@ -2702,7 +2701,7 @@ static void ETH_DMARxDescListInit(ETH_HandleTypeDef *heth)
     WRITE_REG(dmarxdesc->BackupAddr0, 0x0);
     WRITE_REG(dmarxdesc->BackupAddr1, 0x0);
 
-    /* Set Rx descritors adresses */
+    /* Set Rx descritors addresses */
     WRITE_REG(heth->RxDescList.RxDesc[i], (uint32_t)dmarxdesc);
   }
 
@@ -2740,9 +2739,10 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
   ETH_DMADescTypeDef *dmatxdesc = (ETH_DMADescTypeDef *)dmatxdesclist->TxDesc[descidx];
 
   ETH_BufferTypeDef  *txbuffer = pTxConfig->TxBuffer;
+  uint32_t           bd_count = 0;
 
   /* Current Tx Descriptor Owned by DMA: cannot be used by the application  */
-  if(READ_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCWBF_OWN) == ETH_DMATXNDESCWBF_OWN)
+  if((READ_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCWBF_OWN) == ETH_DMATXNDESCWBF_OWN) || (dmatxdesclist->PacketAddress[descidx] != NULL))
   {
     return HAL_ETH_ERROR_BUSY;
   }
@@ -2778,7 +2778,7 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
     }
   }
 
-  /* if tcp segementation is enabled for this packet */
+  /* if tcp segmentation is enabled for this packet */
   if(READ_BIT(pTxConfig->Attributes, ETH_TX_PACKETS_FEATURES_TSO) != 0U)
   {
     /* Set MSS value */
@@ -2880,7 +2880,7 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
     MODIFY_REG(dmatxdesc->DESC3, ETH_DMATXNDESCRF_SAIC, pTxConfig->SrcAddrCtrl);
   }
 
-  /* only if the packet is splitted into more than one descriptors > 1 */
+  /* only if the packet is split into more than one descriptors > 1 */
   while (txbuffer->next != NULL)
   {
     /* Clear the LD bit of previous descriptor */
@@ -2894,7 +2894,7 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
     CLEAR_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCRF_FD);
 
     /* Current Tx Descriptor Owned by DMA: cannot be used by the application  */
-    if(READ_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCRF_OWN) == ETH_DMATXNDESCRF_OWN)
+    if((READ_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCRF_OWN) == ETH_DMATXNDESCRF_OWN) || (dmatxdesclist->PacketAddress[descidx] != NULL))
     {
       descidx = firstdescidx;
       dmatxdesc = (ETH_DMADescTypeDef *)dmatxdesclist->TxDesc[descidx];
@@ -2958,6 +2958,7 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
       }
     }
 
+    bd_count += 1U;
     /* Set Own bit */
     SET_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCRF_OWN);
     /* Mark it as NORMAL descriptor */
@@ -2966,19 +2967,30 @@ static uint32_t ETH_Prepare_Tx_Descriptors(ETH_HandleTypeDef *heth, ETH_TxPacket
 
   if(ItMode != ((uint32_t)RESET))
   {
-    /* Set Interrupt on completition bit */
+    /* Set Interrupt on completion bit */
     SET_BIT(dmatxdesc->DESC2, ETH_DMATXNDESCRF_IOC);
   }
   else
   {
-    /* Clear Interrupt on completition bit */
+    /* Clear Interrupt on completion bit */
     CLEAR_BIT(dmatxdesc->DESC2, ETH_DMATXNDESCRF_IOC);
   }
 
   /* Mark it as LAST descriptor */
   SET_BIT(dmatxdesc->DESC3, ETH_DMATXNDESCRF_LD);
+  /* Save the current packet address to expose it to the application */
+  dmatxdesclist->PacketAddress[descidx] = dmatxdesclist->CurrentPacketAddress;
 
   dmatxdesclist->CurTxDesc = descidx;
+
+  /* disable the interrupt */
+  __disable_irq();
+
+  dmatxdesclist->BuffersInUse += bd_count + 1U;
+
+  /* Enable interrupts back */
+  __enable_irq();
+
 
   /* Return function status */
   return HAL_ETH_ERROR_NONE;
@@ -3014,4 +3026,3 @@ static void ETH_InitCallbacksToDefault(ETH_HandleTypeDef *heth)
   * @}
   */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

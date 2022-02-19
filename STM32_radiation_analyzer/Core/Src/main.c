@@ -36,7 +36,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-//number of ADC (16bit samples to save)
+//number of ADC samples to average (16bit samples to save)
 #define ADC_BUF_LEN 10
 
 /* USER CODE END PD */
@@ -53,14 +53,14 @@
 ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx DMA Descriptors */
 #pragma location=0x30040060
 ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
-#pragma location=0x30040200
+#pragma location=0x300400c0
 uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE]; /* Ethernet Receive Buffers */
 
 #elif defined ( __CC_ARM )  /* MDK ARM Compiler */
 
 __attribute__((at(0x30040000))) ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx DMA Descriptors */
 __attribute__((at(0x30040060))) ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
-__attribute__((at(0x30040200))) uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE]; /* Ethernet Receive Buffer */
+__attribute__((at(0x300400c0))) uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE]; /* Ethernet Receive Buffer */
 
 #elif defined ( __GNUC__ ) /* GNU Compiler */
 
@@ -80,8 +80,6 @@ RTC_HandleTypeDef hrtc;
 
 TIM_HandleTypeDef htim16;
 
-UART_HandleTypeDef huart3;
-
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -91,7 +89,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ETH_Init(void);
-static void MX_USART3_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM16_Init(void);
 static void MX_RTC_Init(void);
@@ -101,11 +98,12 @@ static void MX_RTC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint16_t adc_dma_buf [ADC_BUF_LEN];
-uint16_t spectrum_arr [4096];
-uint32_t time_counter = 0;
-uint32_t pulse_counter = 0;
-uint32_t rising_slope_counter = 0;
+static uint16_t adc_dma_buf [ADC_BUF_LEN];
+static uint16_t pulse_ampl_cnt_arr [4096] = {0};
+static uint32_t pulse_cnt = 0;
+
+static uint32_t time_cnt = 0;
+static uint32_t rising_slope_cnt = 0;
 
 uint8_t conv_cplt = 0;
 
@@ -141,11 +139,10 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_ETH_Init();
-  MX_USART3_UART_Init();
-  MX_USB_DEVICE_Init();
   MX_ADC1_Init();
   MX_TIM16_Init();
   MX_RTC_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   //Start timer
@@ -161,6 +158,9 @@ int main(void)
 	  Error_Handler();
   }
 
+  // Initialize spectral array to zeros
+  memset(pulse_ampl_cnt_arr, 0, sizeof(pulse_ampl_cnt_arr));
+
   //init message
   HAL_Delay(1000);
   uint8_t buffer[] = "Radiation Analyzer init!\r\n";
@@ -171,12 +171,21 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	    // simple led signal that program is working
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, SET);
 		HAL_Delay(1000);
+	    //
+	    // INTERRUPTS ARE NOT A GOOD PLACE TO DO SEND DATA OR PRINT!
+	    //
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
 		HAL_Delay(1000);
 		//GPIOC->ODR = 1 << 3;
 		//GPIOC->ODR = 0;
+
+		// TODO add collected data printing to UART
+		//	uint8_t buffer2[128];
+		//	sprintf(buffer2, "ADC: %d %d %d %d %d %d %d %d %d %d\n\r", adc_dma_buf[0],adc_dma_buf[1],adc_dma_buf[2],adc_dma_buf[3],adc_dma_buf[4],adc_dma_buf[5],adc_dma_buf[6],adc_dma_buf[7],adc_dma_buf[8],adc_dma_buf[9]);
+		//	CDC_Transmit_FS(buffer2, sizeof(buffer2));
 
     /* USER CODE END WHILE */
 
@@ -193,7 +202,6 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
   /** Supply configuration update enable
   */
@@ -245,27 +253,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_USART3
-                              |RCC_PERIPHCLK_ADC|RCC_PERIPHCLK_USB;
-  PeriphClkInitStruct.PLL2.PLL2M = 1;
-  PeriphClkInitStruct.PLL2.PLL2N = 19;
-  PeriphClkInitStruct.PLL2.PLL2P = 2;
-  PeriphClkInitStruct.PLL2.PLL2Q = 2;
-  PeriphClkInitStruct.PLL2.PLL2R = 2;
-  PeriphClkInitStruct.PLL2.PLL2RGE = RCC_PLL2VCIRANGE_3;
-  PeriphClkInitStruct.PLL2.PLL2VCOSEL = RCC_PLL2VCOMEDIUM;
-  PeriphClkInitStruct.PLL2.PLL2FRACN = 0;
-  PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
-  PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
-  PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL2;
-  PeriphClkInitStruct.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Enable USB Voltage detector
-  */
-  HAL_PWREx_EnableUSBVoltageDetector();
 }
 
 /**
@@ -345,16 +332,19 @@ static void MX_ETH_Init(void)
 
   /* USER CODE END ETH_Init 0 */
 
+   static uint8_t MACAddr[6];
+
   /* USER CODE BEGIN ETH_Init 1 */
 
   /* USER CODE END ETH_Init 1 */
   heth.Instance = ETH;
-  heth.Init.MACAddr[0] =   0x00;
-  heth.Init.MACAddr[1] =   0x80;
-  heth.Init.MACAddr[2] =   0xE1;
-  heth.Init.MACAddr[3] =   0x00;
-  heth.Init.MACAddr[4] =   0x00;
-  heth.Init.MACAddr[5] =   0x00;
+  MACAddr[0] = 0x00;
+  MACAddr[1] = 0x80;
+  MACAddr[2] = 0xE1;
+  MACAddr[3] = 0x00;
+  MACAddr[4] = 0x00;
+  MACAddr[5] = 0x00;
+  heth.Init.MACAddr = &MACAddr[0];
   heth.Init.MediaInterface = HAL_ETH_RMII_MODE;
   heth.Init.TxDesc = DMATxDscrTab;
   heth.Init.RxDesc = DMARxDscrTab;
@@ -447,54 +437,6 @@ static void MX_TIM16_Init(void)
 }
 
 /**
-  * @brief USART3 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART3_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART3_Init 0 */
-
-  /* USER CODE END USART3_Init 0 */
-
-  /* USER CODE BEGIN USART3_Init 1 */
-
-  /* USER CODE END USART3_Init 1 */
-  huart3.Instance = USART3;
-  huart3.Init.BaudRate = 115200;
-  huart3.Init.WordLength = UART_WORDLENGTH_8B;
-  huart3.Init.StopBits = UART_STOPBITS_1;
-  huart3.Init.Parity = UART_PARITY_NONE;
-  huart3.Init.Mode = UART_MODE_TX_RX;
-  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart3.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart3.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart3.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetTxFifoThreshold(&huart3, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_SetRxFifoThreshold(&huart3, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_UARTEx_DisableFifoMode(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART3_Init 2 */
-
-  /* USER CODE END USART3_Init 2 */
-
-}
-
-/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -526,11 +468,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(HOLD_RST_GPIO_Port, HOLD_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(sample_and_hold_reset_GPIO_Port, sample_and_hold_reset_Pin, GPIO_PIN_RESET);
@@ -540,13 +478,6 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(USB_PowerSwitchOn_GPIO_Port, USB_PowerSwitchOn_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : HOLD_RST_Pin */
-  GPIO_InitStruct.Pin = HOLD_RST_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  HAL_GPIO_Init(HOLD_RST_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : rising_edge_trigger_Pin */
   GPIO_InitStruct.Pin = rising_edge_trigger_Pin;
@@ -608,10 +539,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim == &htim16){
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-		  time_counter++;
-		  if(time_counter%60 == 0) {
-			    uint8_t buffer[] = "One minute elapsed\r\n";
-			    CDC_Transmit_FS(buffer, sizeof(buffer));
+		  time_cnt++;
+		  static uint8_t sec_buffer[] = "One second elapsed!\r\n";
+		  CDC_Transmit_FS(sec_buffer, sizeof(sec_buffer));
+		  if(time_cnt%60 == 0) {
+			    static uint8_t min_buffer[] = "One minute elapsed!\r\n";
+			    CDC_Transmit_FS(min_buffer, sizeof(min_buffer));
 		  	  }
 	}
 }
@@ -620,9 +553,22 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	conv_cplt = 1;
-	uint8_t buffer2[128];
-	sprintf(buffer2, "ADC: %d %d %d %d %d %d %d %d %d %d\n\r", adc_dma_buf[0],adc_dma_buf[1],adc_dma_buf[2],adc_dma_buf[3],adc_dma_buf[4],adc_dma_buf[5],adc_dma_buf[6],adc_dma_buf[7],adc_dma_buf[8],adc_dma_buf[9]);
-	CDC_Transmit_FS(buffer2, sizeof(buffer2));
+
+	// average collected samples
+	uint32_t tmp_sum = 0;
+	for (uint8_t i = 0; i < ADC_BUF_LEN; ++i) {
+		tmp_sum += adc_dma_buf[i];
+	    }
+	uint16_t avg_sample_val =(uint16_t) (tmp_sum / ADC_BUF_LEN);
+
+	// increment index corresponding to registered amplitude
+	pulse_ampl_cnt_arr[avg_sample_val]++;
+
+	// increment pulse count
+	pulse_cnt++;
+
+	//reset S&H block
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, SET);
 }
 
 //Interrupt handler
@@ -630,20 +576,20 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 
 	if(GPIO_Pin == GPIO_PIN_9){
 		//pulse duration - rising
-		//enable S&H block
+		//enable S&H block - peak capture
 		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, RESET);
-		//trigger ADC sampling burst
-		SET_BIT(ADC1->CR, ADC_CR_ADSTART);
-		//pulse_counter++;
 
 	} else if (GPIO_Pin == GPIO_PIN_14){
 		//pulse duration falling
-		//reset S&H block
-		HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, SET);
+		//pulse has reached the peak
+		//trigger ADC sampling burst
+		SET_BIT(ADC1->CR, ADC_CR_ADSTART);
 
 	} else if (GPIO_Pin == GPIO_PIN_15){
 		//rising slope trigger detected
-		//skipped for initial testing TODO
+		// TODO: Add detection of pulse overlapping
+		// Multiple rising slope triggers during single pulse period - overlapping pulse - discard
+		rising_slope_cnt++;
 
 	} else {
 		//Unhandled interrupt - exception
@@ -685,4 +631,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

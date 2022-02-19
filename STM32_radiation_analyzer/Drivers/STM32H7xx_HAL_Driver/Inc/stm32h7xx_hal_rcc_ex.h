@@ -6,14 +6,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
+  * This software is licensed under terms that can be found in the LICENSE file in
+  * the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   ******************************************************************************
   */
 
@@ -2403,7 +2401,11 @@ typedef struct
   *            @arg RCC_I2C4CLKSOURCE_HSI: HSI selected as I2C4 clock
   *            @arg RCC_I2C4CLKSOURCE_CSI: CSI selected as I2C4 clock
   */
+#if defined(RCC_D3CCIPR_I2C4SEL)
 #define __HAL_RCC_GET_I2C4_SOURCE() ((uint32_t)(READ_BIT(RCC->D3CCIPR, RCC_D3CCIPR_I2C4SEL)))
+#else
+#define __HAL_RCC_GET_I2C4_SOURCE() ((uint32_t)(READ_BIT(RCC->SRDCCIPR, RCC_SRDCCIPR_I2C4SEL)))
+#endif /* RCC_D3CCIPR_I2C4SEL */
 
 #if defined(I2C5)
 /** @brief macro to configure the I2C5 clock (I2C5CLK).
@@ -3206,7 +3208,7 @@ typedef struct
                   MODIFY_REG(RCC->D2CCIP2R, RCC_D2CCIP2R_CECSEL, (uint32_t)(__CECCLKSource__))
 #else
 #define __HAL_RCC_CEC_CONFIG(__CECCLKSource__) \
-                  MODIFY_REG(RCC->D2CCIP2R, RCC_CDCCIP2R_CECSEL, (uint32_t)(__CECCLKSource__))
+                  MODIFY_REG(RCC->CDCCIP2R, RCC_CDCCIP2R_CECSEL, (uint32_t)(__CECCLKSource__))
 #endif /* RCC_D2CCIP2R_CECSEL */
 
 /** @brief  macro to get the CEC clock source.
@@ -4299,8 +4301,6 @@ void     HAL_RCCEx_CRS_ErrorCallback(uint32_t Error);
 #define IS_RCC_PLL3VCO_VALUE(VALUE) (((VALUE) == RCC_PLL3VCOWIDE)  || \
                                     ((VALUE) == RCC_PLL3VCOMEDIUM))
 
-#define IS_RCC_PLLFRACN_VALUE(VALUE) ((VALUE) <=8191U)
-
 #define IS_RCC_LPTIM1CLK(SOURCE)       (((SOURCE) == RCC_LPTIM1CLKSOURCE_D2PCLK1)|| \
                                         ((SOURCE) == RCC_LPTIM1CLKSOURCE_PLL2)   || \
                                         ((SOURCE) == RCC_LPTIM1CLKSOURCE_PLL3)   || \
@@ -4473,4 +4473,3 @@ void     HAL_RCCEx_CRS_ErrorCallback(uint32_t Error);
 
 #endif /* STM32H7xx_HAL_RCC_EX_H */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

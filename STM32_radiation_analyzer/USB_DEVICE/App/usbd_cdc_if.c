@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -32,7 +31,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+uint8_t  ctrl_param_buff[7];
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -156,6 +155,17 @@ static int8_t CDC_Init_FS(void)
   /* Set Application Buffers */
   USBD_CDC_SetTxBuffer(&hUsbDeviceFS, UserTxBufferFS, 0);
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, UserRxBufferFS);
+
+  // https://stackoverflow.com/a/26925578
+  uint32_t baudrate = 115200;
+  ctrl_param_buff[0] = (uint8_t)(baudrate);
+  ctrl_param_buff[1] = (uint8_t)(baudrate >> 8);
+  ctrl_param_buff[2] = (uint8_t)(baudrate >> 16);
+  ctrl_param_buff[3] = (uint8_t)(baudrate >> 24);
+  ctrl_param_buff[4] = 0; // 1 Stop bit
+  ctrl_param_buff[5] = 0; // No parity
+  ctrl_param_buff[6] = 8; // 8 data bits
+
   return (USBD_OK);
   /* USER CODE END 3 */
 }
@@ -181,9 +191,6 @@ static int8_t CDC_DeInit_FS(void)
 static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 {
   /* USER CODE BEGIN 5 */
-	static uint8_t lineCoding[7] //
-	// 115200bps, 1stop, no parity, 8bit
-	= {0x00, 0xC2, 0x01, 0x00, 0x00, 0x00, 0x08};
   switch(cmd)
   {
     case CDC_SEND_ENCAPSULATED_COMMAND:
@@ -224,11 +231,23 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
   /* 6      | bDataBits  |   1   | Number Data bits (5, 6, 7, 8 or 16).          */
   /*******************************************************************************/
     case CDC_SET_LINE_CODING:
-    	memcpy( lineCoding, pbuf, sizeof(lineCoding) );
+    	ctrl_param_buff[0]=pbuf[0];
+    	ctrl_param_buff[1]=pbuf[1];
+    	ctrl_param_buff[2]=pbuf[2];
+    	ctrl_param_buff[3]=pbuf[3];
+    	ctrl_param_buff[4]=pbuf[4];
+    	ctrl_param_buff[5]=pbuf[5];
+    	ctrl_param_buff[6]=pbuf[6];
     break;
 
     case CDC_GET_LINE_CODING:
-    	memcpy( pbuf, lineCoding, sizeof(lineCoding) );
+    	pbuf[0] = ctrl_param_buff[0];
+    	pbuf[1] = ctrl_param_buff[1];
+    	pbuf[2] = ctrl_param_buff[2];
+    	pbuf[3] = ctrl_param_buff[3];
+    	pbuf[4] = ctrl_param_buff[4];
+    	pbuf[5] = ctrl_param_buff[5];
+    	pbuf[6] = ctrl_param_buff[6];
     break;
 
     case CDC_SET_CONTROL_LINE_STATE:
@@ -290,6 +309,7 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
   if (hcdc->TxState != 0){
     return USBD_BUSY;
   }
+  memcpy(UserTxBufferFS, Buf, sizeof(char) * Len);
   USBD_CDC_SetTxBuffer(&hUsbDeviceFS, Buf, Len);
   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
   /* USER CODE END 7 */
@@ -298,7 +318,7 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
 
 /**
   * @brief  CDC_TransmitCplt_FS
-  *         Data transmited callback
+  *         Data transmitted callback
   *
   *         @note
   *         This function is IN transfer complete callback used to inform user that
@@ -330,5 +350,3 @@ static int8_t CDC_TransmitCplt_FS(uint8_t *Buf, uint32_t *Len, uint8_t epnum)
 /**
   * @}
   */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
